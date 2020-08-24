@@ -1,16 +1,16 @@
-##  TryHackMe - Learn Linux (Room 001)
+#  TryHackMe - Learn Linux (Room 001)
 
-# Task 7
+## Task 7
 
-Q: What flag outputs all entries?
+### Q1: What flag outputs all entries?
 
 A: -a
 
-Q: What flag outputs things in a long list format?
+### Q2: What flag outputs things in a long list format?
 
 A: -l
 
-# Task 8
+### Task 8
 
 Q: What flag numbers all output lines?
 
