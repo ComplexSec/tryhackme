@@ -54,7 +54,7 @@ Running a binary called hello in previous directory `../hello`
 About: su allows you to change the user, without logging out and logging back in 
 
 Usage: 	`su shiba2` logs in as shiba2 user
-	`su` logs in as root by default	
+        `su` logs in as root by default	
 
 
 ## Linux Operators - Intro
