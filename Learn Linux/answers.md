@@ -36,6 +36,8 @@ A: ../hello
 
 A: pinguftw
 
-#### Task 12
+## Task 12
 
-This is a test
+#### Q: How do you specify which shell is used when you login?
+
+A: `-s`
