@@ -10,23 +10,23 @@ Connecting: Through the command line, type `ssh shiba1@10.10.32.230`
 
 About: The echo command returns whatever is inputted into it
 
-Executing: Typing echo hello, you will see input echoed back to you
+Executing: Typing `echo hello`, you will see input echoed back to you
 
 # Manual Pages and Flags
 
 About: Most commands will have options called flags (<command> <flag> <input>). Flags learned using the man command (man <command>). Some commands support the `-h` flag as well
 
-Executing: The man echo command shows options for echo command
+Executing: The `man echo` command shows options for echo command
 
 # Basic File Operations - ls
 
 About: ls commands lists information about every file/directory. The ls -a lists all hidden files aswell
 
-Execution: ls -a outputs all entries, ls -l produces a long list format
+Execution: `ls -a` outputs all entries, `ls -l` produces a long list format
 
 # Basic File Operations - cat
 
-About: cat outputs contents of files to the console. cat supports the --help flag
+About: cat outputs contents of files to the console. cat supports the `--help` flag
 
 Execution: `cat -n` numbers all the output lines
 
