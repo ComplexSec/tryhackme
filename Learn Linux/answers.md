@@ -1,6 +1,6 @@
 #  TryHackMe - Learn Linux (Room 001)
 
-## Task 7
+## Task 7 - `ls`
 
 #### Q1: What flag outputs all entries?
 
@@ -10,7 +10,7 @@ A: -a
 
 A: -l
 
-## Task 8
+## Task 8 - `cat`
 
 #### Q1: What flag numbers all output lines?
 
@@ -30,14 +30,36 @@ A: ~/hello
 
 A: ../hello
 
-## Task 11
+## Task 11 - `shiba1 binary`
 
 #### Q: What is the password for shiba2
 
 A: pinguftw
 
-## Task 12
+## Task 12 - `su`
 
 #### Q: How do you specify which shell is used when you login?
 
 A: `-s`
+
+## Task 14 - `>`
+
+#### Q: How would you output `twenty` to a file called test?
+
+A: `echo twenty > test`
+
+## Task 18 - `$`
+
+#### Q: How would you set nootnoot equal to 1111?
+
+A: `export nootnoot=1111`
+
+#### Q: What is the value of the home environment variable?
+
+a: `/home/shiba2`
+
+## Task 21 - shiba2
+
+#### Q: What is shiba3's password?
+
+A: happynootnoises

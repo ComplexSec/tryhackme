@@ -59,5 +59,57 @@ Usage:
         
 `su` logs in as root by default	
 
-## Linux Operators - Intro
+## Linux Operators - `>`
+
+About: `>` is the operator for output redirection. Can redirect output of any command to a file
+
+Usage: `echo hello > file.txt` writes hello to file.txt
+
+Additional notes: Using this operator on an existing file erases the content of the file and replaces it
+
+## Linux Operators - `>>`
+
+About: `>>` does the same thing as `>` but appends the output to a file instead of erasing
+
+Usage: `echo noot >> file.txt` appends noot to file.txt
+
+## Linux Operators - `&&`
+
+About: `&&` means AND. Allows execution of second command after first one executed successfully
+
+Usage: `ls & echo hello` - lists files and prints hello
+
+Additional notes: Can use something created in the first command in the second command
+
+## Linux Operators - `&`
+
+About: `&` is a background operator. Can run commands in the background
+
+Usage: `sleep 5 &` - sleeps for 5 seconds in the background
+
+## Linux Operators - `$`
+
+About: `$` is used to denote environment variables. Variables set by the computer that are used to affect different processes and how they work. Current user is always stored in a variable called $USER
+
+Usage: `echo $USER` - prints the current user value of $USER
+
+Additional notes: Environment variables can be used as input for other commands
+
+Additional Usage: `touch $USER` - creates file called the current user
+
+## Linux Operators - `|`
+
+About: `|` allows you to take the output of a command and use it as input for another. Not all commands support piping.
+
+Usage: `cat test | grep 123` - prints content of test and searches for 123 inside the output
+
+## Linux Operators - `;`
+
+About: `;` works similiar to && but does not require the first command to execute successfully
+
+Usage: `fakecommand; ls` - executes ls command
+
+## Advanced File Operators - Background
+
+The `ls` command has different flags allowing you to view information about different types of files
 
