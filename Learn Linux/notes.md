@@ -41,9 +41,13 @@ Execution: `touch b.txt` creates a file called b.txt
 About: To run programs, provide the full path to the binary. Binary is executable code. Can use relative paths to execute binaries
 
 Executing: 
+
 Running a binary using directory shortcut `./hello`. 
-Running a binary in your home directory using ~ `~/hello`. 
+
+Running a binary in your home directory using ~ `~/hello`.
+
 Running a binary called hello in previous directory `../hello`
+
 
 # su
 
