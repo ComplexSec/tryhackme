@@ -22,8 +22,7 @@ A: -n
 
 A: ./hello
 
-#### Q: How would you run a binary called hello in 
-your home directory using the shortcut ~ ?
+#### Q: How would you run a binary called hello in your home directory using the shortcut ~ ?
 
 A: ~/hello
 
