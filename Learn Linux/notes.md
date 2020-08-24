@@ -14,6 +14,8 @@ About: The echo command returns whatever is inputted into it
 
 Executing: Typing `echo hello`, you will see input echoed back to you
 
+![](/images/echo_hello.png)
+
 ## Manual Pages and Flags
 
 About: Most commands will have options called flags (<command> <flag> <input>). Flags learned using the man command (man <command>). Some commands support the `-h` flag as well
