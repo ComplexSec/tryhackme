@@ -113,4 +113,4 @@ Usage: `fakecommand; ls` - executes ls command
 
 The `ls` command has different flags allowing you to view information about different types of files
 
-https://github.com/ComplexSec/tryhackme/blob/master/images/ls%20-al%20command.png
+![](/images/ls%20-al.png)
