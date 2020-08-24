@@ -2,15 +2,15 @@
 
 ## Task 7
 
-### Q1: What flag outputs all entries?
+#### Q1: What flag outputs all entries?
 
 A: -a
 
-### Q2: What flag outputs things in a long list format?
+#### Q2: What flag outputs things in a long list format?
 
 A: -l
 
-### Task 8
+## Task 8
 
 Q: What flag numbers all output lines?
 
