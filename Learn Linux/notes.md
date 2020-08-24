@@ -4,7 +4,7 @@
 
 About: SSH is the act of remotely accessing a machine. Allows you to run commands interactively on the remote machine - done through the use of a program on the target which allows the SSH client to interface with the target. SSH works with comand line
 
-Connecting: Through the command line, type ssh shiba1@10.10.32.230
+Connecting: Through the command line, type `ssh shiba1@10.10.32.230`
 
 # Basic Command Execution - echo
 
