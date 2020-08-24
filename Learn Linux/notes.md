@@ -6,6 +6,8 @@ About: SSH is the act of remotely accessing a machine. Allows you to run command
 
 Connecting: Through the command line, type `ssh shiba1@10.10.32.230`
 
+![](/images/ssh_command.png)
+
 ## Basic Command Execution - echo
 
 About: The echo command returns whatever is inputted into it
@@ -18,11 +20,15 @@ About: Most commands will have options called flags (<command> <flag> <input>). 
 
 Executing: The `man echo` command shows options for echo command
 
+![](/images/man_echo.png)
+
 ## Basic File Operations - ls
 
 About: ls commands lists information about every file/directory. The ls -a lists all hidden files aswell
 
 Execution: `ls -a` outputs all entries, `ls -l` produces a long list format
+
+![](/images/ls_commands.png)
 
 ## Basic File Operations - cat
 
@@ -30,11 +36,15 @@ About: cat outputs contents of files to the console. cat supports the `--help` f
 
 Execution: `cat -n` numbers all the output lines
 
+![](/images/cat_-n.png)
+
 ## Basic File Operations - touch
 
 About: touch creates files
 
 Execution: `touch b.txt` creates a file called b.txt
+
+![](/images/touch_command.png)
 
 ## Basic File Operations - Running a Binary
 
