@@ -134,3 +134,9 @@ Digit | Meaning
 5 | That file can be read and executed
 6 | That file can be written to and read
 7 | That file can be read, written to and executed
+
+File permissions are divided into three sections
+
+* User
+* Group
+* Everyone
