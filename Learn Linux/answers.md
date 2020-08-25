@@ -63,3 +63,13 @@ a: `/home/shiba2`
 #### Q: What is shiba3's password?
 
 A: happynootnoises
+
+## Task 24 - chmod
+
+#### Q: What permissions mean the user can read the file, the group can read and write to the file, and no one else can read, write or execute the file?
+
+A: 460
+
+#### Q: What permissions mean the user can read, write and execute the file, the group can read, write, and execute the file, and everyone else can read, write, and execute the file?
+
+A: 777
