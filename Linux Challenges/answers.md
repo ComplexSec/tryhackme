@@ -60,3 +60,133 @@ A: dcf50ad844f9fe06339041ccc0d6e280
 Q: Find all other users on the system. What is flag 10?
 
 A: 5e23deecfe3a7292970ee48ff1b6d00c
+
+## Task 3.1
+Q: Run the command flag11. Locate where your command alias are stored and get flag 11
+
+A: b4ba05d85801f62c4c0d05d3a76432e0
+
+## Task 3.2
+Q: Flag12 is located where MOTD's are usually found on an Ubuntu OS. What is flag12?
+
+A: 01687f0c5e63382f1c9cc783ad44ff7f
+
+## Task 3.3
+Q: Find the difference between two script files to find flag 13
+
+A: 3383f3771ba86b1ed9ab7fbf8abab531
+
+## Task 3.4
+Q: Where on the file system are logs typically stored? Find flag 14
+
+A: 71c3a8ad9752666275dadf62a93ef393
+
+## Task 3.5
+Q: Can you find information about the system, such as the kernel version? Find flag 15
+
+A: a914945a4b2b5e934ae06ad6f9c6be45
+
+## Task 3.6
+Q: Flag 16 lies within another system mount
+
+A: cab4b7cae33c87794d82efa1e7f834e6
+
+## Task 3.7
+Q: Login to alice's account and get flag 17. Her password is TryHackMe123
+
+A: 89d7bce9d0bab49e11e194b54a601362
+
+## Task 3.8
+Q: Find the hidden flag 18
+
+A: c6522bb26600d30254549b6574d2cef2
+
+## Task 3.9
+Q: Read the 2345th line of the file that contains flag 19
+
+A: 490e69bd1bf3fc736cce9ff300653a3b
+
+## Task 4.1
+Q: Find and retrieve flag 20
+
+A: 02b9aab8a29970db08ec77ae425f6e68
+
+## Task 4.2
+Q: Inspect the flag21.php file. Find the flag
+
+A: g00djob
+
+## Task 4.3
+Q: Locate and read flag 22. It is represented as hex
+
+A: 9d1ae8d569c83e03d8a8f61568a0fa7d
+
+## Task 4.4
+Q: Locate, read and reverse flag 23
+
+A: ea52970566f4c090a7348b033852bff5
+
+## Task 4.5
+Q: Analyse the flag 24 compiled C program. Find a command that might reveal human readable strings when looking in the source code
+
+A: hidd3nStr1ng
+
+## Task 4.7
+Q: Find flag 26 by searching all files for a string that beings with 4bceb and is 32 characters long
+
+A: 4bceb76f490b24ed577d704c24d6955d
+
+## Task 4.8
+Q: Locate and retrieve flag 27, which is owned by the root user
+
+A: 6fc0c805702baebb0ecc01ae9e5a0db5
+
+## Task 4.9
+Q: What is the linux kernel version?
+
+A: 4.4.0-1075-aws
+
+## Task 4.10
+Q: Find the file called flag 29 and do the following operations on it@
+
+1. Remove all spaces in the file
+2. Remove all new line spaces
+3. Split by comma and get the last element in the split 
+
+A: fastidiisuscipitmeaei
+
+## Task 5.1
+Q: Use curl to find flag 30
+A: fe74bb12fe03c5d8dfc245bdd1eae13f
+
+## Task 5.2
+Q: Flag 31 is a MySQL database name
+
+* MySQL username: root
+* MySQL password: hello
+
+A: 2fb1cab13bf5f4d61de3555430c917f4
+
+## Task 5.3
+Q: Bonus flag question, get data out of the table from the database you found above
+A: ee5954ee1d4d94d61c2f823d7b9d733c
+
+## Task 5.4
+Q: Using SCP, FileZilla or another FTP client download flag32.mp3 to reveal flag 32
+A: tryhackme1337
+
+## Task 5.5
+Q: Flag 33 is located where your personal $PATH's are stored
+A: 547b6ceee3c5b997b625de99b044f5cf
+
+## Task 5.6
+Q: Switch your account back to bob. Using system variables, what is flag34?
+A: 7a88306309fe05070a7c5bb26a6b2def
+
+## Task 5.7
+Q: Look at all groups created on the system. What is flag 35?
+A: 769afb6
+
+## Task 5.8
+Q: Find the user which is apart of the "hacker" group and read flag 36
+A: 83d233f2ffa388e5f0b053848caed1eb
