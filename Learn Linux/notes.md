@@ -121,8 +121,16 @@ About: `;` works similiar to && but does not require the first command to execut
 
 Usage: `fakecommand; ls` - executes ls command
 
-## Advanced File Operators - Background
+## Advanced File Operators - chmod
 
-The `ls` command has different flags allowing you to view information about different types of files
+About: The `chmod` command allows you to set different permissions for a file. Set using a three digit number where each digit controls a specific permission
 
-![](/images/ls%20-al%20command.png)
+Digit | Meaning
+------------ | -------------
+1 | That file can be executed
+2 | That file can be written to
+3 | That file can be executed and written to
+4 | That file can be read
+5 | That file can be read and executed
+6 | That file can be written to and read
+7 | That file can be read, written to and executed
