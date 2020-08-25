@@ -140,3 +140,12 @@ File permissions are divided into three sections
 * User
 * Group
 * Everyone
+
+## Advanced File Operators - chown
+
+About: The `chown` allows us to change the user and group for any file.  Syntax is `chown user:group <filename>`. Can only use chown if you have higher privileges than the other user
+
+Usage: `chown shiba2:shiba2 file` changes owner and group of file to shiba2
+
+![](/images/chown_command.png)
+
