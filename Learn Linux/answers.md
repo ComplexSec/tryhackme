@@ -104,7 +104,7 @@ A: -f
 
 A: mv file /tmp
 
-## Task 28 - cd && mkdir
+## Task 29 - cd && mkdir
 
 #### Q: Using relative paths, how would you cd to your home directory?
 
@@ -113,4 +113,10 @@ A: cd ~
 #### Q: Using absolute paths, how would you make a directory called test in /tmp?
 
 A: mkdir /tmp/test
+
+## Task 30 - ln
+
+#### Q: How would you link /home/test/testfile to /tmp/test?
+
+A: ln /home/test/testfile /tmp/test
 
