@@ -163,3 +163,9 @@ A: sudo -u jen whoami
 #### Q: How do you list your current sudo privileges (what commands you can run, who you can run them as etc...)?
 
 A: sudo -l
+
+## Task 36 - adduser and addgroup
+
+#### Q: How would you add the user `test` to the group `test`?
+
+A: `sudo usermod -a -G test test`

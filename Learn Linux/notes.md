@@ -235,3 +235,19 @@ Usage: `sudo whoami` would run whoami as root and print out root as the current 
 ![](/images/sudo_command.png)
 
 Notes: Need to have current user's password to use it. 
+
+## Miscellaneous - Adding users and groups
+
+About: Both commands allow us to add users and groups. The syntax for them is `adduser <username>` & `addgroup <groupname>`
+
+Usage: 
+* `adduser noot` creates a new user
+* `addgroup b` creates a new group
+
+![](/images/adduser.png)
+![](/images/addgroup.png)
+
+Additional notes: Only root has permissions to add users and groups. Add a user to a group via the usermod command. Syntax is `usermod -a -G <groups_separated_by_commas> <user>`
+
+![](/images/add_user_to_group.png)
+
