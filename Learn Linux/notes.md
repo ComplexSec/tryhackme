@@ -201,3 +201,27 @@ About: The next form of linking is symbolic linking (symlink). A symbolic link i
 
 Additional notes: The permissions on the symblink has 777, but since it is just a reference, it still has the same perms as the original file
 
+## Advanced File Operators - find
+
+About: The `find` command allows us to find files. Lists every file in the current directory. Is recursive. Only lists files in directories you have permission to access
+
+Usage: 
+
+* `find dir -user` would list every file owned by a specific user
+* `find dir -group` would list every file owned by a specific group
+
+![](/images/find_command.png)
+
+## Advanced File Operators - grep
+
+About: The `grep` command allows us to find data inside of data. Syntax is `grep <string> <file>`. Can use it in piping
+
+Usage: `find /* | grep test1234` would find all files on the system and grep would narrow it down to just files containing test1234 in the name
+
+![](/images/grep_command.png)
+
+Additional usage: `grep hello test -n` would grep for the string hello in the file test while printing numbered lines
+
+![](/images/grep2_command.png)
+
+Additional notes: The `grep` command supports regular expressions

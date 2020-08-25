@@ -120,3 +120,32 @@ A: mkdir /tmp/test
 
 A: ln /home/test/testfile /tmp/test
 
+## Task 31 - find
+
+#### Q: How do you find files that have specific permissions?
+
+A: -perm
+
+#### Q: How would you find all the files in /home?
+
+A: find /home
+
+#### Q: How would you find all the files owned by paradox on the whole system?
+
+A: find / -user paradox
+
+## Task 32 - grep
+
+#### Q: What flag lists line numbers for every string found?
+
+A: -n
+
+#### Q: How would you search for the string `boop` in the file `aaaa` in the directory `/tmp`?
+
+A: grep boop /tmp/aaaa
+
+## Task 33 - Shiba3
+
+#### Q: What is shiba4's password?
+
+A: test1234
