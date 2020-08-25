@@ -169,3 +169,9 @@ A: sudo -l
 #### Q: How would you add the user `test` to the group `test`?
 
 A: `sudo usermod -a -G test test`
+
+## Bonus Challenge - The True Ending
+
+#### Q: Finish this room off! What is the root.txt flag?
+
+A: ad91979868d06e19d8e8a9c28be56e0c

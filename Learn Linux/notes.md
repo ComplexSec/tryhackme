@@ -251,3 +251,49 @@ Additional notes: Only root has permissions to add users and groups. Add a user 
 
 ![](/images/add_user_to_group.png)
 
+## Miscellaneous - nano
+
+About: `nano` is a command line based text editor. Syntax is `nano <file>`
+
+Usage: `Ctrl+X` will save and exit the file
+
+## Miscellaneous - Basic Shell Scripting
+
+About: Linux provides a way to run commands one after another - done by storing commands in a file with a .sh extension
+
+Additional notes: `.sh` extension not needed if given a shebang and the path to the shell
+
+![](/images/shellscripting.png)
+
+## Miscellaneous - Important Files and Directories
+
+* The `/etc/passwd` file stores user information
+* The `/etc/shadow` file stores password hashes for users
+* The `/tmp` directory deletes every file upon shutdown
+* The `/etc/sudoers` file is used to control the sudo permissions
+* The `/home` directory is where all downloads, documents, etc are located
+* The `/root` directory is the root user's home directory
+* The `/usr` directory is where all software is installed
+* The `/bin` & `/sbin` directory is used for system critical files
+* The `/var` directory is where many processes store data
+* The `$PATH` variable stores all binaries you are able to run
+
+## Miscellaneous - Installing packages
+
+About: A package is essentially a program. To install packages you need root permissions as each package will likely modify some system critical directories. Syntax is `apt install <package>`
+
+Additional notes: `apt` downloads the package from a repo and then installs it
+
+![](/images/apt_command.png)
+
+## Miscellaneous - Processes
+
+About: Every binary is a process while it's run. List of user created processes can be viewed via `ps` command. To view all system processes, use the `ps -ef` command
+
+![](/images/pscommand1.png)
+
+Each process has a PID. To stop a process, we type `kill <PID>`
+
+Another way to interact with PIDs is through the `top` command. The `top` command shows you what processes take up the most resources
+
+![](/images/topcommand.png)
