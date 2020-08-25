@@ -149,3 +149,17 @@ A: grep boop /tmp/aaaa
 #### Q: What is shiba4's password?
 
 A: test1234
+
+## Task 34 - sudo
+
+#### Q: How do you specify which user you want to run a command as?
+
+A: -u
+
+#### Q: How would you run whoami as user `jen`?
+
+A: sudo -u jen whoami
+
+#### Q: How do you list your current sudo privileges (what commands you can run, who you can run them as etc...)?
+
+A: sudo -l

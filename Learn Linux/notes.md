@@ -225,3 +225,13 @@ Additional usage: `grep hello test -n` would grep for the string hello in the fi
 ![](/images/grep2_command.png)
 
 Additional notes: The `grep` command supports regular expressions
+
+## Miscellaneous - sudo
+
+About: The `root` user is the highest privileged user. The `sudo` command lets you run commands as root. Syntax is `sudo <command>`
+
+Usage: `sudo whoami` would run whoami as root and print out root as the current user
+
+![](/images/sudo_command.png)
+
+Notes: Need to have current user's password to use it. 
