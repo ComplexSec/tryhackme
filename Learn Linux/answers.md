@@ -73,3 +73,44 @@ A: 460
 #### Q: What permissions mean the user can read, write and execute the file, the group can read, write, and execute the file, and everyone else can read, write, and execute the file?
 
 A: 777
+
+## Task 25 - chown
+
+#### Q: How would you change the owner of file to paradox?
+
+A: chown paradox file
+
+#### Q: What about the owner and group of file to paradox?
+
+A: chown paradox:paradox file
+
+#### Q: What flag allows you to operate on every file in the directory at once?
+
+A: -R
+
+## Task 26 - rm
+
+#### Q: What flag deletes every file in a directory?
+
+A: -r 
+
+#### Q: How do you suprress all warning prompts?
+
+A: -f
+
+## Task 27 - mv
+
+#### Q: How would you move `file` to /tmp directory?
+
+A: mv file /tmp
+
+## Task 28 - cd && mkdir
+
+#### Q: Using relative paths, how would you cd to your home directory?
+
+A: cd ~
+
+#### Q: Using absolute paths, how would you make a directory called test in /tmp?
+
+A: mkdir /tmp/test
+

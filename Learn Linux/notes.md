@@ -149,3 +149,55 @@ Usage: `chown shiba2:shiba2 file` changes owner and group of file to shiba2
 
 ![](/images/chown_command.png)
 
+Additional notes: Can use chown without specifying a group
+
+![](/images/chown2_command.png)
+
+## Advanced File Operators - rm
+
+About: The `rm` command removes files. Need write permissions to the file to delete it
+
+Usage: `rm file` deletes the file called file
+
+![](/images/rm_command.png)
+
+## Advanced File Operators - mv
+
+About: The `mv` command allows you to move files from one place to another. Syntax is `mv <file> <destination>`
+
+Usage: `mv file ~` moves file into the home directory
+
+![](/images/mv_command.png)
+
+Additional notes: Can use `mv` command to change the name of a file
+
+Usage: `mv file ~ghfds` will rename file to ghfds
+
+![](/images/mv2_command.png)
+
+## Advanced File Operators - cp
+
+About: The `cp` command does the same thing as mv except instead of moving the file, it duplicates it. Syntax is `cp <file> <destination>`
+
+## Advanced File Operators - cd && mkdir
+
+About (cd): The `cd` command allows you to change directory. Relative paths are supported as well as absolute paths. Syntax is `cd <directory>`
+
+Usage: `cd aa` moves us into the `aa` directory
+
+![](/images/cd_command.png)
+
+About (mkdir): The `mkdir` command allows us to make a new directory to store files in. Syntax is `mkdir <directory_name>`
+
+## Advanced File Operators - ln
+
+About: The `ln` command has two different uses. One is what is known as hard linking, which duplicates the file and links the duplicate to the original - whatever happens to the created link, is also done to the original file. Syntax is `ln <source> <destination>`
+
+![](/images/lnhard_command.png)
+
+About: The next form of linking is symbolic linking (symlink). A symbolic link is a glorified reference, meaning that the actual symbolic link has no data in it at all - just a reference to another file. Syntax is `ln -s <file> <destination>`
+
+![](/images/lnsym_command.png)
+
+Additional notes: The permissions on the symblink has 777, but since it is just a reference, it still has the same perms as the original file
+
