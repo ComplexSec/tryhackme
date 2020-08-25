@@ -147,7 +147,7 @@ Q: What is the linux kernel version?
 A: 4.4.0-1075-aws
 
 ## Task 4.10
-Q: Find the file called flag 29 and do the following operations on it@
+Q: Find the file called flag 29 and do the following operations on it:
 
 1. Remove all spaces in the file
 2. Remove all new line spaces
