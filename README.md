@@ -6,3 +6,6 @@ Learn the basics of the command line - common commands, operators and anything e
 
 ## Linux Challenges
 Learn Linux by completing challenges && practice the skills from the first room
+
+## tmux
+Master the use of tmux - a very common command line tool to make using the linux terminal more efficient
