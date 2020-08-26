@@ -19,4 +19,4 @@ Master the use of tmux - a very common command line tool to make using the linux
 ## Common Linux Privesc ([TryHackMe](https://tryhackme.com/room/commonlinuxprivesc))
 Learn about Linux security and how to escalate your privileges in a Linux environment.
 
-[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Common%20Linux%20Privesc/images/commonlinuxprivesc.png">](https://github.com/ComplexSec/tryhackme/tree/master/Linux%20Common%20Privesc)
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Common%20Linux%20Privesc/images/commonlinuxprivesc.png">](https://github.com/ComplexSec/tryhackme/tree/master/Common%20Linux%20Privesc)
