@@ -18,13 +18,13 @@ Priv esc lets you gain system administrator levels of access. Being admin allows
 
 There are two main privilege escalation variants:
 
-#### Horizontal Privilege Escalation
+### Horizontal Privilege Escalation
 
 This is where you expand your reach over the compromised system by taking over a different user who is on the same privilege level as you. Allows you to inherit whatever files and access that user has. 
 
 Can be used to gain access to another normal privileged user that happens to have an SUID file attached to their home directory which can be used to get super user access
 
-#### Vertical Privilege Escalation
+### Vertical Privilege Escalation
 
 This is where you attempt to gain higher privileges or access, with an existing compromised account. For local priv esc attacks, this might mean hijacking an account with admin privileges or root privileges
 
@@ -32,11 +32,11 @@ This is where you attempt to gain higher privileges or access, with an existing 
 
 LinEnum is a simple bash script that performs common commands related to priv esc. Important to understand what commands LinEnum executes
 
-#### Getting LinEnum on Victim Machine
+### Getting LinEnum on Victim Machine
 
 Two ways to get LinEnum on the victim machine:
 
-First way is to start a Python web server using `python -m SimpleHTTPServer 8080` then using `wget` on the victim to download it from the local machine
+First way is to start a Python web server using `python -m SimpleHTTPServer 8080` tfhen using `wget` on the victim to download it from the local machine
 
 ![](/Common%20Linux%20Privesc/images/linenum_hosted.png)
 ![](/Common%20Linux%20Privesc/images/linenum_download.png)
