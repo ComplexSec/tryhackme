@@ -30,7 +30,7 @@ This is where you attempt to gain higher privileges or access, with an existing 
 
 ## Enumeration
 
-LinEnum is a simple bash script that performs common commands related to priv esc. Important to understand what commands LinEnum executes
+__LinEnum__ is a simple bash script that performs common commands related to priv esc. Important to understand what commands LinEnum executes
 
 ### Getting LinEnum on Victim Machine
 
@@ -70,3 +70,27 @@ Output is broken down into different sections. The main sections are as follows:
 	### Crontab contents
 
 	Cron is used to schedule commands at a specific time. Scheduled commands/tasks are known as *cron jobs*. The `crontab` command creates a crontab file containing commands and instructions for the cron daemon to execute. 
+
+## Abusing SUID/GUID Files
+
+First step in Linux priv esc is checking for files with the SUID/GUID bit set - means that files can be run with permission of the file owner/group.
+
+### SUID Binary
+
+When special permission is given to each user, it becomes SUID or SGID. When extra bit "4" is set to user(Owner), it becomes SUID(set User ID) and when bit "2" is set to group, it becomes SGID (set Group ID)
+
+The permissions to look for are
+
+* SUID (rws-__rwx__-rwx)
+* GUID (rwx-__rws__-rwx)
+
+### Finding SUID Binaries
+
+To locate SUID binaries, utilized the find command by using `find / -perm -u=s -type f 2>/dev/null` 
+
+* `find` initiates the find command
+* `/` searches the whole file system
+* `-perm` searches for files with specific permissions
+* `-u=s` any of the permission bits mode are set for the file. Symbolic modes are accepted
+* `-type f` only searches for files
+* `2>/dev/null` suppresses errors
