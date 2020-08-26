@@ -141,7 +141,16 @@ The fields are separated by a colon. Total of seven fields per entry. In order, 
 
 	The absolute path of a command or shell. Typically a shell, but does not have to be
 
-## How to Exploit a Writable /etc/passwd
+### How to Exploit a Writable /etc/passwd
 
 If you have a writable /etc/passwd file, simply write a new line entry according to the formula and create a new user. Add the password hash of our choice, and set the UID, GID and shell to root
 
+## Escaping Vi Editor
+
+Running `sudo -l` (or checking the LinEnum results) on the __user8__ account shows that they can run __vi__ with root privileges. This allows us to escape vim into a root shell
+
+### Misconfigured Binaries and GTFOBins
+
+If you find a misconfigured binary, a good place to look up how to exploit them is [GTFOBins](https://gtfobins.github.io/)
+
+GTFOBins is a curated list of Unix binaries that can be exploited by an attacker to bypass local security restrictions
