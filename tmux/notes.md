@@ -2,7 +2,7 @@
 
 ## About
 
-tmux is a terminal multiplexer. Makes running simulatenous tasks easy.
+**tmux is a terminal multiplexer. Makes running simulatenous tasks easy**
 
 ![](/images/tmux_cheat_sheet.png)
 
