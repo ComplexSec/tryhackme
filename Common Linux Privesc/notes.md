@@ -81,7 +81,7 @@ When special permission is given to each user, it becomes SUID or SGID. When ext
 
 The permissions to look for are
 
-* SUID (rws-__rwx__-rwx)
+* SUID (__rws__-rwx-rwx)
 * GUID (rwx-__rws__-rwx)
 
 ### Finding SUID Binaries
