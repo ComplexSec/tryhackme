@@ -6,8 +6,6 @@ Learn the basics of the command line - common commands, operators and anything e
 
 [<img src="https://github.com/ComplexSec/tryhackme/blob/master/Learn%20Linux/images/learnlinux.png">](https://github.com/ComplexSec/tryhackme/tree/master/Learn%20Linux)
 
-![](/Learn%20Linux/images/learnlinux.png)
-
 ## Linux Challenges
 Learn Linux by completing challenges && practice the skills from the first room
 
