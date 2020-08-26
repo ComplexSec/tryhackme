@@ -52,3 +52,32 @@ To exit copy mode, use `q`
 
 ## Split Vertically
 
+To split windows vertically, use `CtrlB + %`
+
+## Split Horizontally
+
+To split windows horizontally, use `CtrlB + "`
+
+## Moving Panes
+
+To move between windows, use `CtrlB + <arrow_key>`
+
+## Resizing Panes
+
+To resize windows, hold `CtrlB` and use arrow keys
+
+## Move between windows
+
+To move between different windows, use `CtrlB + <number>`
+
+## Kill Windows
+
+To kill an unresponsive window, use `CtrlB + k` 
+
+## Closing Session
+
+To close a session, use `exit`
+
+## New Named Session
+
+To create a new session with a name, use `tmux new -s <name>`
