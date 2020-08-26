@@ -55,18 +55,18 @@ Output is broken down into different sections. The main sections are as follows:
 * SUID files
 * Crontab contents
 
-	## Kernel
+		## Kernel
 
-	Kernel information is shown. Most likely a kernel exploit available for this machine
+		Kernel information is shown. Most likely a kernel exploit available for this machine
 
-	## Can we read/write sensitive files
+		## Can we read/write sensitive files
 
-	World-writable files are shown. Files that any authenticated user can read/write to
+		World-writable files are shown. Files that any authenticated user can read/write to
 
-	## SUID Files
+		## SUID Files
 
-	SUID is a special type of file permissions given to a file. Allows the file to run with permissions of whoever the owner is. If root, it runs with root permissions
+		SUID is a special type of file permissions given to a file. Allows the file to run with permissions of whoever the owner is. If root, it runs with root permissions
 
-	## Crontab contents
+		## Crontab contents
 
-	Cron is used to schedule commands at a specific time. Scheduled commands/tasks are knwon as *cron jobs*. The `crontab` command creates a crontab file containing commands and instructions for the cron daemon to execute. 
+		Cron is used to schedule commands at a specific time. Scheduled commands/tasks are knwon as *cron jobs*. The `crontab` command creates a crontab file containing commands and instructions for the cron daemon to execute. 
