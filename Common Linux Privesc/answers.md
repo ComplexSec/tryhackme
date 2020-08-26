@@ -6,4 +6,35 @@ To start this test, login using the credentials __user3:password__
 
 ## Task 4.1
 
-#### Q: 
+#### Q: What is the target's hostname?
+
+A: polobox
+
+Walkthrough: Learnt through LinEnum.sh or by running the `hostname` command
+
+![](/Common%20Linux%20Privesc/images/hostname_through_linenum.png)
+![](/Common%20Linux%20Privesc/images/hostname_through_command.png)
+
+## Task 4.2
+
+#### Q: Look at the output of /etc/password. How many "user[x]" are there on the system?
+
+A: 8
+
+## Task 4.3
+
+#### Q: How many available shells are there on the system?
+
+A: 4
+
+## Task 4.4
+
+#### Q: What is the name of the bash script that is set to run every 5 minutes by cron?
+
+A: autoscript.sh
+
+## Task 4.5
+
+#### What critical file has had its permissions changed to allow some users to write to it?
+
+A: /etc/passwd
