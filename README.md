@@ -1,7 +1,7 @@
 # TryHackMe
 Collection of notes, exploits and tips
 
-## Learn Linux
+## Learn Linux ([TryHackMe](https://tryhackme.com/room/zthlinux))
 Learn the basics of the command line - common commands, operators and anything else you need to get started with Linux
 
 [<img src="https://github.com/ComplexSec/tryhackme/blob/master/Learn%20Linux/images/learnlinux.png">](https://github.com/ComplexSec/tryhackme/tree/master/Learn%20Linux)
