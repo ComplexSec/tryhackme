@@ -26,6 +26,8 @@ To detach from a session, use `CtrlB + d`
 
 To list all sessions, use `tmux ls` command
 
+![](/images/tmuxls.png)
+
 ## Attaching
 
 To attach to a session, use `tmux a -t <session_name>`
@@ -72,7 +74,7 @@ To move between different windows, use `CtrlB + <number>`
 
 ## Kill Windows
 
-To kill an unresponsive window, use `CtrlB + k` 
+To kill an unresponsive window, use `Ctrl + D` 
 
 ## Closing Session
 
