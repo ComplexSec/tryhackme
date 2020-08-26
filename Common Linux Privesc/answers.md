@@ -71,10 +71,10 @@ Walkthrough: Learnt through the [`find`](https://github.com/ComplexSec/tryhackme
 
 ## Task 5.2
 
-### We know that "shell" is a SUID bit file, therefore running it will run the script as a root user. Run it
+We know that "shell" is a SUID bit file, therefore running it will run the script as a root user. Run it
 
 ## Task 5.3
 
-### You should have a root shell
+You should have a root shell
 
 ![](/Common%20Linux%20Privesc/images/root_shell.png)
