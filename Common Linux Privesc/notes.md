@@ -34,7 +34,39 @@ LinEnum is a simple bash script that performs common commands related to priv es
 
 #### Getting LinEnum on Victim Machine
 
-Two ways to get LinEnum on the victim machine
+Two ways to get LinEnum on the victim machine:
 
 First way is to start a Python web server using `python -m SimpleHTTPServer 8080` then using `wget` on the victim to download it from the local machine
 
+![](/Common%20Linux%20Privesc/images/linenum_hosted.png)
+![](/Common%20Linux%20Privesc/images/linenum_download.png)
+
+The other way is to copy the raw LinEnum code from the local machine and paste it into a new file on the target using *vim* or *nano*, saving it with `.sh` extension and executing it
+
+![](/Common%20Linux%20Privesc/images/linenum_writingfile.png)
+![](/Common%20Linux%20Privesc/images/linenum_chmod.png)
+
+## Understanding LinEnum Output
+
+Output is broken down into different sections. The main sections are as follows:
+
+* Kernel
+* Can we read/write sensitive files
+* SUID files
+* Crontab contents
+
+#### Kernel
+
+Kernel information is shown. Most likely a kernel exploit available for this machine
+
+#### Can we read/write sensitive files
+
+World-writable files are shown. Files that any authenticated user can read/write to
+
+#### SUID Files
+
+SUID is a special type of file permissions given to a file. Allows the file to run with permissions of whoever the owner is. If root, it runs with root permissions
+
+#### Crontab contents
+
+Cron is used to schedule commands at a specific time. Scheduled commands/tasks are knwon as *cron jobs*. The `crontab` command creates a crontab file containing commands and instructions for the cron daemon to execute. 
