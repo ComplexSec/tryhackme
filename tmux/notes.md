@@ -1,8 +1,8 @@
 # tmux (Room 003)
 
-## About
+# About
 
-**tmux is a terminal multiplexer. Makes running simulatenous tasks easy**
+## tmux is a terminal multiplexer. Makes running simulatenous tasks easy
 
 ![](/images/tmux_cheat_sheet.png)
 
