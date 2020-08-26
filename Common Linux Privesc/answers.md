@@ -68,3 +68,13 @@ A: /home/user3/shell
 Walkthrough: Learnt through the [`find`](https://github.com/ComplexSec/tryhackme/blob/master/Common%20Linux%20Privesc/notes.md) command located in notes.md
 
 ![](/Common%20Linux%20Privesc/images/find_suid.png)
+
+## Task 5.2
+
+### We know that "shell" is a SUID bit file, therefore running it will run the script as a root user. Run it
+
+## Task 5.3
+
+### You should have a root shell
+
+![](/Common%20Linux%20Privesc/images/root_shell.png)
