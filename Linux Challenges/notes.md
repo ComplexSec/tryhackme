@@ -1,4 +1,4 @@
-# Linux Challenges (Room 002)
+# TryHackMe - Linux Challenges (Room 002)
 
 ## History
 

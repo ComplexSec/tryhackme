@@ -1,4 +1,4 @@
-# tmux (Room 003)
+# TryHackMe - tmux (Room 003)
 
 # About
 

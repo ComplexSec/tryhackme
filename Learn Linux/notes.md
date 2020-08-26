@@ -1,4 +1,4 @@
-# Learn Linux (Room 001)
+#  TryHackMe - Learn Linux (Room 001)
 
 ## SSH
 
