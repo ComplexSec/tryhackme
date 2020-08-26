@@ -14,4 +14,4 @@ Learn Linux by completing challenges && practice the skills from the first room
 ## tmux ([TryHackMe](https://tryhackme.com/room/rptmux))
 Master the use of tmux - a very common command line tool to make using the linux terminal more efficient
 
-![](/tmux/images/tmux.png)
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/tmux/images/tmux.png">](https://github.com/ComplexSec/tryhackme/tree/master/tmux)
