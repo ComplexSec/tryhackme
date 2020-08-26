@@ -78,3 +78,41 @@ We know that "shell" is a SUID bit file, therefore running it will run the scrip
 You should have a root shell
 
 ![](/Common%20Linux%20Privesc/images/root_shell.png)
+
+## Task 6.1 - no answer needed
+
+First, exit out of root by typing `exit` and swap to user using the `su -l user7` command. The password is __password__
+
+## Task 6.2
+
+### Q: What direction privilege escalation is this attack?
+
+A: Vertical
+
+Walkthrough: Learnt through the diagram at the very top
+
+## Task 6.3
+
+### Q: Before we add our new user, we first need to create a compliant password hash to add. We do this by using the command: "openssl passwd -1 -salt [salt] [password]"
+
+### What is the hash created by using this command with the salt "new" and the password "123"?
+
+A: $1$new$p7ptkEKU1HnaHpRtzNizS1
+
+Walkthrough: Learnt through executing the command
+
+![](/Common%20Linux%20Privesc/images/openssl.png)
+
+## Task 6.4
+
+### Now, we need to take this value and create a new root account. What would the /etc/passwd entry look like for a root user with the username "new" and the password hash we created?
+
+A: new:$1$new$p7ptkEKU1HnaHpRtzNizS1:0:0:root:/root:/bin/bash
+
+Walkthrough: Learnt through the [/etc/passwd format](https://github.com/ComplexSec/tryhackme/blob/master/Common%20Linux%20Privesc/notes.md) section inside in notes.md
+
+## Task 6.6
+
+### Q: Now, use "su" to login as the "new" account. You should be greeted with a root prompt
+
+![](/Common%20Linux%20Privesc/images/root_shell2.png)
