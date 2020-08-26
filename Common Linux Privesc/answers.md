@@ -58,3 +58,11 @@ Walkthrough: Learnt through __LinEnum.sh__ or by running the `ls -l /etc/passwd`
 
 ![](/Common%20Linux%20Privesc/images/sens_through_linenum.png)
 ![](/Common%20Linux%20Privesc/images/sens_through_command.png)
+
+## Task 5.1
+
+### What is the path of the file in user3's directory that stands out to you?
+
+A: /home/user3/shell
+
+Walkthrough: Learnt through the [`find`](https://github.com/ComplexSec/tryhackme/blob/master/Common%20Linux%20Privesc/notes.md) command located in notes.md
