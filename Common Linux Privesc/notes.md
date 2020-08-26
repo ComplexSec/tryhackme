@@ -41,7 +41,7 @@ First way is to start a Python web server using `python -m SimpleHTTPServer 8080
 ![](/Common%20Linux%20Privesc/images/linenum_hosted.png)
 ![](/Common%20Linux%20Privesc/images/linenum_download.png)
 
-The other way is to copy the raw LinEnum code from the local machine and paste it into a new file on the target using *vim* or *nano*, saving it with `.sh` extension and executing it
+The other way is to copy the raw LinEnum code from the local machine and paste it into a new file on the target using __vim__ or __nano__, saving it with `.sh` extension and executing it
 
 ![](/Common%20Linux%20Privesc/images/linenum_writingfile.png)
 ![](/Common%20Linux%20Privesc/images/linenum_chmod.png)
