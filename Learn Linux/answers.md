@@ -180,7 +180,7 @@ A: ad91979868d06e19d8e8a9c28be56e0c
 
 1. Check sudo privileges for each user
 
-![](/images/sudo_check.png)
+![](/Learn%20Linux/images/sudo_check.png)
 
 2. Search for interesting files via `find` command
 
