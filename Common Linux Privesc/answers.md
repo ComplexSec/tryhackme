@@ -135,6 +135,6 @@ Walkthrough: Learnt through running the `sudo -l` command
 
 ## Task 7.4 - no answer needed
 
-### Q: Now, type `:!.sh` to open a shell from Vi
+### Q: Now, type `:!sh` to open a shell from Vi
 
 ![](/Common%20Linux%20Privesc/images/vi_shell.png)
