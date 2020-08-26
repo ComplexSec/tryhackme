@@ -30,3 +30,11 @@ This is where you attempt to gain higher privileges or access, with an existing 
 
 ## Enumeration
 
+LinEnum is a simple bash script that performs common commands related to priv esc. Important to understand what commands LinEnum executes
+
+#### Getting LinEnum on Victim Machine
+
+Two ways to get LinEnum on the victim machine
+
+First way is to start a Python web server using `python -m SimpleHTTPServer 8080` then using `wget` on the victim to download it from the local machine
+
