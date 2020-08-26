@@ -6,7 +6,7 @@ About: SSH is the act of remotely accessing a machine. Allows you to run command
 
 Connecting: Through the command line, type `ssh shiba1@10.10.32.230`
 
-![](/images/ssh_command.png)
+![](/Learn%20Linux/images/ssh_command.png)
 
 ## Basic Command Execution - echo
 
@@ -14,7 +14,7 @@ About: The echo command returns whatever is inputted into it
 
 Executing: Typing `echo hello`, you will see input echoed back to you
 
-![](/images/echo_hello.png)
+![](/Learn%20Linux/images/echo_hello.png)
 
 ## Manual Pages and Flags
 
@@ -22,7 +22,7 @@ About: Most commands will have options called flags (<command> <flag> <input>). 
 
 Executing: The `man echo` command shows options for echo command
 
-![](/images/man_echo.png)
+![](/Learn%20Linux/images/man_echo.png)
 
 ## Basic File Operations - ls
 
@@ -30,7 +30,7 @@ About: ls commands lists information about every file/directory. The ls -a lists
 
 Execution: `ls -a` outputs all entries, `ls -l` produces a long list format
 
-![](/images/ls_commands.png)
+![](/Learn%20Linux/images/ls_commands.png)
 
 ## Basic File Operations - cat
 
@@ -38,7 +38,7 @@ About: cat outputs contents of files to the console. cat supports the `--help` f
 
 Execution: `cat -n` numbers all the output lines
 
-![](/images/cat_-n.png)
+![](/Learn%20Linux/images/cat_-n.png)
 
 ## Basic File Operations - touch
 
@@ -46,7 +46,7 @@ About: touch creates files
 
 Execution: `touch b.txt` creates a file called b.txt
 
-![](/images/touch_command.png)
+![](/Learn%20Linux/images/touch_command.png)
 
 ## Basic File Operations - Running a Binary
 
@@ -147,11 +147,11 @@ About: The `chown` allows us to change the user and group for any file.  Syntax 
 
 Usage: `chown shiba2:shiba2 file` changes owner and group of file to shiba2
 
-![](/images/chown_command.png)
+![](/Learn%20Linux/images/chown_command.png)
 
 Additional notes: Can use chown without specifying a group
 
-![](/images/chown2_command.png)
+![](/Learn%20Linux/images/chown2_command.png)
 
 ## Advanced File Operators - rm
 
@@ -159,7 +159,7 @@ About: The `rm` command removes files. Need write permissions to the file to del
 
 Usage: `rm file` deletes the file called file
 
-![](/images/rm_command.png)
+![](/Learn%20Linux/images/rm_command.png)
 
 ## Advanced File Operators - mv
 
@@ -167,13 +167,13 @@ About: The `mv` command allows you to move files from one place to another. Synt
 
 Usage: `mv file ~` moves file into the home directory
 
-![](/images/mv_command.png)
+![](/Learn%20Linux/images/mv_command.png)
 
 Additional notes: Can use `mv` command to change the name of a file
 
 Usage: `mv file ~ghfds` will rename file to ghfds
 
-![](/images/mv2_command.png)
+![](/Learn%20Linux/images/mv2_command.png)
 
 ## Advanced File Operators - cp
 
@@ -185,7 +185,7 @@ About (cd): The `cd` command allows you to change directory. Relative paths are 
 
 Usage: `cd aa` moves us into the `aa` directory
 
-![](/images/cd_command.png)
+![](/Learn%20Linux/images/cd_command.png)
 
 About (mkdir): The `mkdir` command allows us to make a new directory to store files in. Syntax is `mkdir <directory_name>`
 
@@ -193,11 +193,11 @@ About (mkdir): The `mkdir` command allows us to make a new directory to store fi
 
 About: The `ln` command has two different uses. One is what is known as hard linking, which duplicates the file and links the duplicate to the original - whatever happens to the created link, is also done to the original file. Syntax is `ln <source> <destination>`
 
-![](/images/lnhard_command.png)
+![](/Learn%20Linux/images/lnhard_command.png)
 
 About: The next form of linking is symbolic linking (symlink). A symbolic link is a glorified reference, meaning that the actual symbolic link has no data in it at all - just a reference to another file. Syntax is `ln -s <file> <destination>`
 
-![](/images/lnsym_command.png)
+![](/Learn%20Linux/images/lnsym_command.png)
 
 Additional notes: The permissions on the symblink has 777, but since it is just a reference, it still has the same perms as the original file
 
@@ -210,7 +210,7 @@ Usage:
 * `find dir -user` would list every file owned by a specific user
 * `find dir -group` would list every file owned by a specific group
 
-![](/images/find_command.png)
+![](/Learn%20Linux/images/find_command.png)
 
 ## Advanced File Operators - grep
 
@@ -218,11 +218,11 @@ About: The `grep` command allows us to find data inside of data. Syntax is `grep
 
 Usage: `find /* | grep test1234` would find all files on the system and grep would narrow it down to just files containing test1234 in the name
 
-![](/images/grep_command.png)
+![](/Learn%20Linux/images/grep_command.png)
 
 Additional usage: `grep hello test -n` would grep for the string hello in the file test while printing numbered lines
 
-![](/images/grep2_command.png)
+![](/Learn%20Linux/images/grep2_command.png)
 
 Additional notes: The `grep` command supports regular expressions
 
@@ -232,7 +232,7 @@ About: The `root` user is the highest privileged user. The `sudo` command lets y
 
 Usage: `sudo whoami` would run whoami as root and print out root as the current user
 
-![](/images/sudo_command.png)
+![](/Learn%20Linux/images/sudo_command.png)
 
 Notes: Need to have current user's password to use it. 
 
@@ -244,12 +244,12 @@ Usage:
 * `adduser noot` creates a new user
 * `addgroup b` creates a new group
 
-![](/images/adduser.png)
-![](/images/addgroup.png)
+![](/Learn%20Linux/images/adduser.png)
+![](/Learn%20Linux/images/addgroup.png)
 
 Additional notes: Only root has permissions to add users and groups. Add a user to a group via the usermod command. Syntax is `usermod -a -G <groups_separated_by_commas> <user>`
 
-![](/images/add_user_to_group.png)
+![](/Learn%20Linux/images/add_user_to_group.png)
 
 ## Miscellaneous - nano
 
@@ -263,7 +263,7 @@ About: Linux provides a way to run commands one after another - done by storing 
 
 Additional notes: `.sh` extension not needed if given a shebang and the path to the shell
 
-![](/images/shellscripting.png)
+![](/Learn%20Linux/images/shellscripting.png)
 
 ## Miscellaneous - Important Files and Directories
 
@@ -284,16 +284,16 @@ About: A package is essentially a program. To install packages you need root per
 
 Additional notes: `apt` downloads the package from a repo and then installs it
 
-![](/images/apt_command.png)
+![](/Learn%20Linux/images/apt_command.png)
 
 ## Miscellaneous - Processes
 
 About: Every binary is a process while it's run. List of user created processes can be viewed via `ps` command. To view all system processes, use the `ps -ef` command
 
-![](/images/pscommand1.png)
+![](/Learn%20Linux/images/pscommand1.png)
 
 Each process has a PID. To stop a process, we type `kill <PID>`
 
 Another way to interact with PIDs is through the `top` command. The `top` command shows you what processes take up the most resources
 
-![](/images/topcommand.png)
+![](/Learn%20Linux/images/topcommand.png)

@@ -184,20 +184,20 @@ A: ad91979868d06e19d8e8a9c28be56e0c
 
 2. Search for interesting files via `find` command
 
-![](/images/interesting_file.png)
+![](/Learn%20Linux/images/interesting_file.png)
 
 3. Check permissions of file
 
-![](/images/perms.png)
+![](/Learn%20Linux/images/perms.png)
 
 4. Switch user to shiba2 and open file
 
-![](/images/credentials.png)
+![](/Learn%20Linux/images/credentials.png)
 
 5. Switch to nootnoot user and check privileges
 
-![](/images/nootnoot.png)
+![](/Learn%20Linux/images/nootnoot.png)
 
 6. Read the root.txt file located in /root/root.txt
 
-![](/images/root.png)
+![](/Learn%20Linux/images/root.png)
