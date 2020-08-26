@@ -69,11 +69,11 @@ Walkthrough: Learnt through the [`find`](https://github.com/ComplexSec/tryhackme
 
 ![](/Common%20Linux%20Privesc/images/find_suid.png)
 
-## Task 5.2
+## Task 5.2 - no answer needed
 
 We know that "shell" is a SUID bit file, therefore running it will run the script as a root user. Run it
 
-## Task 5.3
+## Task 5.3 - no answer needed
 
 You should have a root shell
 
