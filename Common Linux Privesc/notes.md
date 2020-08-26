@@ -94,3 +94,23 @@ To locate SUID binaries, utilized the find command by using `find / -perm -u=s -
 * `-u=s` any of the permission bits mode are set for the file. Symbolic modes are accepted
 * `-type f` only searches for files
 * `2>/dev/null` suppresses errors
+
+## Exploiting Writable /etc/passwd
+
+![](/Common%20Linux%20Privesc/images/grep_root.png)
+
+From LinEnum, we spot that __user7__ is a member of the __root__ group with __gid 0__
+
+Conclusion is that user7 can edit the __/etc/passwd/__ file
+
+### What is /etc/passwd?
+
+The __/etc/passwd/__ file stores user account information. Contains a list of the system's accounts and gives information like user ID, group ID, home directory, shell and more of each user
+
+It should have general read permissions as many command utilities to map user IDs to usernames. Write access must ONLY be given to __root__
+
+### Understanding /etc/passwd format
+
+The fields are separated by a colon. Total of seven fields per entry. In order, the fields mean:
+
+* Username
