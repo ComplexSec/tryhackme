@@ -114,3 +114,29 @@ It should have general read permissions as many command utilities to map user ID
 The fields are separated by a colon. Total of seven fields per entry. In order, the fields mean:
 
 * Username
+
+	Used when user logs in. Should be 1-32 characters
+
+* Password
+	
+	An "x" character indicates the password is stored in __/etc/shadow__
+
+* User ID (uid)
+
+	Each user must be assigned an ID. __uid 0__ is reserved for root and __uid 1-99__ are reserved for other predefined accounts. Further UID (100-9999) are reserved by system for administrative and system accounts/groups
+
+* Group ID (gid)
+	
+	The primary group ID stored in __/etc/group__ file
+
+* User ID info
+
+	Allows you to add extra information about the user like full name. This field used by the __finger__ command
+
+* Home directory
+
+	The absolute path to the directory the user will be in when they log in. If it does not exist, the users directory becomes __/__
+
+* Command/shell
+
+	The absolute path of a command or shell. Typically a shell, but does not have to be
