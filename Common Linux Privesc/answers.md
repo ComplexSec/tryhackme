@@ -66,3 +66,5 @@ Walkthrough: Learnt through __LinEnum.sh__ or by running the `ls -l /etc/passwd`
 A: /home/user3/shell
 
 Walkthrough: Learnt through the [`find`](https://github.com/ComplexSec/tryhackme/blob/master/Common%20Linux%20Privesc/notes.md) command located in notes.md
+
+![](/Common%20Linux%20Privesc/images/find_suid.png)
