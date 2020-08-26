@@ -2,7 +2,7 @@
 
 ## Important Information
 
-To start this test, login using the credentials _user3:password__
+To start this test, login using the credentials __user3:password__
 
 ## Task 4.1
 
