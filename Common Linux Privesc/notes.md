@@ -69,4 +69,4 @@ Output is broken down into different sections. The main sections are as follows:
 
 	### Crontab contents
 
-	Cron is used to schedule commands at a specific time. Scheduled commands/tasks are knwon as *cron jobs*. The `crontab` command creates a crontab file containing commands and instructions for the cron daemon to execute. 
+	Cron is used to schedule commands at a specific time. Scheduled commands/tasks are known as *cron jobs*. The `crontab` command creates a crontab file containing commands and instructions for the cron daemon to execute. 
