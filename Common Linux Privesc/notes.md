@@ -140,3 +140,8 @@ The fields are separated by a colon. Total of seven fields per entry. In order, 
 * Command/shell
 
 	The absolute path of a command or shell. Typically a shell, but does not have to be
+
+## How to Exploit a Writable /etc/passwd
+
+If you have a writable /etc/passwd file, simply write a new line entry according to the formula and create a new user. Add the password hash of our choice, and set the UID, GID and shell to root
+
