@@ -4,7 +4,7 @@
 
 ## tmux is a terminal multiplexer. Makes running simulatenous tasks easy
 
-![](/images/tmux_cheat_sheet.png)
+![](/tmux/images/tmux_cheat_sheet.png)
 
 ## Installing tmux
 
@@ -26,7 +26,7 @@ To detach from a session, use `CtrlB + d`
 
 To list all sessions, use `tmux ls` command
 
-![](/images/tmuxls.png)
+![](/tmux/images/tmuxls.png)
 
 ## Attaching
 
