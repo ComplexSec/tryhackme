@@ -6,12 +6,12 @@ Learn the basics of the command line - common commands, operators and anything e
 
 [<img src="https://github.com/ComplexSec/tryhackme/blob/master/Learn%20Linux/images/learnlinux.png">](https://github.com/ComplexSec/tryhackme/tree/master/Learn%20Linux)
 
-## Linux Challenges
+## Linux Challenges ([TryHackMe](https://tryhackme.com/room/linuxctf))
 Learn Linux by completing challenges && practice the skills from the first room
 
 ![](/Linux%20Challenges/images/linuxchallenges.png)
 
-## tmux
+## tmux ([TryHackMe](https://tryhackme.com/room/rptmux))
 Master the use of tmux - a very common command line tool to make using the linux terminal more efficient
 
 ![](/tmux/images/tmux.png)
