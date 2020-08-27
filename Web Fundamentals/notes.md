@@ -113,3 +113,19 @@ Typical GET response:
 `Date: Thu, 27 Feb 2020 21:47:30 GMT`
 
 `console.log("Hello, World!")`
+
+## Cookies
+
+Cookies are bits of data stored in your browser. Each browser stores them separately. Most common uses are __session management__ or __advertising (tracking cookies)__. Cookies normally sent with every HTTP request made to a server
+
+### Why Cookies?
+
+Cookies allow sites to keep track of data (items in shopping cart, who you are, what you've done, etc...) 
+
+Cookies can be broken down into:
+
+* name
+* value
+* expiry date
+* path
+
