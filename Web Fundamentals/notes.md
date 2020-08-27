@@ -91,3 +91,20 @@ Basic breakdown of status codes or [click here](https://developer.mozilla.org/en
 * 400-499: Client errors (user did something wrong)
 * 500-599: Server errors (server tried & something went wrong)
 
+Response headers often tell you something about the server or provide cookies
+
+Responses have a body
+
+* For GET requests, normally web content or information such as JSON
+* For POST requests, it may be a status message or similiar
+
+Typical GET response:
+
+`HTTP/1.1 200 OK`
+`Accept-Ranges: bytes`
+`Content-Length: 28`
+`Content-Type: application/javascript; charset=utf-8`
+`Last-Modified: Wed, 12 Feb 2020 12:51:44 GMT`
+`Date: Thu, 27 Feb 2020 21:47:30 GMT`
+
+`console.log("Hello, World!")`
