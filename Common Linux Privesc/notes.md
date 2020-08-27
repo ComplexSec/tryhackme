@@ -180,3 +180,12 @@ Cronjobs exist in a certain format. The format is as follows:
 
 The autoscript.sh on user4's Desktop is scheduled to run every five minutes and is owned by root. We can create a command that will return a shell and paste it into the file.
 
+## Exploiting PATH variable
+
+PATH is an environmental variable in Linux which specifies directories that hold executable programs. When running a program, it searches for executable files with the help of PATH variable. View the PATH variable by typing `echo $PATH`
+
+### How to Escalate Privileges via PATH
+
+Say we have a SUID binary. Running it, we can see it is calling the system shell to do a basic process like `ls`. We can re-write the PATH variable to a location of our choosing. When the SUID binary calls the system shell to run an executable, it runs one that we wrote instead
+
+As with any SUID file, it will run this command with the same privileges of the SUID file
