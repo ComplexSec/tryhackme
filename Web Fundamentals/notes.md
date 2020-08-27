@@ -77,3 +77,17 @@ Example of GET request retrieving a JS file:
 
 `Accept-Language: en-GB,en-US;q=0.9,en;q=0.8`
 
+### Responses
+
+Server replies with a response. Responses follow a similiar structure to the request
+
+First line describes the status rather than a verb & path. Status normally a code like 404
+
+Basic breakdown of status codes or [click here](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status):
+
+* 100-199: Information
+* 200-299: Successes (200 OK is the "normal" response for a GET)
+* 300-399: Redirects (information you want is elsewhere)
+* 400-499: Client errors (user did something wrong)
+* 500-599: Server errors (server tried & something went wrong)
+
