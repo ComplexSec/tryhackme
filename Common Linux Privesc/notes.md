@@ -147,7 +147,7 @@ If you have a writable /etc/passwd file, simply write a new line entry according
 
 ## Escaping Vi Editor
 
-Running `sudo -l` (or checking the LinEnum results) on the __user8__ account shows that they can run __vi__ with root privileges. This allows us to escape vim into a root shell
+Running `sudo -l` (or checking the LinEnum results) on the __user8__ account shows that they can run __vi__ with root privileges. This allows us to escape vim into a root shell. To escape Vi into a shell, use the `:!sh` command inside Vi
 
 ### Misconfigured Binaries and GTFOBins
 
