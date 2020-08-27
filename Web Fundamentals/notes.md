@@ -37,3 +37,35 @@ Content of web page is normally a combination of HTML, CSS & JavaScript.
 * `JavaScript` makes pages interactive & loads extra content
 
 ## More HTTP - Verbs and Request Formats
+
+There are 9 different HTTP "verbs" - also known as __methods__
+
+Two main ones used in web servers:
+
+* GET - used to retrieve content
+* POST - used to send data like commenting or logging in
+
+### HTTP Request Broken Down
+
+First line is a verb and path for the server
+
+* `GET /index.html`
+
+Next section is headers which give web server more information about the request. Cookies are sent in __request headers__
+
+Finally, the body of the request. 
+
+* For __POST__ requests, this is the content that is sent to the server
+* For GET requests, a body is allowed but will mostly be ignored
+
+Example of GET request retrieving a JS file:
+
+`GET /main.js HTTP/1.1
+Host: 192.168.170.129:8081
+Connection: keep-alive
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.122 Safari/537.36
+Accept: */*
+Referer: http://192.168.170.129:8081/
+Accept-Encoding: gzip, deflate
+Accept-Language: en-GB,en-US;q=0.9,en;q=0.8`
+
