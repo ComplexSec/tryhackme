@@ -24,4 +24,4 @@ Learn about Linux security and how to escalate your privileges in a Linux enviro
 ## Web Fundamentals ([TryHackMe](https://tryhackme.com/room/webfundamentals))
 Understand how the web works
 
-[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Web%20Fundamentals/images/web_fundamentals.png">](https://github.com/ComplexSec/tryhackme/tree/master/Common%20Linux%20Privesc)
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Web%20Fundamentals/images/web_fundamentals.png">](https://github.com/ComplexSec/tryhackme/tree/master/Web%20Fundamentals)
