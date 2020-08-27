@@ -154,3 +154,29 @@ Running `sudo -l` (or checking the LinEnum results) on the __user8__ account sho
 If you find a misconfigured binary, a good place to look up how to exploit them is [GTFOBins](https://gtfobins.github.io/)
 
 GTFOBins is a curated list of Unix binaries that can be exploited by an attacker to bypass local security restrictions
+
+## Exploiting Crontab
+
+The __cron daemon__ is a long running process that executes commands at specific dates and times. Can create a crontab file containing commands and instructions for the Cron daemon to execute
+
+### Viewing Active Crontabs
+
+Use the `cat /etc/crontab` command to view what cron jobs are scheduled
+
+### Format of a Cronjob
+
+Cronjobs exist in a certain format. The format is as follows:
+
+* # = ID
+* m = Minute
+* h = Hour
+* dom = Day of month
+* mon = Month
+* dow = Day of the week
+* user = What user the command will run as
+* command = What command should be run
+
+### Exploiting
+
+The autoscript.sh on user4's Desktop is scheduled to run every five minutes and is owned by root. We can create a command that will return a shell and paste it into the file.
+
