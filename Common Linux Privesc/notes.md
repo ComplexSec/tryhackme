@@ -189,3 +189,15 @@ PATH is an environmental variable in Linux which specifies directories that hold
 Say we have a SUID binary. Running it, we can see it is calling the system shell to do a basic process like `ls`. We can re-write the PATH variable to a location of our choosing. When the SUID binary calls the system shell to run an executable, it runs one that we wrote instead
 
 As with any SUID file, it will run this command with the same privileges of the SUID file
+
+## Expanding Your Knowledge
+
+Checklists are a good way to make sure you have not missed anything during your enumeration stage, and also provide a resource to check how to do things if you forget.
+
+Below is a list of good checklists to apply to CTF challenges or penetration tests
+
+[Payload All The Things](https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Linux%20-%20Privilege%20Escalation.md)
+
+[OSCP Priv Esc Guide](https://sushant747.gitbooks.io/total-oscp-guide/content/privilege_escalation_-_linux.html)
+
+[Guide to Linux Privilege Escalation](https://payatu.com/guide-linux-privilege-escalation)
