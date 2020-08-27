@@ -167,14 +167,14 @@ Use the `cat /etc/crontab` command to view what cron jobs are scheduled
 
 Cronjobs exist in a certain format. The format is as follows:
 
-* # = ID
-* m = Minute
-* h = Hour
-* dom = Day of month
-* mon = Month
-* dow = Day of the week
-* user = What user the command will run as
-* command = What command should be run
+* `#` = ID
+* `m` = Minute
+* `h` = Hour
+* `dom` = Day of month
+* `mon` = Month
+* `dow` = Day of the week
+* `user` = What user the command will run as
+* `command` = What command should be run
 
 ### Exploiting
 
