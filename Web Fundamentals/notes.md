@@ -28,10 +28,12 @@ A webserver is software that receives and responds to HTTP(S) requests. Examples
 
 HTTP runs on port 80 and HTTPS runs on port 443
 
-## Content
+### Content
 
 Content of web page is normally a combination of HTML, CSS & JavaScript.
 
 * `HTML` defines the structure of the page and the content
 * `CSS` changes how the page looks
 * `JavaScript` makes pages interactive & loads extra content
+
+## More HTTP - Verbs and Request Formats
