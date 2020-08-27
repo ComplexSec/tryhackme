@@ -14,3 +14,24 @@ __GET__ is an example of an HTTP verb which are different types of requests
 
 The server responds to __GET__ requests with the web page content. If the web page is loading extra resources like JavaScript, images, or CSS files, those are retrieved in __separate GET requests__
 
+### Wireshark Showing the HTTP requests that load a website
+
+![](/Web%20Fundamentals/images/wireshark.png)
+
+For most websites, the requests will use HTTPS. HTTPS is an encrypted version of HTTP. It uses TLS 1.3
+
+### Web Server
+
+A webserver is software that receives and responds to HTTP(S) requests. Examples are Apache, Nginx, and Microsoft IIS
+
+### HTTP
+
+HTTP runs on port 80 and HTTPS runs on port 443
+
+## Content
+
+Content of web page is normally a combination of HTML, CSS & JavaScript.
+
+* `HTML` defines the structure of the page and the content
+* `CSS` changes how the page looks
+* `JavaScript` makes pages interactive & loads extra content
