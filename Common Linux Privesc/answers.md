@@ -119,7 +119,7 @@ Walkthrough: Learnt through the [/etc/passwd format](https://github.com/ComplexS
 
 ## Task 7.1 - no answer needed
 
-### Q: First, swap user to user8 with the password of `password` using the `su -l user8` command
+First, swap user to user8 with the password of `password` using the `su -l user8` command
 
 ## Task 7.2
 
@@ -131,11 +131,11 @@ Walkthrough: Learnt through running the `sudo -l` command
 
 ## Task 7.3 - no answer needed
 
-### Q: All we need to do is open vi as root by typing `sudo vi`
+All we need to do is open vi as root by typing `sudo vi`
 
 ## Task 7.4 - no answer needed
 
-### Q: Now, type `:!sh` to open a shell from Vi
+Now, type `:!sh` to open a shell from Vi
 
 ![](/Common%20Linux%20Privesc/images/vi_shell.png)
 
