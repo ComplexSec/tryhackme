@@ -101,10 +101,15 @@ Responses have a body
 Typical GET response:
 
 `HTTP/1.1 200 OK`
+
 `Accept-Ranges: bytes`
+
 `Content-Length: 28`
+
 `Content-Type: application/javascript; charset=utf-8`
+
 `Last-Modified: Wed, 12 Feb 2020 12:51:44 GMT`
+
 `Date: Thu, 27 Feb 2020 21:47:30 GMT`
 
 `console.log("Hello, World!")`
