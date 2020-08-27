@@ -124,8 +124,25 @@ Cookies allow sites to keep track of data (items in shopping cart, who you are, 
 
 Cookies can be broken down into:
 
-* name
-* value
-* expiry date
-* path
+* name - identifies the cookie
+* value - where data is stored
+* expiry date - when browser will get rid of the cookie
+* path - determines what requests the cookie will be sent with
 
+Cookies normally only sent with requests to the site that set them
+
+### Using Cookies
+
+When logging in, you are given a __Session Token__ which allows the web server to identify your requests
+
+### Manipulating Cookies
+
+Using developer tools, you can view and modify cookies. In Firefox, the `Storage` tab displays the cookies the website has set
+
+There is also a `+` button that allows the creation of cookies
+
+### Alternatives - useful to know
+
+Slowly, for some uses, __LocalStorage__ and __Session Storage__ are used instead. These are not sent with HTTP requests by default. These are HTML5 features
+
+For more information about cookies, check out [Mozilla website](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
