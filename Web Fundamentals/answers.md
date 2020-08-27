@@ -17,3 +17,33 @@ A: Port 80
 ### Q: What is responsible for making websites look good?
 
 A: CSS (Cascading Style Sheets)
+
+## Task 3.1
+
+### Q: What verb would be used for a login?
+
+A: POST
+
+## Task 3.2
+
+### Q: What verb would be used to see your bank balance once logged in?
+
+A: GET
+
+## Task 3.3
+
+### Q: Does the body of a GET request matter? Yea/Nay
+
+A: Nay
+
+## Task 3.4
+
+### Q: What is the status code for "I'm a teapot"?
+
+A: 418
+
+## Task 3.5
+
+### Q: What status code will you get if you need to authenticate to access some content, and you are unauthenticated?
+
+A: 401
