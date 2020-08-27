@@ -146,3 +146,18 @@ There is also a `+` button that allows the creation of cookies
 Slowly, for some uses, __LocalStorage__ and __Session Storage__ are used instead. These are not sent with HTTP requests by default. These are HTML5 features
 
 For more information about cookies, check out [Mozilla website](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
+
+## Mini CTF
+
+### Making HTTP Requests
+
+You can make HTTP requests in many ways. For CTFs, `curl` is useful or a programming language
+
+### Intro to cURL
+
+`cURL` will perform GET requests by default
+
+* The `-X` flag will allow us to speicfy the request type (eg. POST)
+* Can specify the data to POST with `--data` flag which defaults to plaintext
+
+cURL does NOT store cookies. Have to manually specify any cookies and values to send
