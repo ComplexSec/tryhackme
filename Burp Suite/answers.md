@@ -1,5 +1,8 @@
 #  TryHackMe - Burp Suite (Room 006)
 
+<details><summary>Task 4.1 to 4.9</summary>
+<p>
+
 ## Task 4.1
 
 ### Q: Which tool in Burp Suite can we use to perform a `diff` on responses and other pieces of data?
@@ -53,6 +56,9 @@ A: Intruder
 ### Q: Which tool allows us to modify Burp Suite via the addition of extensions?
 
 A: Extender
+
+</p>
+</details>
 
 ## Task 5.2
 
