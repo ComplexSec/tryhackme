@@ -191,3 +191,6 @@ A: Happy Path
 A: Web Cache Poisoning
 
 ![](/Burp%20Suite/images/webcache_poisoning.png)
+
+</p>
+</details>
