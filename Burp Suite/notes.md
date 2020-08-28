@@ -1,8 +1,14 @@
 #  TryHackMe - Burp Suite (Room 006)
 
+<details><summary>Introduction</summary>
+<p>
+
 ## Introduction
 
 Burp Suite is widely regarded as the de facto tool to use when performing web app testing
+
+</p>
+</details>
 
 ## Installation
 
