@@ -10,11 +10,20 @@ Burp Suite is widely regarded as the de facto tool to use when performing web ap
 </p>
 </details>
 
+<details><summary>Installation</summary>
+<p>
+
 ## Installation
 
 Burp Suite is already installed in Kali Linux. If installing Burp from scratch, download from [here](https://portswigger.net/burp/communitydownload)
 
 Burp Suite also requires [Java JRE](https://www.java.com/en/download/) to run successfully
+
+</p>
+</details>
+
+<details><summary>Getting CA Certified</summary>
+<p>
 
 ## Getting CA Certified
 
@@ -23,6 +32,12 @@ Before using Burp, installation of a CA certificate is necessary as Burp acts as
 Download it from `http:://localhost:8080` while Burp is running and import it into Firefox via the settings
 
 ![](/Burp%20Suite/images/ca_certificate.png)
+
+</p>
+</details>
+
+<details><summary>Overview of Features</summary>
+<p>
 
 ## Overview of Features
 
@@ -38,11 +53,23 @@ Quick overview of each section:
 * __Extender__ - allows us to add components such as tool integration, additional scan definitions and more
 * __Scanner__ - automated web vulnerability scanner that can highlight areas of the app for further investigation. Not in community edition of Burp
 
+</p>
+</details>
+
+<details><summary>Dark Mode</summary>
+<p>
+
 ## Dark Mode
 
 To use Dark Mode in Burp Suite, navigate to `User options` --> `Display` -->  `Look and feel` and choose the __Darcula__ mode
 
 ![](/Burp%20Suite/images/darcula.png)
+
+</p>
+</details>
+
+<details><summary>Proxy</summary>
+<p>
 
 ## Proxy
 
@@ -60,6 +87,12 @@ By default Burp will be set to 'intercept' traffic:
 * Can send requests to other tools like Repeater or Intruder for modification and manipulation to induce vulnerabilities
 
 For more information about proxies, read [here](https://portswigger.net/burp/documentation/desktop/tools/proxy)
+
+</p>
+</details>
+
+<details><summary>Target Definition</summary>
+<p>
 
 ## Target Definition
 
@@ -84,6 +117,12 @@ Following the creation of a site map, we can go through and start removing vario
 * Automated exploitation of the item would cause a huge mess
 * Automated exploitation of the item would lead to damaging and potentially crashing the web app
 
+</p>
+</details>
+
+<details><summary>Putting it on Repeat[er]</summary>
+<p>
+
 ## Putting it on Repeat[er]
 
 Repeater allows us to repeat requests. These requests can be re-issued as-is or with modifications. In contrast to Intruder, Repeater is typically used for the purposes of experimentation or more fine-tuned exploitation
@@ -91,3 +130,6 @@ Repeater allows us to repeat requests. These requests can be re-issued as-is or 
 ![](/Burp%20Suite/images/repeater_header.png)
 
 For more information on Repeater, click [here](https://portswigger.net/burp/documentation/desktop/tools/repeater)
+
+</p>
+</details>
