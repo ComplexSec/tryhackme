@@ -60,6 +60,13 @@ A: Extender
 </p>
 </details>
 
+<details><summary>Task 5.1 to 5.9</summary>
+<p>
+
+## Task 5.1 - no answer needed
+
+Deploy the VM
+
 ## Task 5.2
 
 ### Q: By default, the Burp proxy listens on only one interface. What is it?
@@ -134,3 +141,6 @@ A: Is in target scope
 Walkthrough: Going into the `Intercept Client Requests` options, we can see the `Relationship` field says Is in target scope for our AND rule 
 
 ![](/Burp%20Suite/images/relationship.png)
+
+</p>
+</details>
