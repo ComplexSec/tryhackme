@@ -55,3 +55,23 @@ By default Burp will be set to 'intercept' traffic:
 
 For more information about proxies, read [here](https://portswigger.net/burp/documentation/desktop/tools/proxy)
 
+## Target Definition
+
+The `Target` tab in Burp allows us to define the scope, view a site map and specify issue definitions
+
+When starting a web app test, you will be provided a few things:
+
+* The application URL
+* A list of the different user roles within the app
+* Various test accounts and associated credentials for those accounts
+* A list of pieces/forms in the app which are out-of-scope for testing
+
+From this information, we can start to build our scope within Burp. Typically done in a tiered approach wherein we work our way up from the lowest privileged account, browsing the site as a normal user would
+
+Browsing normally to discover the full extent of the site is commonly referred to as the __happy path__
+
+Following the creation of a site map, we can go through and start removing various items from the scope. These items typically fit one of these criteria:
+
+* The item (page, form, etc) has been designated as out of scope
+* Automated exploitation of the item would cause a huge mess
+* Automated exploitation of the item would lead to damaging and potentially crashing the web app
