@@ -194,3 +194,61 @@ A: Web Cache Poisoning
 
 </p>
 </details>
+
+<details><summary>Task 8.1 to 8.9 - Putting it on Repeat[er]</summary>
+<p>
+
+## Task 8.1 - no answer needed
+
+To start, click `Account` or `Login` in the top right corner to navigate to the login page
+
+## Task 8.2
+
+### Q: Try logging in with invalid credentials. What error is generated when login fails?
+
+A: Invalid email or password
+
+![](/Burp%20Suite/images/invalid_creds.png)
+
+## Task 8.3 - no answer needed
+
+### Q: Even though we did not send it to Repeater initially, we can still find the request in our history. Switch over to the HTTP sub-tab of Proxy, look through the requests to find it, right click and send it to Repeater and Intruder
+
+## Task 8.4
+
+### Q: Now that is it in Repeater, let's try adjusting the request such that we are sending a single quote (') as both the email and password. What error is generated from this request?
+
+A: SQLITE_ERROR
+
+Walkthrough: Replace the `email` and `password` content with a single quote in Repeater and send it
+
+![](/Burp%20Suite/images/sqlite_error.png)
+
+## Task 8.5 & 8.6 - no answer needed
+
+Now that we leveraged Repeater to gain POC that Juice Shop's login is vulnerable to SQLi, let's try something a little more mischievous and attempt to leave a devastating zero-star review
+
+First, click on the `Contact Us` tab and then `Customer Feedback`
+
+## Task 8.7 - no answer needed
+
+With the Burp proxy turned on, submit feedback. Once this is done, find the POST request in your HTTP History and send it to Repeater
+
+![](/Burp%20Suite/images/website_sucks.png)
+
+## Task 8.8 
+
+### Q: What field do we have to modify in order to submit a zero-star review?
+
+A: rating
+
+Walkthrough: The `rating` field indicates how many stars are posted in the review
+
+## Task 8.9
+
+Submit a zero star review and complete the challenge
+
+![](/Burp%20Suite/images/zerostar.png)
+
+</p>
+</details>
