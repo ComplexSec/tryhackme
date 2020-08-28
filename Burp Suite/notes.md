@@ -57,6 +57,8 @@ For more information about proxies, read [here](https://portswigger.net/burp/doc
 
 ## Target Definition
 
+![](/Burp%20Suite/images/target_definition.png)
+
 The `Target` tab in Burp allows us to define the scope, view a site map and specify issue definitions
 
 When starting a web app test, you will be provided a few things:
@@ -75,3 +77,11 @@ Following the creation of a site map, we can go through and start removing vario
 * The item (page, form, etc) has been designated as out of scope
 * Automated exploitation of the item would cause a huge mess
 * Automated exploitation of the item would lead to damaging and potentially crashing the web app
+
+## Putting it on Repeat[er]
+
+Repeater allows us to repeat requests. These requests can be re-issued as-is or with modifications. In contrast to Intruder, Repeater is typically used for the purposes of experimentation or more fine-tuned exploitation
+
+![](/Burp%20Suite/images/repeater_header.png)
+
+For more information on Repeater, click [here](https://portswigger.net/burp/documentation/desktop/tools/repeater)
