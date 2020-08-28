@@ -25,3 +25,8 @@ Learn about Linux security and how to escalate your privileges in a Linux enviro
 Understand how the web works
 
 [<img src="https://github.com/ComplexSec/tryhackme/blob/master/Web%20Fundamentals/images/web_fundamentals.png">](https://github.com/ComplexSec/tryhackme/tree/master/Web%20Fundamentals)
+
+## Burp Suite ([TryHackMe](https://tryhackme.com/room/rpburpsuite))
+Learn how to use Burp Suite when testing web applications
+
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Burp%20Suite/images/burp_suite.png">](https://github.com/ComplexSec/tryhackme/tree/master/Burp%20Suite)
