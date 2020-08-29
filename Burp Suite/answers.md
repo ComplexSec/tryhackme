@@ -462,3 +462,22 @@ A: Bookmarks
 
 </p>
 </details>
+
+<details><summary>Task 13.1 to 13.2 - Burp Suite Pro</summary>
+<p>
+
+## Task 13.1
+
+### Q: Download the report attached to this take. What is the only critical issue?
+
+A: Cross-origin resource sharing: arbitrary origin trust
+
+![](/Burp%20Suite/images/cors.png)
+
+## Task 13.2
+
+### Q: How many `certain` low issues did Burp find?
+
+A: 12
+
+![](/Burp%20Suite/images/low.png)

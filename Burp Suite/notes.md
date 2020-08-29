@@ -222,3 +222,23 @@ A pre-requisite for many extensions is Jython: the Java implementation of Python
 ![](/Burp%20Suite/images/jython.png)
 
 For more information, check Burp Suite [documentation](https://portswigger.net/burp/documentation/desktop/tools/extender) on Extender or check out the [article](https://portswigger.net/testers/penetration-testing-tools) on some of the top extensions for Burp Suite
+
+<details><summary>Burp Suite Pro Features</summary>
+<p>
+
+## Burp Suite Pro Features
+
+![](/Burp%20Suite/images/pro.png)
+
+The Burp Suite Scanner allows us to passively and actively scan and spider the website we are testing for vulnerabilities. In Burp 2.0's task-based model, we can launch these scans (Scanner and Spider) from the dashboard and let them run in the background while we continue to examine the web app
+
+![](/Burp%20Suite/images/jython.png)
+
+Commonly used in manual tests, Burp Collaborator Client allows us to gain insight into issues that may otherwise seem to produce no output
+
+Often during testing, we may come across items which - either due to timing/slowness or a lack of any reaction - are likely vulnerable but do not produce any sure-fire indicators. With Burp Collaborator, we can produce out-of-band alerts via generating payloads that reach back to Burp Suite's servers for us
+
+For more information, check out the documentation for [Scanner](https://portswigger.net/burp/documentation/scanner) and [Collaborate Client](https://portswigger.net/burp/documentation/desktop/tools/collaborator-client)
+
+</p>
+</details>
