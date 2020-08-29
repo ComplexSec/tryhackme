@@ -423,3 +423,39 @@ A: Words
 Walkthrough: Located at the bottom right of Comparer tab
 
 ![](/Burp%20Suite/images/words.png)
+
+</p>
+</details>
+
+<details><summary>Task 12.1 to 12.6 - Extensions</summary>
+<p>
+
+## Task 12.1 - no answer needed
+
+### Switch over to the Options sub-tab of the Extender tab
+
+## Task 12.2 - no answer needed
+
+### Scroll down until you reach the `Python Environment` section. Burp requires the standalone edition of Jython
+
+## Task 12.3 - no answer needed
+
+### Download the standalone version of Jython from [here](https://www.jython.org/download.html)
+
+## Task 12.4 - no answer needed
+
+### Return to Burp and hit `Select file` under the Python environment subsection for Jython standalone. Navigate to where you just downloaded this file and select it
+
+![](/Burp%20Suite/images/jython_standalone.png)
+
+## Task 12.5 - no answer needed
+
+### Burp is now set to go for installing extensions. Switch to the BApp Store sub-tab of Extender and look for extensions
+
+## Task 12.6
+
+### Q: Which extension allows us to bookmark various requests?
+
+A: Bookmarks
+
+![](/Burp%20Suite/images/bookmarks.png)
