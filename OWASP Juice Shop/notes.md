@@ -67,3 +67,22 @@ In this task, we will look at exploiting authentication through different flaws.
 * Forgotten password pages
 
 For more information, check [here](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A2-Broken_Authentication)
+
+</p>
+</details>
+
+<details><summary>AH! Don't Look!</summary>
+<p>
+
+## AH! Don't Look!
+
+![](/OWASP%20Juice%20Shop/images/sens_data.png)
+
+A web app should store and transmit sensitive data safely and securely. In some cases, the developer may not correctly protect their sensitive data, making it vulnerable
+
+Most of the time, data protection is not applied consistently across the web app making certain pages accessible to the public. Other times information is leaked to the public without the knowledge of the developer, making the web app vulnerable to an attack
+
+For more information, check [here](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A3-Sensitive_Data_Exposure)
+
+</p>
+</details>

@@ -119,7 +119,7 @@ Once complete, login and get the flag
 
 A: 094fbc9b48e525150ba97d05b942bbf114987257
 
-The reset password mechanism can also be exploited. When inputted into the email field in the Forgot Password page, Jim's security question is set to "Your elder siblings middle name"
+Walkthrough: The reset password mechanism can also be exploited. When inputted into the email field in the Forgot Password page, Jim's security question is set to "Your elder siblings middle name"
 
 ![](/OWASP%20Juice%20Shop/images/eld_sibling.png)
 
@@ -132,6 +132,60 @@ Looking through the wiki page, we see that he has a brother called George and hi
 Inputting this information allows us to successfully change his password
 
 ![](/OWASP%20Juice%20Shop/images/jim_flag.png)
+
+</p>
+</details>
+
+<details><summary>Task 5.1 to 5.3</summary>
+<p>
+
+## Task 5.1
+
+### Q: Access the Confidential Document
+
+A: edf9281222395a1c5fee9b89e32175f1ccf50c5b
+
+Walkthrough: Navigate to the `About Us` page and hover over the "Check out our terms of use". You will see that it links to `/ftp/legal.md`. Navigating to that /ftp/ directory reveals that it is exposed to the public
+
+![](/OWASP%20Juice%20Shop/images/ftp_directory.png)
+
+Download all the interesting looking files and save it. After downloading, navigate to the home page to receive the flag
+
+![](/OWASP%20Juice%20Shop/images/data_success.png)
+
+## Task 5.2
+
+### Q: Log into MC SafeSearch's account
+
+A: 66bdcffad9e698fd534003fbb3cc7e2b7b55d7f0
+
+Walkthrough: Searching MC SafeSearch brings up [this YouTube video]. In this video, he reveals that his password is `Mr Noodles` but he replaced some vowels with zeroes. This must mean his password is `Mr N00dles` instead
+
+We can now login using the email address of `mc.safesearch@juice-sh.op` and password of `Mr N00dles`
+
+![](/OWASP%20Juice%20Shop/images/mrnoodles.png)
+
+## Task 5.3
+
+### Q: Download the Backup File
+
+A:
+
+Walkthrough: Go back to the /ftp directory and try to download `package.json.bak`. It seems we are met with a 403 which says that only .md and .pdf files can be downloaded
+
+![](/OWASP%20Juice%20Shop/images/error.png)
+
+To get around this, use a character bypass called "Poison Null Byte". A Poison Null Byte looks like `%00`. Note that we can download it using the URL, so we can encode this into a URL encoded format
+
+The Poison Null Byte will now look like this - `%2500`. Adding this and then a .md will bypass the 403 error
+
+![](/OWASP%20Juice%20Shop/images/poison.png)
+
+How does this work?
+
+A Poison Null Byte is actually a NULL terminator. By placing a NULL character in the string at a certain byte, the string will tell the server to terminate at that point, nulling the rest of the string
+
+![](/OWASP%20Juice%20Shop/images/backup_success.png)
 
 </p>
 </details>
