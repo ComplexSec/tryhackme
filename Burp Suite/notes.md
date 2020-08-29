@@ -223,6 +223,9 @@ A pre-requisite for many extensions is Jython: the Java implementation of Python
 
 For more information, check Burp Suite [documentation](https://portswigger.net/burp/documentation/desktop/tools/extender) on Extender or check out the [article](https://portswigger.net/testers/penetration-testing-tools) on some of the top extensions for Burp Suite
 
+</p>
+</details>
+
 <details><summary>Burp Suite Pro Features</summary>
 <p>
 
