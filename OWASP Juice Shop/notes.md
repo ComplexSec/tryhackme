@@ -37,6 +37,8 @@ This is called __walking through__ the application.
 	
 ## Inject the Juice
 
+![](/OWASP%20Juice%20Shop/images/sql_injection.png)
+
 This task will focus on injection vulnerabilities. Injection vulnerabilities are quite dangerous to a company as they can potentially cause downtime and/or loss of data. 
 
 Identifying injection points within a web application is usually quite simple, as most of them will return an error
@@ -56,3 +58,12 @@ For more information, check [here](https://owasp.org/www-project-top-ten/OWASP_T
 
 <details><summary>Who Broke My Lock?</summary>
 <p>
+
+![](/OWASP%20Juice%20Shop/images/broken_auth.png)
+
+In this task, we will look at exploiting authentication through different flaws. When talking about flaws within authentication, we include mechanisms that are vulnerable to manipulation. These mechanisms are what we will be exploiting:
+
+* Weak passwords in high privileged accounts
+* Forgotten password pages
+
+For more information, check [here](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A2-Broken_Authentication)
