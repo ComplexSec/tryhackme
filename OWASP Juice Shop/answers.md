@@ -95,6 +95,20 @@ A: fb364762a3c102b2db932069c0e6b78e738d4066
 
 A: 
 
-Walkthrough: Capture a login request and then go to the `Positions` tab and select the `Clear` button in Intruder
+Walkthrough: Capture a login request and then go to the `Positions` tab and select the `Clear` button in Intruder. In the password field, place two $$ inside the quotes
 
-![](/OWASP%20Juice%20Shop/images/bender.png)
+![](/OWASP%20Juice%20Shop/images/brute_intruder.png)
+
+For the payload, we will be using the best1050.txt from SecLists - can be installed via the `apt-get install seclists` command
+
+Can load the list from `/usr/share/seclists/Passwords/Common-Credentials/best1050.txt`
+
+![](/OWASP%20Juice%20Shop/images/seclists.png)
+
+Once the file is loaded into Burp, start the attack. Then, filter for the request by status. A failed request will receive a `401 Unauthorized` where as a sucessful request will return a `200 OK`
+
+![](/OWASP%20Juice%20Shop/images/success_brute.png)
+
+Once complete, login and get the flag
+
+![](/OWASP%20Juice%20Shop/images/admin_creds.png)
