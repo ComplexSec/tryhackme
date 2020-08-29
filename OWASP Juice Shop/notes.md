@@ -3,7 +3,7 @@
 <details><summary>Introduction</summary>
 <p>
 
-![](/OWASP%20Juice%20Shop/images/juiceshop.png)
+![](/OWASP%20Juice%20Shop/images/juice_shop.png)
 
 Within this room, we will look at OWASP's Top 10 vulnerabilities in web applications. You will find these in all types of web applications.
 
