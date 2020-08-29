@@ -93,7 +93,7 @@ A: fb364762a3c102b2db932069c0e6b78e738d4066
 
 ### Q: Bruteforce the Administrator's password
 
-A: 
+A: c2110d06dc6f81c67cd8099ff0ba601241f1ac0e
 
 Walkthrough: Capture a login request and then go to the `Positions` tab and select the `Clear` button in Intruder. In the password field, place two $$ inside the quotes
 
@@ -112,3 +112,26 @@ Once the file is loaded into Burp, start the attack. Then, filter for the reques
 Once complete, login and get the flag
 
 ![](/OWASP%20Juice%20Shop/images/admin_creds.png)
+
+## Task 4.2
+
+### Q: Reset Jim's password
+
+A: 094fbc9b48e525150ba97d05b942bbf114987257
+
+The reset password mechanism can also be exploited. When inputted into the email field in the Forgot Password page, Jim's security question is set to "Your elder siblings middle name"
+
+![](/OWASP%20Juice%20Shop/images/eld_sibling.png)
+
+In task 2, we found that Jim might have something to do with Star Trek. Googling "Jim Star Trek" gives us a wiki page for James T. Kirk from Star Trek
+
+Looking through the wiki page, we see that he has a brother called George and his middle name is Samuel
+
+![](/OWASP%20Juice%20Shop/images/eld_sibling.png)
+
+Inputting this information allows us to successfully change his password
+
+![](/OWASP%20Juice%20Shop/images/jim_flag.png)
+
+</p>
+</details>
