@@ -159,7 +159,7 @@ Download all the interesting looking files and save it. After downloading, navig
 
 A: 66bdcffad9e698fd534003fbb3cc7e2b7b55d7f0
 
-Walkthrough: Searching MC SafeSearch brings up [this YouTube video]. In this video, he reveals that his password is `Mr Noodles` but he replaced some vowels with zeroes. This must mean his password is `Mr N00dles` instead
+Walkthrough: Searching MC SafeSearch brings up [this YouTube video](https://www.youtube.com/watch?&v=v59CX2DiX0Y&feature=emb_title). In this video, he reveals that his password is `Mr Noodles` but he replaced some vowels with zeroes. This must mean his password is `Mr N00dles` instead
 
 We can now login using the email address of `mc.safesearch@juice-sh.op` and password of `Mr N00dles`
 
