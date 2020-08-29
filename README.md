@@ -30,3 +30,8 @@ Understand how the web works
 Learn how to use Burp Suite when testing web applications
 
 [<img src="https://github.com/ComplexSec/tryhackme/blob/master/Burp%20Suite/images/burp_suite.png">](https://github.com/ComplexSec/tryhackme/tree/master/Burp%20Suite)
+
+## OWASP Juice Shop ([TryHackMe](https://tryhackme.com/room/owaspjuiceshop))
+Use Juice Shop to discover and exploit the most common web application security issues (OWASP Top 10)
+
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Burp%20Suite/images/burp_suite.png">](https://github.com/ComplexSec/tryhackme/tree/master/Burp%20Suite)
