@@ -127,7 +127,7 @@ In task 2, we found that Jim might have something to do with Star Trek. Googling
 
 Looking through the wiki page, we see that he has a brother called George and his middle name is Samuel
 
-![](/OWASP%20Juice%20Shop/images/eld_sibling.png)
+![](/OWASP%20Juice%20Shop/images/george.png)
 
 Inputting this information allows us to successfully change his password
 
