@@ -166,6 +166,8 @@ Intruder has [four](https://portswigger.net/burp/documentation/desktop/tools/int
 
 ## Sequencer
 
+![](/Burp%20Suite/images/sequencer.png)
+
 Sequencer is a tool for analyzing the quality of randomness in an application's session tokens and other important data items that are otherwise intended to be unpredictable
 
 Commonly analyzed items include:
