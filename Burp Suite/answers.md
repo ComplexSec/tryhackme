@@ -374,3 +374,50 @@ Walkthrough: Learnt through the `Bit level analysis` and `Bit conversion` sectio
 
 </p>
 </details>
+
+<details><summary>Task 11.1 to 11.6 - Decoder & Comparer</summary>
+<p>
+
+## Task 11.1 - no answer needed
+
+Return to the Target tab and find the API endpoint highlighted in the following request
+
+![](/Burp%20Suite/images/scoreboard.png)
+
+## Task 11.2 - no answer needed
+
+Copy the first line of that request and paste it into Decoder then select `Decode as URL`
+
+## Task 11.3
+
+### Q: What character does the %20 in the request we copied into Decoder come out as?
+
+A: Space
+
+Walkthrough: There is a space between Score and Board
+
+![](/Burp%20Suite/images/space.png)
+
+## Task 11.4
+
+### Q: Similiar to CyberChef, Decoder also has a `Magic` mode where it will automatically attempt to decode the input it is provided. What is this mode called?
+
+A: Smart Decode
+
+Walkthrough: Look through the options to Decode as
+
+![](/Burp%20Suite/images/smartdecode.png)
+
+## TAsk 11.5 
+
+### Q: What can we load into Comparer to see differences in what various user roles can access? This is very useful to check for access control issues
+
+A: Site maps
+
+## Task 11.6 
+
+### Q: Comparer can perform a diff against two different metrics, which one allows us to examine the data loaded in as-is rather than breaking it down into bytes?
+
+A: Words
+
+Walkthrough: Located at the bottom right of Comparer tab
