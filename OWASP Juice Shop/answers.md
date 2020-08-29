@@ -79,6 +79,22 @@ Why don't we put the 1=1? As the email address is valid which will return true, 
 
 We should now be logged in as Bender
 
-![](/OWASP%20Juice%20Shop/images/bender.png)
+![](/OWASP%20Juice%20Shop/images/bender_login.png)
 
 A: fb364762a3c102b2db932069c0e6b78e738d4066
+
+</p>
+</details>
+
+<details><summary>Task 4.1 to 4.2</summary>
+<p>
+
+## Task 3.1
+
+### Q: Bruteforce the Administrator's password
+
+A: 
+
+Walkthrough: Capture a login request and then go to the `Positions` tab and select the `Clear` button in Intruder
+
+![](/OWASP%20Juice%20Shop/images/bender.png)
