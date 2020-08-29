@@ -459,3 +459,6 @@ Walkthrough: Located at the bottom right of Comparer tab
 A: Bookmarks
 
 ![](/Burp%20Suite/images/bookmarks.png)
+
+</p>
+</details>
