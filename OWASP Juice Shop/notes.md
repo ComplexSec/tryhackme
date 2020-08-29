@@ -103,3 +103,4 @@ Categories | Description
 Horizontal Privilege Escalation | Occurs when a user can perform an action or access data of another user with the __same__ level of permission
 Vertical Privilege Escalation | Occurs when a user can perform an action or access data of another user with a __higher__ level of permission
 
+For more information, check [here](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A5-Broken_Access_Control)
