@@ -92,6 +92,8 @@ For more information, check [here](https://owasp.org/www-project-top-ten/OWASP_T
 
 ## Who's Flying This Thing?
 
+![](/OWASP%20Juice%20Shop/images/bac.png)
+
 Modern day systems allows for multiple users to have access to different pages. Administrators most commonly use an administration page to edit, add and remove different elements of a website. You might use these when building a website via Weebly or Wix
 
 When Broken Access Control exploits or bugs are found, it will be categorized into one of two types:
