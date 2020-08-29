@@ -160,3 +160,21 @@ Intruder has [four](https://portswigger.net/burp/documentation/desktop/tools/int
 
 </p>
 </details>
+
+<details><summary>Sequencer</summary>
+<p>
+
+## Sequencer
+
+Sequencer is a tool for analyzing the quality of randomness in an application's session tokens and other important data items that are otherwise intended to be unpredictable
+
+Commonly analyzed items include:
+
+* Session tokens
+* Anti-CSRF (Cross-Site Request Forgery) Tokens
+* Password reset tokens (sent with password resets that in theory uniquely tie user with their password reset requests)
+
+For more information, check out Burp Suite [documentation](https://portswigger.net/burp/documentation/desktop/tools/sequencer)
+
+</p>
+</details>

@@ -326,3 +326,51 @@ Walkthrough: Look through the results and check the status codes
 
 </p>
 </details>
+
+<details><summary>Task 10.1 to 10.7 - Sequencer</summary>
+<p>
+
+## Task 10.1 - no answer needed
+
+### Switch over to the HTTP History sub-tab of Proxy
+
+## Task 10.2 - no answer needed
+
+### We are going to dig for a response which issues a cookie. Parse through the various responses we have received from Juice Shop until you find one that includes a `Set-Cookie` header
+
+![](/Burp%20Suite/images/setcookie.png)
+
+## Task 10.3 - no answer needed
+
+### Once a request is found, right-click on it and `Send to Sequencer`
+
+## Task 10.4 - no answer needed
+
+### Change over to Sequencer and select `Start live capture`
+
+## Task 10.5 - no answer needed
+
+### Let Sequencer run and collect 10,000 requests. Once it hits that amount, hit  `Pause` and then `Analyze now`
+
+## Task 10.6 
+
+### Parse through the results. What is the effective estimated entrop measured in?
+
+A: bits
+
+Walkthrough: Learnt through the summary tab under `Overall result`
+
+![](/Burp%20Suite/images/bits.png)
+
+## Task 10.7
+
+### In order to find the usable bits of entropy, we often have to make some adjustments to have a normalized dataset. What item is converted in this process?
+
+A: token
+
+Walkthrough: Learnt through the `Bit level analysis` and `Bit conversion` section
+
+![](/Burp%20Suite/images/token.png)
+
+</p>
+</details>
