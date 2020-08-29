@@ -86,3 +86,16 @@ For more information, check [here](https://owasp.org/www-project-top-ten/OWASP_T
 
 </p>
 </details>
+
+<details><summary>Who's Flying This Thing?</summary>
+<p>
+
+## Who's Flying This Thing?
+
+Modern day systems allows for multiple users to have access to different pages. Administrators most commonly use an administration page to edit, add and remove different elements of a website. You might use these when building a website via Weebly or Wix
+
+When Broken Access Control exploits or bugs are found, it will be categorized into one of two types:
+
+------------ | -------------
+Horizontal Privilege Escalation | Occurs when a user can perform an action or access data of another user with the __same__ level of permission
+Vertical Privilege Escalation | Occurs when a user can perform an action or access data of another user with a __higher__ level of permission
