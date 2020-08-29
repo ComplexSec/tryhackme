@@ -14,3 +14,45 @@ This room will cover the following topics:
 * [Sensitive Data Exposure](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A3-Sensitive_Data_Exposure)
 * [Broken Access Control](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A5-Broken_Access_Control)
 * [Cross-site Scripting (XSS)](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A7-Cross-Site_Scripting_(XSS))
+
+</p>
+</details>
+
+<details><summary>Let's Go on an Adventure</summary>
+<p>
+
+## Let's Go on an Adventure
+
+Before getting into the actual hacking part, it's good to have a look around.
+
+In Burp, set the Intercept mode to off and then browse the site. This allows Burp to log different requests from the server that may be helpful later
+
+This is called __walking through__ the application.
+
+</p>
+</details>
+
+<details><summary>Inject the Juice</summary>
+<p>
+	
+## Inject the Juice
+
+This task will focus on injection vulnerabilities. Injection vulnerabilities are quite dangerous to a company as they can potentially cause downtime and/or loss of data. 
+
+Identifying injection points within a web application is usually quite simple, as most of them will return an error
+
+There are many types of injection attacks, some of them are:
+
+* SQL Injection - is when an attacker enters a malicious or malformed query to either retrieve or tamper data from a database. And in some cases, log into accounts
+* Command Injection - is when web apps take input or user-controlled data and run them as system commands. An attacker may tamper with this data to execute their own system commands. This can be seen in applications that perform misconfigured ping tests
+* Email injection - is a security vulnerability that allows malicious users to send email messages without prior authorization by the email server. These occur when the attacker adds extra data to fields which are not interpreted by the server correctly
+
+In this case, we will use SQL Injection
+
+For more information, check [here](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection)
+
+</p>
+</details>
+
+<details><summary>Who Broke My Lock?</summary>
+<p>
