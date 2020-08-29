@@ -252,3 +252,77 @@ Submit a zero star review and complete the challenge
 
 </p>
 </details>
+
+<details><summary>Task 9.1 to 9.12 - Intruder</summary>
+<p>
+
+## Task 9.1
+
+### Q: Which attack type allows us to select multiple payload sets (one per position) and iterate through them simulatenously?
+
+A: Pitchfork
+
+## Task 9.2
+
+### Q: How about the attack type which allows us to use one payload set in every single position we have selected simultaneously?
+
+A: Battering ram
+
+## Task 9.3
+
+### Q: Which attack type allows us to select multiple payload sets (one per position) and iterate through all possible combinations?
+
+A: Cluster Bomb
+
+## Task 9.4
+
+### Q: Perhaps the most commonly used, which attack type allows us to cycle through our payload set, putting the next available payload in each position in turn?
+
+A: Sniper
+
+## Task 9.5 - no answer needed
+
+### Download the wordlist attached to this room, this is a shortened version of the [fuzzbd SQLi platform detection list](https://github.com/fuzzdb-project/fuzzdb/blob/master/attack/sql-injection/detect/xplatform.txt)
+
+## Task 9.6 - no answer needed
+
+### Return to the Intruder in Burp. Open up the Positions sub-tab and verify that `Sniper` is selected as our attack type
+
+## Task 9.7 - no answer needed
+
+### Burp attempts to automatically highlight possible fields of interest for Intruder, however, it does not have it correct. Hit `Clear` on the right hand side to clear all selected fields
+
+## Task 9.8 - no answer needed
+
+### Highlight the email field between the double quotes (")
+
+## Task 9.9 - no answer needed
+
+### Click `Add` to select the email field as a position for our payloads
+
+![](/Burp%20Suite/images/email.png)
+
+## Task 9.10 - no answer needed
+
+### Switch to the payloads sub-tab of Intruder. Once there, hit `Load` and select the wordlist you previously downloaded
+
+![](/Burp%20Suite/images/payload.png)
+
+## Task 9.11 - no answer needed
+
+### Scroll down and uncheck `URL-encode these characters`. We do not want to have the characters sent to be encoded as they otherwise won't be recognized by SQL
+
+![](/Burp%20Suite/images/urlencode.png)
+
+## Task 9.12
+
+### Finally, click `Start attack`. What is the first payload that returns a 200 status code, showing that we have successfully bypassed authentication?
+
+A: a' OR 1=1--
+
+Walkthrough: Look through the results and check the status codes
+
+![](/Burp%20Suite/images/200OK.png)
+
+</p>
+</details>
