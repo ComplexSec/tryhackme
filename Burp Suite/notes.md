@@ -232,7 +232,7 @@ For more information, check Burp Suite [documentation](https://portswigger.net/b
 
 The Burp Suite Scanner allows us to passively and actively scan and spider the website we are testing for vulnerabilities. In Burp 2.0's task-based model, we can launch these scans (Scanner and Spider) from the dashboard and let them run in the background while we continue to examine the web app
 
-![](/Burp%20Suite/images/jython.png)
+![](/Burp%20Suite/images/scanner.png)
 
 Commonly used in manual tests, Burp Collaborator Client allows us to gain insight into issues that may otherwise seem to produce no output
 
