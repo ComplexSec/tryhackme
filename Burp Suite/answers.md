@@ -421,3 +421,5 @@ A: Site maps
 A: Words
 
 Walkthrough: Located at the bottom right of Comparer tab
+
+![](/Burp%20Suite/images/words.png)
