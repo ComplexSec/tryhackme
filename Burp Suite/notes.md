@@ -133,3 +133,27 @@ For more information on Repeater, click [here](https://portswigger.net/burp/docu
 
 </p>
 </details>
+
+<details><summary>Intruder</summary>
+<p>
+
+## Intruder
+
+Intruder can be used from fuzzing to brute forcing. At its core, Intruder serves one purpose: automation
+
+It is meant for repeat testing once a POC has been established
+
+Some common uses are:
+
+* Enunemerating identifiers such as usernames, cycling through predictable session/password recovery tokens, and attempting simple password guessing
+* Harvesting useful data from user profiles or other pages of interest via grepping our responses
+* Fuzzing for vulnerabilities such as SQL injection, XSS and file path traversal
+
+![](/Burp%20Suite/images/intruder_header.png)
+
+Intruder has four different attack types:
+
+1. Sniper - the most popular attack type. Cycles through selected positions, putting the next available payload in each position in turn. Uses only one set of payloads
+2. Battering ram - uses only one set of payloads. Puts every payload into every selected position
+3. Pitchfork - allows us to use multiple payload sets and iterate through both payload sets simultaneously. If we selected two positions, we can provide a username and password payload list for example
+4. Cluster Bomb - allows us to use multiple payload sets and iterate through all combinations of the payload lists we provide. If we selected two positions, we can provide a username and password payload list. Intruder then cycles through the combinations resulting in a total number of combinations equalling usernames * passwords
