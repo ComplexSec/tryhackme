@@ -96,6 +96,8 @@ Modern day systems allows for multiple users to have access to different pages. 
 
 When Broken Access Control exploits or bugs are found, it will be categorized into one of two types:
 
+Categories | Description
 ------------ | -------------
 Horizontal Privilege Escalation | Occurs when a user can perform an action or access data of another user with the __same__ level of permission
 Vertical Privilege Escalation | Occurs when a user can perform an action or access data of another user with a __higher__ level of permission
+
