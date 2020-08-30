@@ -1,11 +1,11 @@
 #  TryHackMe - OWASP Top 10 (Room 008)
 
-<details><summary>1 - Injection</summary>
+<details><summary>Day 1 - Injection</summary>
 <p>
 
 ![](/OWASP%20Top%2010/images/command_inj.png)
 
-<details><summary>Day 1 - Injection</summary>
+<details><summary>Injection</summary>
 <p>
 
 Injection flaws are very common. These flaws occur because the user controlled input is interpreted as actual commands or parameters by the application. Injection attacks depend on what technologies are being used and how exactly the input is interpreted by these technologies
@@ -30,7 +30,7 @@ Dangerous characters or input is classified as any input that can change how the
 </p>
 </details>
 
-<details><summary>Day 1 - OS Command Injection</summary>
+<details><summary>OS Command Injection</summary>
 <p>
 
 Command Injection occures when server-side code in a web application makes a system call on the hosting machine
@@ -46,7 +46,7 @@ Once the attacker has a foothold on the server, they can start the usual enumera
 </p>
 </details>
 
-<details><summary>Day 1 - Command Injection Practical</summary>
+<details><summary>Command Injection Practical</summary>
 <p>
 
 ## What is Active Command Injection?
