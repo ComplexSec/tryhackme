@@ -3,7 +3,7 @@
 <details><summary>1 - Injection</summary>
 <p>
 
-Introduction: To complete the questions below, navigate to http://<IP>/evilshell.php
+Introduction: To complete the questions below, navigate to __http://MACHINE_IP/evilshell.php__
 
 ## Task 1.1
 
@@ -43,7 +43,7 @@ A: /usr/bin/nologin
 
 Walkthrough: To know about the current user's shell, fetch the contents of the /etc/passwd file. The 7th field contains login shells corresponding to the user. Looking at the www-data user, we can see the shell
 
-![](/OWASP%20Top%2010/images/no_login.png)
+![](/OWASP%20Top%2010/images/nologin.png)
 
 ## Task 1.5
 
