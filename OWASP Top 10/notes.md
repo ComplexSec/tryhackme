@@ -5,7 +5,7 @@
 
 ![](/OWASP%20Top%2010/images/command_inj.png)
 
-<details><summary>Injection</summary>
+<details><summary>__Injection__</summary>
 <p>
 
 Injection flaws are very common. These flaws occur because the user controlled input is interpreted as actual commands or parameters by the application. Injection attacks depend on what technologies are being used and how exactly the input is interpreted by these technologies
