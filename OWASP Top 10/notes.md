@@ -61,3 +61,89 @@ Scenario: EvilCorp has started development on a web based shell but has accident
 
 Just like before, look at the sample code from evilshell.php and go over what it is doing and why it makes it active command injection. 
 
+![](/OWASP%20Top%2010/images/evilshell.png)
+
+In pseudocode, the above snippet is doing the following:
+
+1. Checking if the parameter "commandString" is set
+2. If it is, then the variable $command_string gets what was passed into the input field
+3. The program then goes into a try block to execute the function `passthru($command_string)`. Read the docs on `passthru()` on [PHP's website](https://www.php.net/manual/en/function.passthru.php) but in general, it is executing what gets entered into the input then passing the output directly back to the browser
+4. If the try does not succeed, output the error to the page. Generally, this won't output anything because you cannot output stderr but PHP does not let you have a try without a catch
+
+## Ways to Detect Active Command Injection
+
+We know that active command injection occurs when you can see the response from the system call. In the above code, the function `passthru()` is actually what is doing all the work. It is passing the response directly to the document so you can see the fruits of your labour right there.
+
+Since we know that, we can go over some useful commands to try to enumerate the machine a bit further. The function call here to `passthru()` may not always be what is happening behind the scenes
+
+## Commands to Try
+
+### Linux
+
+* whoami
+* id
+* ifconfig / ip a
+* uname -a
+* ps -ef
+
+### Windows
+
+* whoami
+* vers
+* ipconfig
+* tasklist
+* netstat -an
+
+</p>
+</details>
+
+</p>
+</details>
+
+<details><summary>Day 2 - Broken Authentication</summary>
+<p>
+
+![](/OWASP%20Top%2010/images/broken_auth.png)
+
+<details><summary>Broken Authentication</summary>
+<p>
+
+Authentication and session management constitute core components of modern web apps. Authentication allows users to gain access to web applications by verifying their identities
+
+The most common form of authentication is using a username and password mechanism. A user would enter these credentials and the server would verify them. If they were correct, the server would then provide the user's browser with a session cookie
+
+A session cookie is needed because web servers use HTTP(S) to communicate which is stateless. Attaching session cookies means that the server will know who is sending what data
+
+If an attacker is able to find flaws in an authentication mechanism, they would then successfully gain access to other user's accounts. This would allow the attacker to access sensitive data
+
+Some common flaws in authentication mechanisms include:
+
+* Brute force attacks: If a web app uses usernames and passwords, an attacker is able to launch brute force attacks that allow them to guess the username and passwords using multiple authentication attempts
+* Use of weak credentials: Web applications should set strong password policies. If applications allow users to set passwords such as `password` or common passwords, then an attacker is able to easily guess them and access user accounts. They can do this without brute forcing and without multiple attempts
+* Weak Session Cookies: session cookies are how the server keeps track of users. If session cookies contain predictable values, an attacker can set their own session cookies and access user's accounts
+
+There can be various mitigation techniques for broken authentication mechanisms depending on the exact flaw
+
+* To avoid password guessing attacks, ensure the app enforces a strong password policy
+* To avoid brute force attacks, ensure the app enforces an automatic lockout after a certain number of attempts. This would prevent an attacker from launching more brute force attacks
+* Implement Multi Factor Authentication - if a user has multiple methods of authentication it would be difficult to get access to both credentials to get access to their account
+
+</p>
+</details>
+
+<details><summary>Broken Authentication Practical</summary>
+<p>
+
+A lot of times what happens is that developers forget to sanitize the input given by the user in the code of their application, which can make them vulnerable to attacks like SQLi. However, we are going to focus on a vulnerability that happens because of a developer's mistake but is very easy to exploit i.e. re-registration of an existing user
+
+Say there is an existing user with the name __admin__ and now we want to get access to their account. We can re-register that username but with slight modification like "  admin"
+
+Now when you enter that in the username field and enter other information, it will register a new user but that user will have the same right as normal admin. That new user will also be able to see all the content presented under the user __admin__
+
+To see this in action, go to `http://<IP>:8888` and try to register a user name __darren__ you will see that user already exists so then try to register a user " darren" and you will see that you are now logged in and will be able to see the content present only in Darren's account which in our case is the flag that you need to retrieve
+
+</p>
+</details>
+
+</p>
+</details>
