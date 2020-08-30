@@ -143,7 +143,7 @@ To gain remote access to this machine, follow these steps:
 1. Edit the PHP reverse shell file and edit the IP to be our VPN IP
 2. Rename this file to php-reverse-shell.phtml
 3. Listen for incoming connections using netcat via `nc -nvlp 1234`
-4. Upload the shell and navigate to http://<ip>:3333/internal/uploads/php-reverse-shell.phtml and execute the payload
+4. Upload the shell and navigate to http://MACHINE_IP:3333/internal/uploads/php-reverse-shell.phtml and execute the payload
 5. Get a connection back via netcat
 
 ![](/Vulnversity/images/changeip.png)
