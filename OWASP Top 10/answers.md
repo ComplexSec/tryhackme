@@ -72,3 +72,12 @@ First, locate all .motd files and look for the 00-header file. Once found, simpl
 
 <details><summary>2 - Broken Authentication</summary>
 <p>
+
+## Task 2.1
+
+### Q: What is the flag that you found in darren's account?
+
+A: 
+
+Walkthrough: We are given that there is an account named `darren` which contains a flag. To access this account, if we try something like ` darren` or `   darren` for registering a new account and then try logging in with this account, we are able to access the account details
+
