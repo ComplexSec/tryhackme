@@ -201,7 +201,7 @@ A: 946a799363226a24822008503f5d1324536629a0
 
 Walkthrough: First, open the Network Viewer on Firefox. This can be done with the keyboard shortcut `Ctrl+Shift+E` and then refresh the page. Look for the GET request calling for `main-es2015.js`
 
-![](/OWASP%20Juice%20Shop/images/backup_success.png)
+![](/OWASP%20Juice%20Shop/images/js.png)
 
 Open this file and search for the term "admin" - we are looking for the `app-administration` finding
 
