@@ -23,7 +23,7 @@ __-sS__ | TCP SYN port scan
 </p>
 </details>
 
-<details><summary>Task 3 - Locating Directories using GoBuster</summary>
+<details><summary>Locating Directories using GoBuster</summary>
 <p>
 
 ![](/Vulnversity/images/gob.png)
@@ -48,7 +48,7 @@ __-c <http_cookies>__ | Specify a cookie for simulating your auth
 </p>
 </details>
 
-<details><summary>Task 4 - Compromise the WebServer</summary>
+<details><summary>Compromise the Web Server</summary>
 <p>
 
 Now you have found a form to upload files, we can leverage this to upload and execute our payload which will lead to compromising the server
