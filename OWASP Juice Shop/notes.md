@@ -1,4 +1,4 @@
-#  TryHackMe - OWASP Juice Shope (Room 007)
+#  TryHackMe - OWASP Juice Shop (Room 007)
 
 <details><summary>Introduction</summary>
 <p>
