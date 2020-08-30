@@ -300,3 +300,87 @@ Like HTML, we can use attributes in XML too. The syntax for having attributes is
 ```
 
 In the above example, `category` is the attribute name and `message` is the attribute value
+
+</p>
+</details>
+
+<details><summary>XML Eternal Entity - DTD</summary>
+<p>
+
+## DTD 
+
+DTD stands for Document Type Definition. A DTD defines the structure and the legal elements and attributes of an XML document
+
+Say we have a file named `note.dtd` with the following content:
+
+```dtd
+<!DOCTYPE note [ <!ELEMENT note (to,from,heading,body)> <!ELEMENT to (#PCDATA)> <!ELEMENT from (#PCDATA)> <!ELEMENT heading (#PCDATA)> <!ELEMENT body (#PCDATA)> ]>
+```
+
+Now we can use this DTD to validate the information of some XML document and make sure that the XML file conforms to the rules of that DTD
+
+Below is given an XML document that uses `note.dtd`
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE note SYSTEM "note.dtd">
+<note>
+    <to>falcon</to>
+    <from>feast</from>
+    <heading>hacking</heading>
+    <body>XXE attack</body>
+</note>
+```
+
+Now, understand how that DTD validates the XML. Here is what all those terms used in notes.dtd mean:
+
+* !DOCTYPE note - defines a root element of the document named __note__
+* !ELEMENT note - defines that the note element must contain the elements: "to, from heading, body"
+* !ELEMENT to - defines the `to` element to be of type `#PCDATA`
+* !ELEMENT from - defines the `from` element to be of type `#PCDATA`
+* !ELEMENT heading - defines the `heading` element to be of type `#PCDATA`
+* !ELEMENT body - defines the `body` element to be of type `#PCDATA`
+
+PCDATA means parseable character data
+
+</p>
+</details>
+
+<details><summary>XML Eternal Entity - XXE Payload</summary>
+<p>
+
+## XXE Payload
+
+1. The first payload we will see is very simple. If you read the previous task, you will understand this payload easily
+
+![](/OWASP%20Top%2010/images/payload1.png)
+
+We are defining an ENTITY called name and assigning it a value feast. Later, we are using that ENTITY in our code
+
+2. Can also use XXE to read some file from the system by defining an ENTITY and having it use the SYSTEM keyword
+
+![](/OWASP%20Top%2010/images/payload2.png)
+
+Here again, we are defining an ENTITY with the name `read` but the difference is that we are setting its value to `SYSTEM` and path of the file
+
+If we use this payload then a website vulnerable to XXE would display the content of the file `/etc/passwd`
+
+In a similiar manner, we can use this kind of payload to read other files but a lot of times you can fail to read files in this manner or the reason for failuer could be the file you are trying to read
+
+</p>
+</details>
+
+<details><summary>XML Eternal Entity - Exploiting</summary>
+<p>
+
+## Exploiting
+
+1. Let's see how the website would look if we try to use the payload for displaying the name
+
+![](/OWASP%20Top%2010/images/name.png)
+
+On the left side, we can see the burp request that was sent with the URL encoded payload and on the right side we can see that the payload was able to successfully display name `falcon feast`
+
+2. Now, try to read the `/etc/passwd`
+
+![](/OWASP%20Top%2010/images/passwd.png)

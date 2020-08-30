@@ -166,3 +166,58 @@ Walkthrough: Simply login with the credentials found and get the flag
 </p>
 </details>
 
+<details><summary>4 - XML Eternal Entity</summary>
+<p>
+
+## Task 4.1
+
+### Q: What is the full form of XML?
+
+A: Extensible Markup Language
+
+## Task 4.2
+
+### Q: Is it compulsory to have XML prolog in XML documents?
+
+A: No
+
+## Task 4.3
+
+### Q: Can we validate XML documents against a schema?
+
+A: yes
+
+## Task 4.4
+
+### Q: How can we specify XML version and encoding in XML document?
+
+</p>
+</details>
+
+<details><summary>5 - XML Eternal Entity - DTD</summary>
+<p>
+
+## Task 5.1
+
+### Q: How do you define a new ELEMENT?
+
+A: !ELEMENT
+
+## Task 5.2
+
+### Q: How do you define a ROOT element?
+
+A: !DOCTYPE
+
+## Task 5.3
+
+### Q: How do you define a new ENTITY?
+
+A: !ENTITY
+
+</p>
+</details>
+
+<details><summary>6 - XML Eternal Entity - XXE Payload</summary>
+<p>
+
