@@ -79,5 +79,34 @@ First, locate all .motd files and look for the 00-header file. Once found, simpl
 
 A: fe86079416a21a3c99937fea8874b667 
 
-Walkthrough: We are given that there is an account named `darren` which contains a flag. To access this account, if we try something like " darren" or "   darren" for registering a new account and then try logging in with this account, we are able to access the account details
+Walkthrough: We are given that there is an account named `darren` which contains a flag. To access this account, if we try something like " darren" or "   darren" for registering a new account it successfully lets us create an account
 
+![](/OWASP%20Top%2010/images/darren.png)
+
+Once registered, simply log in as our darren (with spaces) and we will see the flag
+
+![](/OWASP%20Top%2010/images/loggedin.png)
+
+## Task 2.2
+
+### Q: Now try to do the same trick and see if you can login as arthur
+
+Walkthrough: Simply do the same as above but use arthur instead of darren
+
+## Task 2.3
+
+### Q: What is the flag you found in arthur's account?
+
+A: d9ac0f7db4fda460ac3edeb75d75e16e
+
+Walkthrough: Simply do the same method as Darren's account and we are able to receive the flag
+
+As a note, trying various other methods like `arthur.`, `art hur`, `_arthur` yield no results. Only blank spaces can be used to check Broken Authentication successfully
+
+![](/OWASP%20Top%2010/images/arthur.png)
+
+</p>
+</details>
+
+<details><summary>3 - Sensitive Data Exposuer</summary>
+<p>

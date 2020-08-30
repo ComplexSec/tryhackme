@@ -147,3 +147,6 @@ To see this in action, go to `http://<IP>:8888` and try to register a user name 
 
 </p>
 </details>
+
+<details><summary>Day 2 - Broken Authentication</summary>
+<p>
