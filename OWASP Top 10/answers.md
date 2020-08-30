@@ -108,7 +108,7 @@ As a note, trying various other methods like `arthur.`, `art hur`, `_arthur` yie
 </p>
 </details>
 
-<details><summary>3 - Sensitive Data Exposuer</summary>
+<details><summary>3 - Sensitive Data Exposure</summary>
 <p>
 
 ## Task 3.1
