@@ -230,3 +230,73 @@ Simply paste the hashes we found earlier into the box and hit the `Crack Hashes`
 
 </p>
 </details>
+
+<details><summary>Day 4 - XML Eternal Entity</summary>
+<p>
+
+![](/OWASP%20Top%2010/images/xxe.png)
+
+<details><summary>XML Eternal Entity</summary>
+<p>
+
+An XML attack is a vulnerability that abuses features of XML parsers/data. It often allows an attacker to interact with any backend or external systems that the application itself can access and can allow the attacker to read the file on that system
+
+They can also cause DoS attacks or coulde use XXE to perform Server-Side Request Forgery (SSRF) inducing the web app to make requests to other applications. XXE may even enable port scanning and lead to remove code execution
+
+There are two types of XXE attacks;
+
+* in-band
+* out-of-band
+
+An __in-band__ XXE attack is the one in which the attacker can receive an immediate response to the XXE payload
+
+An __out-of-band__ XXE has no immediate response from the web app and attacker has to reflect the output of their XXE payload to some other file or their own server
+
+</p>
+</details>
+
+<details><summary>XML Eternal Entity - eXtensible Markup Language</summary>
+<p>
+
+## What is XML?
+
+XML is a markup language that defines a set of rules for encoding documents in a format that is both human-readable and machine-readable. It is a markup language used for storing and transporting data
+
+## Why we Use XML
+
+1. XML is platform-independent and programming language independent, thus it can be used on any system and supports the technology change when that happens
+2. The data stored and transported using XML can be changed at any point in time without affecting the data presentation
+3. XML allows validation using DID and Schema. This validation ensures that the XML document is free from any syntax error
+4. XML simplifies data sharing between various systems because of its platform-independent nature. XML data does not require any conversion when transferred between different systems
+
+## Syntax
+
+Every XML document mostly starts with what is known as XML Prolog
+
+`<?xml version="1.0" encoding="UTF-8"?>`
+
+Above the line is called XML prolog and it specifies the XML version and the encoding used in the XML document. This line is not compulsory to use but it is considered a good practice
+
+Every XML document must contain a `ROOT` element. For example:
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<mail>
+   <to>falcon</to>
+   <from>feast</from>
+   <subject>About XXE</subject>
+   <text>Teach about XXE</text>
+</mail>
+```
+
+In the above, the `<mail>` is the ROOT element of that document and <to>, <from>, <subject> and <text> are the children elements. If the XML document does not have any root element then it would be considered wrong or invalid XML doc
+
+Another thing to remember is that XML is a case sensitive language. If a tag starts like <to> then it has to end by </to>.
+
+Like HTML, we can use attributes in XML too. The syntax for having attributes is also very similiar to HTML. For example:
+
+```html
+<text category = "message">You need to learn about XXE</text>
+```
+
+In the above example, `category` is the attribute name and `message` is the attribute value
