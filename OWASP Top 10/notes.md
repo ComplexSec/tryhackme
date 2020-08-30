@@ -5,8 +5,10 @@
 
 ![](/OWASP%20Top%2010/images/command_inj.png)
 
-<details><summary>__Injection__</summary>
+<details><summary>Injection</summary>
 <p>
+
+## Injection
 
 Injection flaws are very common. These flaws occur because the user controlled input is interpreted as actual commands or parameters by the application. Injection attacks depend on what technologies are being used and how exactly the input is interpreted by these technologies
 
@@ -32,6 +34,8 @@ Dangerous characters or input is classified as any input that can change how the
 
 <details><summary>OS Command Injection</summary>
 <p>
+
+## OS Command Injection
 
 Command Injection occures when server-side code in a web application makes a system call on the hosting machine
 
