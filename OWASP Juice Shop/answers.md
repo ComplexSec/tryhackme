@@ -189,3 +189,125 @@ A Poison Null Byte is actually a NULL terminator. By placing a NULL character in
 
 </p>
 </details>
+
+<details><summary>Task 6.1 to 6.3</summary>
+<p>
+
+## Task 6.1
+
+### Q: Access the administration page
+
+A: 946a799363226a24822008503f5d1324536629a0
+
+Walkthrough: First, open the Network Viewer on Firefox. This can be done with the keyboard shortcut `Ctrl+Shift+E` and then refresh the page. Look for the GET request calling for `main-es2015.js`
+
+![](/OWASP%20Juice%20Shop/images/backup_success.png)
+
+Open this file and search for the term "admin" - we are looking for the `app-administration` finding
+
+![](/OWASP%20Juice%20Shop/images/app_admin.png)
+
+This hints towards a page called `Administration` but going there while not logged in does not work. Because this is an admin page, it makes sense that we need to be in the Admin account
+
+Logging in as admin and then navigating to the `/#/administration` page gives you the flag
+
+![](/OWASP%20Juice%20Shop/images/admin_panel.png)
+
+## Task 6.2
+
+### Q: View another user's shopping basket
+
+A: 41b997a36cc33fbe4f0ba018474e19ae5ce52121
+
+Walkthrough: Log into the admin account and check the basket under `Your Basket`. Intercept this request via Burp and you should see a GET request for `/rest/basket/1`
+
+![](/OWASP%20Juice%20Shop/images/burp_intercept.png)
+
+Simply change the number after /basket/ from 1 to 2 and it will now show you the basket of UserID2. You can do this for other UserIDs as well, provided they have one
+
+![](/OWASP%20Juice%20Shop/images/basket.png)
+
+## Task 6.3
+
+### Q: Remove all 5-star reviews
+
+A: 50c97bcce0b895e446d61c83a21df371ac2266ef
+
+Walkthrough: Navigate to the administration page again and click the bin icon next to the reviews with 5 stars
+
+![](/OWASP%20Juice%20Shop/images/5star.png)
+
+</p>
+</details>
+
+<details><summary>Task 7.1 to 7.3</summary>
+<p>
+
+## Task 7.1
+
+### Q: Perform a DOM-based XSS
+
+A: 9aaf4bbea5c30d00a1f5bbcfce4db6d4b0efe0bf
+
+Walkthrough: In the search parameter on Juice Shop, use the iframe tag with a simple alert 
+
+* <iframe src="javascript:alert(`xss`)">
+
+![](/OWASP%20Juice%20Shop/images/dombased.png)
+
+This type of XSS is also called XFS (Cross-Frame Scripting)
+
+Once inputted, a popup will appear
+
+![](/OWASP%20Juice%20Shop/images/dombased_result.png)
+
+Websites that allow the user to modify the `iframe` will most likely be vulnerable to XSS
+
+Once entered, you should be presented with the flag
+
+![](/OWASP%20Juice%20Shop/images/dombased_flag.png)
+
+## Task 7.2
+
+### Q: Perform a Persistent XSS
+
+A: 149aa8ce13d7a4a8a931472308e269c94dc5f156
+
+Walkthrough: Navigate to the "Last Login IP" page for this attack
+
+As it logs the last login IP, we will now logout so that it logs the new IP. Make sure that Burp intercept is on, so it will catch the logout request
+
+Then, head over to the Headers tab where we will add a new Header:
+
+* True-Client-IP			<iframe src="javascript:alert(`xss`)">
+
+![](/OWASP%20Juice%20Shop/images/logout.png)
+
+Then forward the request to the server. When signing back into the admin account and navigating to the last login IP page again, we will see the alert message
+
+![](/OWASP%20Juice%20Shop/images/popup.png)
+
+![](/OWASP%20Juice%20Shop/images/persistent_flag.png)
+
+## Task 7.3
+
+### Q: Perform a Reflected XSS 
+
+A: 23cefee1527bde039295b2616eeb29e1edc660a0
+
+Walkthrough: First, login to the admin account and navigate to the `Order History` page
+
+From here, you will see a truck icon - clicking it will bring you to the track result page. You will also see that there is an id paired with the order in the URL
+
+![](/OWASP%20Juice%20Shop/images/id_param.png)
+
+Using the iframe XSS in place of the id parameter, we should be able to submit the URL, refresh the page and get the alert
+
+![](/OWASP%20Juice%20Shop/images/url.png)
+
+After refreshing the page, the popup should appear
+
+![](/OWASP%20Juice%20Shop/images/xss_popup.png)
+
+</p>
+</details>

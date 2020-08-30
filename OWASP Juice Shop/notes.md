@@ -104,3 +104,33 @@ Horizontal Privilege Escalation | Occurs when a user can perform an action or ac
 Vertical Privilege Escalation | Occurs when a user can perform an action or access data of another user with a __higher__ level of permission
 
 For more information, check [here](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A5-Broken_Access_Control)
+
+</p>
+</details>
+
+<details><summary>Where Did That Come From?</summary>
+<p>
+
+## Where Did That Come From?
+
+![](/OWASP%20Juice%20Shop/images/xss.png)
+
+XSS is a vulnerability that allows attacker to run JavaScript in web apps. It is one of the most found bugs in web apps. Their complexity ranges from easy to extremely hard, as each web app parses the queries in a different way
+
+There are three major types of XSS attacks:
+
+1. DOM (Special)
+2. Persistent (Server-side)
+3. Reflected (Client-side)
+
+__DOM XSS__ (Document Object Model-based Cross Site Scripting) uses the HTML environment to execute malicious JavaScript. This type of attack commonly uses the `<script></script>` HTML tag
+
+__Persistent XSS__ is JavaScript that is run when the server loads the page containing it. These can occure when the server does not sanitize the user data when it is uploaded to a page. These are commonly found on blog posts
+
+__Reflected XSS__ is JavaScript that is run on the client side end of the web app. These are most commonly found when the sever does not sanitize search data
+
+
+For more information, check [here](https://owasp.org/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A7-Cross-Site_Scripting_(XSS))
+
+</p>
+</details>
