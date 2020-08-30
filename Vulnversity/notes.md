@@ -32,6 +32,8 @@ GoBuster is a tool used to brute-force URLs (directories and files), DNS subdoma
 
 Download GoBuster [here](https://github.com/OJ/gobuster) or on Kali simply type `sudo apt-get install gobuster`
 
+![](/Vulnversity/images/gobuster.png)
+
 Some common GoBuster flags are:
 
 GoBuster flag | Description
@@ -42,6 +44,16 @@ __-w__ | Path to your wordlist
 __-U and -P__ | Username and Password for Basic Auth
 __-p <x>__ | Proxy to use for requests
 __-c <http_cookies>__ | Specify a cookie for simulating your auth
+
+</p>
+</details>
+
+<details><summary>Task 4 - Compromise the WebServer</summary>
+<p>
+
+Now you have found a form to upload files, we can leverage this to upload and execute our payload which will lead to compromising the server
+
+Check out the [answers](https://github.com/ComplexSec/tryhackme/blob/master/Vulnversity/answers.md) for a walkthrough
 
 </p>
 </details>
