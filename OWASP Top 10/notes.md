@@ -5,7 +5,8 @@
 
 ![](/OWASP%20Top%2010/images/command_inj.png)
 
-## Day 1 - Injection
+<details><summary>Day 1 - Injection</summary>
+<p>
 
 Injection flaws are very common. These flaws occur because the user controlled input is interpreted as actual commands or parameters by the application. Injection attacks depend on what technologies are being used and how exactly the input is interpreted by these technologies
 
@@ -26,7 +27,11 @@ The main defence for preventing injection attacks is ensuring that user controll
 
 Dangerous characters or input is classified as any input that can change how the underlying data is processed. Instead of manually constructing allow lists or even just stripping input, there are various libraries that perform these actions for you
 
-## Day 1 -OS Command Injection
+</p>
+</details>
+
+<details><summary>Day 1 - OS Command Injection</summary>
+<p>
 
 Command Injection occures when server-side code in a web application makes a system call on the hosting machine
 
@@ -37,3 +42,10 @@ Command Injection opens up many options for the attacker. The worst thing they c
 Some variants of netcat do not support the `-e` option. You can use a list of [these](http://pentestmonkey.net/cheat-sheet/shells/reverse-shell-cheat-sheet) reverse shells as an alternative
 
 Once the attacker has a foothold on the server, they can start the usual enumeration of your systems and start looking for ways to pivot around
+
+</p>
+</details>
+
+<details><summary>Day 1 - Command Injection Practical</summary>
+<p>
+
