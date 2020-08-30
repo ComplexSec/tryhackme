@@ -151,7 +151,7 @@ A: qwertyuiop
 
 Walkthrough: Simply paste the hash into [Crackstation](https://crackstation.net/) and it will return the plaintext password
 
-![](/OWASP%20Top%2010/images/adminhash.png)
+![](/OWASP%20Top%2010/images/qwerty.png)
 
 ## Task 3.5
 
