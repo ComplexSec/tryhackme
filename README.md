@@ -34,4 +34,4 @@ Learn how to use Burp Suite when testing web applications
 ## OWASP Juice Shop ([TryHackMe](https://tryhackme.com/room/owaspjuiceshop))
 Use Juice Shop to discover and exploit the most common web application security issues (OWASP Top 10)
 
-[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Burp%20Suite/images/burp_suite.png">](https://github.com/ComplexSec/tryhackme/tree/master/Burp%20Suite)
+[<img src="https://github.com/ComplexSec/tryhackme/upload/master/OWASP%20Juice%20Shop/images/owasp_juice_shop.png">]https://github.com/ComplexSec/tryhackme/tree/master/OWASP%20Juice%20Shop)
