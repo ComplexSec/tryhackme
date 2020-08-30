@@ -134,3 +134,16 @@ For more information, check [here](https://owasp.org/www-project-top-ten/OWASP_T
 
 </p>
 </details>
+
+<details><summary>Exploration</summary>
+<p>
+
+## Exploration
+
+![](/OWASP%20Juice%20Shop/images/web_hacking.png)
+
+If you wish to tackle some of the harder challenges that were not covered, check out the /score-board/ section on Juice Shop
+
+Here, you can see the completed tasks as well as other tasks in varying difficulty
+
+![](/OWASP%20Juice%20Shop/images/scoreboard.png)
