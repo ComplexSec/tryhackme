@@ -20,3 +20,28 @@ __-v__ | Verbose mode
 __-sU__ | UDP port scan
 __-sS__ | TCP SYN port scan
 
+</p>
+</details>
+
+<details><summary>Task 3 - Locating Directories using GoBuster</summary>
+<p>
+
+![](/Vulnversity/images/gob.png)
+
+GoBuster is a tool used to brute-force URLs (directories and files), DNS subdomains and virtual host names
+
+Download GoBuster [here](https://github.com/OJ/gobuster) or on Kali simply type `sudo apt-get install gobuster`
+
+Some common GoBuster flags are:
+
+GoBuster flag | Description
+------------ | -------------
+__-e__ | Print the full URLs in your console
+__-u__ | The target URL
+__-w__ | Path to your wordlist
+__-U and -P__ | Username and Password for Basic Auth
+__-p <x>__ | Proxy to use for requests
+__-c <http_cookies>__ | Specify a cookie for simulating your auth
+
+</p>
+</details>
