@@ -1,5 +1,8 @@
 #  TryHackMe - Common Linux Privesc (Room 004)
 
+<details><summary>Understanding Privesc</summary>
+<p>
+
 ## Understanding Privesc
 
 Privilege escalation involves going from a lower permission to a higher permission. It's the exploitation of a vulnerability, design flaw or configuration oversight in an operating system or app to gain unauthorized access to resources that are usually restricted from users
@@ -11,6 +14,12 @@ Priv esc lets you gain system administrator levels of access. Being admin allows
 * Edit software configurations
 * Enable persistence, so you can access the machine again later
 * Change privilege of users
+
+</p>
+</details>
+
+<details><summary>Direction of Privilege Escalation</summary>
+<p>
 
 ## Direction of Privilege Escalation
 
@@ -27,6 +36,12 @@ Can be used to gain access to another normal privileged user that happens to hav
 ### Vertical Privilege Escalation
 
 This is where you attempt to gain higher privileges or access, with an existing compromised account. For local priv esc attacks, this might mean hijacking an account with admin privileges or root privileges
+
+</p>
+</details>
+
+<details><summary>Enumeration</summary>
+<p>
 
 ## Enumeration
 
@@ -71,6 +86,12 @@ Output is broken down into different sections. The main sections are as follows:
 
 	Cron is used to schedule commands at a specific time. Scheduled commands/tasks are known as *cron jobs*. The `crontab` command creates a crontab file containing commands and instructions for the cron daemon to execute. 
 
+</p>
+</details>
+
+<details><summary>Abusing SUID/GUID Files</summary>
+<p>
+
 ## Abusing SUID/GUID Files
 
 First step in Linux priv esc is checking for files with the SUID/GUID bit set - means that files can be run with permission of the file owner/group.
@@ -94,6 +115,12 @@ To locate SUID binaries, utilized the find command by using `find / -perm -u=s -
 * `-u=s` any of the permission bits mode are set for the file. Symbolic modes are accepted
 * `-type f` only searches for files
 * `2>/dev/null` suppresses errors
+
+</p>
+</details>
+
+<details><summary>Exploiting Writeable /etc/passwd</summary>
+<p>
 
 ## Exploiting Writable /etc/passwd
 
@@ -145,6 +172,12 @@ The fields are separated by a colon. Total of seven fields per entry. In order, 
 
 If you have a writable /etc/passwd file, simply write a new line entry according to the formula and create a new user. Add the password hash of our choice, and set the UID, GID and shell to root
 
+</p>
+</details>
+
+<details><summary>Escaping Vi Editor</summary>
+<p>
+
 ## Escaping Vi Editor
 
 Running `sudo -l` (or checking the LinEnum results) on the __user8__ account shows that they can run __vi__ with root privileges. This allows us to escape vim into a root shell. To escape Vi into a shell, use the `:!sh` command inside Vi
@@ -154,6 +187,12 @@ Running `sudo -l` (or checking the LinEnum results) on the __user8__ account sho
 If you find a misconfigured binary, a good place to look up how to exploit them is [GTFOBins](https://gtfobins.github.io/)
 
 GTFOBins is a curated list of Unix binaries that can be exploited by an attacker to bypass local security restrictions
+
+</p>
+</details>
+
+<details><summary>Exploiting Crontab</summary>
+<p>
 
 ## Exploiting Crontab
 
@@ -180,6 +219,12 @@ Cronjobs exist in a certain format. The format is as follows:
 
 The autoscript.sh on user4's Desktop is scheduled to run every five minutes and is owned by root. We can create a command that will return a shell and paste it into the file.
 
+</p>
+</details>
+
+<details><summary>Exploiting PATH Variable</summary>
+<p>
+
 ## Exploiting PATH variable
 
 PATH is an environmental variable in Linux which specifies directories that hold executable programs. When running a program, it searches for executable files with the help of PATH variable. View the PATH variable by typing `echo $PATH`
@@ -189,6 +234,12 @@ PATH is an environmental variable in Linux which specifies directories that hold
 Say we have a SUID binary. Running it, we can see it is calling the system shell to do a basic process like `ls`. We can re-write the PATH variable to a location of our choosing. When the SUID binary calls the system shell to run an executable, it runs one that we wrote instead
 
 As with any SUID file, it will run this command with the same privileges of the SUID file
+
+</p>
+</details>
+
+<details><summary>Expanding Your Knowledge</summary>
+<p>
 
 ## Expanding Your Knowledge
 
@@ -201,3 +252,6 @@ Below is a list of good checklists to apply to CTF challenges or penetration tes
 [OSCP Priv Esc Guide](https://sushant747.gitbooks.io/total-oscp-guide/content/privilege_escalation_-_linux.html)
 
 [Guide to Linux Privilege Escalation](https://payatu.com/guide-linux-privilege-escalation)
+
+</p>
+</details>
