@@ -49,3 +49,11 @@ Once the attacker has a foothold on the server, they can start the usual enumera
 <details><summary>Day 1 - Command Injection Practical</summary>
 <p>
 
+## What is Active Command Injection?
+
+Blind command injection occurs when the system command made to the server does not return the response to the user in the HTML document. Active command injection will return the response to the user. It can be made visible through several HTML elements
+
+Scenario: EvilCorp has started development on a web based shell but has accidentally left it exposed to the internet. It is nowhere near finished but contains the same command injection vulnerability as before but this time, the response from the system call can be seen on the page
+
+Just like before, look at the sample code from evilshell.php and go over what it is doing and why it makes it active command injection. 
+
