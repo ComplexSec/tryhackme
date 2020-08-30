@@ -108,6 +108,8 @@ Since we know that, we can go over some useful commands to try to enumerate the 
 <details><summary>Broken Authentication</summary>
 <p>
 
+## Broken Authentication
+
 Authentication and session management constitute core components of modern web apps. Authentication allows users to gain access to web applications by verifying their identities
 
 The most common form of authentication is using a username and password mechanism. A user would enter these credentials and the server would verify them. If they were correct, the server would then provide the user's browser with a session cookie
@@ -134,6 +136,8 @@ There can be various mitigation techniques for broken authentication mechanisms 
 <details><summary>Broken Authentication Practical</summary>
 <p>
 
+## Broken Authentication Practical
+
 A lot of times what happens is that developers forget to sanitize the input given by the user in the code of their application, which can make them vulnerable to attacks like SQLi. However, we are going to focus on a vulnerability that happens because of a developer's mistake but is very easy to exploit i.e. re-registration of an existing user
 
 Say there is an existing user with the name __admin__ and now we want to get access to their account. We can re-register that username but with slight modification like "  admin"
@@ -148,5 +152,81 @@ To see this in action, go to `http://<IP>:8888` and try to register a user name 
 </p>
 </details>
 
-<details><summary>Day 2 - Broken Authentication</summary>
+<details><summary>Day 3 - Sensitive Data Exposure</summary>
 <p>
+
+![](/OWASP%20Top%2010/images/sens.png)
+
+<details><summary>Sensitive Data Exposure</summary>
+<p>
+
+## Sensitive Data Exposure
+
+When a web app accidentally divulges sensitive data, we refer to it as "Sensitive Data Exposure". This is often data directly linked to customers (names, DoBs, financial information, etc...) but could also be more technical information such as usernames and passwords
+
+At more complex levels, this often involves techniques such as a MitM attack where the attacker would force user connections through a device whcih they control, then take advantage of weak encryption on any transmitted data to gain access to the intercepted information
+
+Many examples are much simpler and vulnerabilities can be found in web apps which can be exploited without any advanced networking knowledge
+
+The web app in this box contains one such vulnerability
+
+</p>
+</details>
+
+<details><summary>Sensitive Data Exposure - Supporting Material 1</summary>
+<p>
+
+## Sensitive Data Exposure - Supporting Material 1
+
+The most common way to store a large amount of data in a format that is easily accessible from many locations at once is in a database. This is obviously perfect for something like a web app, as there may be many users interacting with the website at any one time
+
+Database engines usually follow the Structured Query Language (SQL) synax; however, alternative formats (such as NoSQL) are rising in popularity
+
+In a production environment, it is common to see databases set up on dedicated servers, running a database service such as MySQL, or MariaDB; however, databases can also be stored as files
+
+These databases are referred to as __flat-file__ databases as they are stored as a single file on the computer. Commonly seen on smaller web apps
+
+What happens if the database is stored underneath the root directory of the website (one of the files that a user connecting to the website is able to acecss?) Well, we can download it and query it on our own machine, with full access to everything in the database
+
+The most common format of flag-file database is an __sqlite__ database. These can be interacted with in most programming languages, and have a dedicated client for querying them on the command line. This client is called __sqlite3__ and is installed by default on Kali
+
+To access a local sqlite database, use the `sqlite3 <database_name>` command
+
+From there, you can see the tables in the database by using the `.tables` command
+
+![](/OWASP%20Top%2010/images/sens.png)
+
+At this point, we can dump all of the data from the table, but we won't necessarily know what each column means unless we look at the table information
+
+First, use the `PRAGMA table_info(<table_name>)` command to see the table information. After that, you can use the `SELECT * FROM customers;` to dump the information from the table
+
+![](/OWASP%20Top%2010/images/customers.png)
+
+We can see from the table information that there are four columns:
+
+* custID
+* custName
+* creditCard
+* password
+
+</p>
+</details>
+
+<details><summary>Sensitive Data Exposure - Supporting Material 2</summary>
+<p>
+
+## Sensitive Data Exposure - Supporting Material 2
+
+In the previous task we found a collection of password hashes. When it comes to hash cracking, Kali comes pre-installed with various tools
+
+For this, we can use the online tool [Crackstation](https://crackstation.net/). This website is extremely good at cracking weak password hashes. For more complicated hashes, we would need more sophisticated tools
+
+Simply paste the hashes we found earlier into the box and hit the `Crack Hashes` button and it should successfully break the password
+
+![](/OWASP%20Top%2010/images/crackstation.png)
+
+</p>
+</details>
+
+</p>
+</details>

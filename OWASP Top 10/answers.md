@@ -110,3 +110,59 @@ As a note, trying various other methods like `arthur.`, `art hur`, `_arthur` yie
 
 <details><summary>3 - Sensitive Data Exposuer</summary>
 <p>
+
+## Task 3.1
+
+### Q: Have a look around the webapp. The developer has left themselves a note indicating that there is sensitive data in a specific directory. What is the name of the mentioned directory?
+
+A: /assets
+
+Walkthrough: Looking at the source code on the /login page reveals the comment
+
+![](/OWASP%20Top%2010/images/assets.png)
+
+## Task 3.2
+
+### Q:  Navigate to the directory you found in questionn one. What file stands out as being likely to contain sensitive data?
+
+A: webapp.db
+
+Walkthrough: There is a .db file which indicates a database. Databases normally store sensitive information in web apps
+
+![](/OWASP%20Top%2010/images/webapp.png)
+
+## Task 3.3
+
+### Q: Use the supporting material to access the sensitive data. What is the password hash of the admin user?
+
+A: 6eea9b7ef19179a06954edd0f6c05ceb
+
+Walkthrough: First, download the webapp.db file. After downloading it, access it using the SQL commands located in [notes.md](https://github.com/ComplexSec/tryhackme/blob/master/OWASP%20Top%2010/notes.md) to access the database and get information
+
+Revealing what the data means, we know that the third field indicates the password hash
+
+![](/OWASP%20Top%2010/images/adminhash.png)
+
+## Task 3.4
+
+### Q: Crack the hash. What is the admin's plaintext password?
+
+A: qwertyuiop
+
+Walkthrough: Simply paste the hash into [Crackstation](https://crackstation.net/) and it will return the plaintext password
+
+![](/OWASP%20Top%2010/images/adminhash.png)
+
+## Task 3.5
+
+### Q: Login as the admin. What is the flag?
+
+A: THM{Yzc2YjdkMjE5N2VjMzNhOTE3NjdiMjdl}
+
+Walkthrough: Simply login with the credentials found and get the flag
+
+![](/OWASP%20Top%2010/images/flag.png)
+
+</p>
+</details>
+
