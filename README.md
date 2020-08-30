@@ -40,3 +40,8 @@ Use Juice Shop to discover and exploit the most common web application security 
 Use Juice Shop to discover and exploit the most common web application security issues (OWASP Top 10)
 
 [<img src="https://github.com/ComplexSec/tryhackme/blob/master/OWASP%20Top%2010/images/top10.png">](https://github.com/ComplexSec/tryhackme/tree/master/OWASP%20Top%2010)
+
+## Vulnversity ([TryHackMe](https://tryhackme.com/room/vulnversity))
+Learn about active recon, web app attacks and privilege escalation
+
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Vulnversity/images/vulnversity.png">](https://github.com/ComplexSec/tryhackme/tree/master/Vulnversity)
