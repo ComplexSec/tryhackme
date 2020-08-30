@@ -191,6 +191,8 @@ A: yes
 
 ### Q: How can we specify XML version and encoding in XML document?
 
+A: XML prolog
+
 </p>
 </details>
 
