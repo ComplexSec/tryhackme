@@ -4,6 +4,9 @@
 
 To start this test, login using the credentials __user3:password__
 
+<details><summary>Tasks 4.1 - 4.5</summary>
+<p>
+
 ## Task 4.1
 
 #### Q: What is the target's hostname?
@@ -59,6 +62,12 @@ Walkthrough: Learnt through __LinEnum.sh__ or by running the `ls -l /etc/passwd`
 ![](/Common%20Linux%20Privesc/images/sens_through_linenum.png)
 ![](/Common%20Linux%20Privesc/images/sens_through_command.png)
 
+</p>
+</details>
+
+<details><summary>Tasks 5.1 - 5.3</summary>
+<p>
+
 ## Task 5.1
 
 ### What is the path of the file in user3's directory that stands out to you?
@@ -78,6 +87,12 @@ We know that "shell" is a SUID bit file, therefore running it will run the scrip
 You should have a root shell
 
 ![](/Common%20Linux%20Privesc/images/root_shell.png)
+
+</p>
+</details>
+
+<details><summary>Tasks 6.1 - 6.6</summary>
+<p>
 
 ## Task 6.1 - no answer needed
 
@@ -117,6 +132,12 @@ Walkthrough: Learnt through the [/etc/passwd format](https://github.com/ComplexS
 
 ![](/Common%20Linux%20Privesc/images/root_shell2.png)
 
+</p>
+</details>
+
+<details><summary>Tasks 7.1 - 7.4</summary>
+<p>
+
 ## Task 7.1 - no answer needed
 
 First, swap user to user8 with the password of `password` using the `su -l user8` command
@@ -138,6 +159,12 @@ All we need to do is open vi as root by typing `sudo vi`
 Now, type `:!sh` to open a shell from Vi
 
 ![](/Common%20Linux%20Privesc/images/vi_shell.png)
+
+</p>
+</details>
+
+<details><summary>Tasks 8.1 - 8.8</summary>
+<p>
 
 ## Task 8.1 - no answer needed
 
@@ -198,6 +225,12 @@ Can create a shell without generating a payload using MSFVenom either through Ba
 
 ![](/Common%20Linux%20Privesc/images/python_shell.png)
 
+</p>
+</details>
+
+<details><summary>Tasks 9.1 - 9.7</summary>
+<p>
+
 ## Task 9.1 - no answer needed
 
 Login as user5 with the password `password` using the `su -l user5` command
@@ -249,3 +282,6 @@ To reset the PATH variable, simply type `export PATH=/usr/local/sbin:/usr/local/
 Change back to the home directory and run the `script` file again
 
 ![](/Common%20Linux%20Privesc/images/root_PATH.png)
+
+</p>
+</details>
