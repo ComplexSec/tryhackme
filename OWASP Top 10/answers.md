@@ -77,7 +77,7 @@ First, locate all .motd files and look for the 00-header file. Once found, simpl
 
 ### Q: What is the flag that you found in darren's account?
 
-A: 
+A: fe86079416a21a3c99937fea8874b667 
 
-Walkthrough: We are given that there is an account named `darren` which contains a flag. To access this account, if we try something like ` darren` or `   darren` for registering a new account and then try logging in with this account, we are able to access the account details
+Walkthrough: We are given that there is an account named `darren` which contains a flag. To access this account, if we try something like " darren" or "   darren" for registering a new account and then try logging in with this account, we are able to access the account details
 
