@@ -194,7 +194,7 @@ To access a local sqlite database, use the `sqlite3 <database_name>` command
 
 From there, you can see the tables in the database by using the `.tables` command
 
-![](/OWASP%20Top%2010/images/sens.png)
+![](/OWASP%20Top%2010/images/tables.png)
 
 At this point, we can dump all of the data from the table, but we won't necessarily know what each column means unless we look at the table information
 
