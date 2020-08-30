@@ -1,6 +1,9 @@
-#  TryHackMe - OWASP Top 10 (Room 008)
+# OWASP Juice Shop
 
-<details><summary>1 - Injection</summary>
-<p>
+## Notes.md
 
-![](/OWASP%20Top%2010/images/command_inj.png)
+Includes detailed notes of the room - open for more information
+
+## Answers.md
+
+Questions and answers from TryHackMe room with walkthrough
