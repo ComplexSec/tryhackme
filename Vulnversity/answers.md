@@ -172,3 +172,66 @@ Walkthrough: The `user.txt` flag in most CTFs is located on the Desktop of the u
 
 </p>
 </details>
+
+<details><summary>Task 5 - Privilege Escalation</summary>
+<p>
+
+## Task 5.1
+
+### Q: On the system, search for all SUID files. What file stands out?
+
+A: /bin/systemctl
+
+Walkthrough. There are two ways to do this. The first way is by manually searching for all files with SUID permissions using the find command `find / -user root -perm -4000 -exec ls -ldb {} \;`
+
+![](/Vulnversity/images/systemctl.png)
+
+Another way is we can run LinPeas by first running a local Python server hosting the .sh script and thenusing `wget` on the victim machine to download it to the `/tmp` directory
+
+![](/Vulnversity/images/linpeas.png)
+
+Running LinPeas highlights the /bin/systemctl command under SUID binaries section indicating it is vulnerable
+
+![](/Vulnversity/images/linpeas_results.png)
+
+Now that we know /bin/systemctl is an issue, we can use [GTFOBins](https://gtfobins.github.io/gtfobins/systemctl/) to get more information
+
+There are two ways to exploit this binary - SUID and sudo
+
+![](/Vulnversity/images/suid.png)
+
+This way creates a service that systemctl is going to start for us and that service will be running with elevated privileges
+
+Systemctl is a controlling interface and inspection tool for the widely-adopted init system and service manager systemd. Systemd in turn is an init system and system manager that is widely becoming the new standard for Linux machines
+
+Systemd initializes user space components that run after the Linux kernel has booted, as well as continuously maintaining those components throughout a system's lifecycle. These tasks are known as units, and each unit has a corresponding unit file
+
+We can create our own unit file and let systemd start it. Normally systemctl will look for unit files in the default folder, which is /etc/system/systemd but we do not have permission to write to that folder
+
+We can create a unit file and let systemctl start it via an environment variable
+
+First, we create a variable which holds a unique file
+
+`eop=$(mktemp).service`
+
+Then, we create a unit file and write it into the variable
+
+```bash
+$ echo '[Service]
+> ExecStart=/bin/sh -c "cat /root/root.txt > /tmp/output"
+> [Install]
+> WantedBy=multi-user.target' > $eop
+```
+
+Inside the unit file, we entered a command which will let shell execute the command `cat` and redirect the output of cat to a file called `output` in the tmp folder. Finally, we use the /bin/systemctl program to enable the unit file
+
+```bash
+/bin/systemctl link $eop
+/bin/systemctl enable --now $eop
+```
+
+![](/Vulnversity/images/output.png)
+
+Looking at the output file, we see the root.txt flag
+
+![](/Vulnversity/images/rootflag.png)
