@@ -51,7 +51,7 @@ __-c <http_cookies>__ | Specify a cookie for simulating your auth
 <details><summary>Compromise the Web Server</summary>
 <p>
 
-![](/Vulnversity/images/gobuster.png)	
+![](/Vulnversity/images/webserver.png)	
 
 Now you have found a form to upload files, we can leverage this to upload and execute our payload which will lead to compromising the server
 
@@ -63,7 +63,7 @@ Check out the [answers](https://github.com/ComplexSec/tryhackme/blob/master/Vuln
 <details><summary>Privilege Escalation</summary>
 <p>
 
-![](/Vulnversity/images/gobuster.png)
+![](/Vulnversity/images/privesc.png)
 
 In Linux, SUID is a special type of file permission given to a file. SUID gives temporary permissions to a user to run the program/file with the permission of the file owner
 
