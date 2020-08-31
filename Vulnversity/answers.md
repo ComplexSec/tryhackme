@@ -235,3 +235,7 @@ Inside the unit file, we entered a command which will let shell execute the comm
 Looking at the output file, we see the root.txt flag
 
 ![](/Vulnversity/images/rootflag.png)
+
+Another way to accomplish this is by changing the command inside the unit file to add SUID to /bin/bash which will run it as root, make /bin/bash a SUID binary and allow us to effectively become root by running the `bash -p` command
+
+![](/Vulnversity/images/bashp.png)
