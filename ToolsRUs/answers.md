@@ -19,7 +19,7 @@ We now know that there is a webserver located on port 80. Navigating to the web 
 
 We can brute force directories now to see if any hidden directories are revealed using Gobuster
 
-![](/ToolsRUs/images/tosrus.png)
+![](/ToolsRUs/images/301.png)
 
 ## Task 1.2
 
@@ -67,7 +67,7 @@ After a second or two, you will get a positive result for a correct password
 
 Navigating to this page reveals some interesting information. It reveals that the protected page has moved to a different port
 
-![](/ToolsRUs/images/bubbles.png)
+![](/ToolsRUs/images/different.png)
 
 ## Task 1.5
 
