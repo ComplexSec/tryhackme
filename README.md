@@ -45,3 +45,8 @@ Use Juice Shop to discover and exploit the most common web application security 
 Learn about active recon, web app attacks and privilege escalation
 
 [<img src="https://github.com/ComplexSec/tryhackme/blob/master/Vulnversity/images/vulnversity.png">](https://github.com/ComplexSec/tryhackme/tree/master/Vulnversity)
+
+## ToolsRUs ([TryHackMe](https://tryhackme.com/room/toolsrus))
+Use common tools such as Nikto, Hydra, Dirbuster and more associated with web application security to enumerate and exploit an example application
+
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/ToolsRUs/images/toolsrus.png">](https://github.com/ComplexSec/tryhackme/tree/master/ToolsRUs)
