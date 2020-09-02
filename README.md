@@ -50,3 +50,8 @@ Learn about active recon, web app attacks and privilege escalation
 Use common tools such as Nikto, Hydra, Dirbuster and more associated with web application security to enumerate and exploit an example application
 
 [<img src="https://github.com/ComplexSec/tryhackme/blob/master/ToolsRUs/images/toolsrus.png">](https://github.com/ComplexSec/tryhackme/tree/master/ToolsRUs)
+
+## Web Scanning ([TryHackMe](https://tryhackme.com/room/rpwebscanning))
+Web scanning is a common activity in web application security testing - learn how to do this with the OWAS ZAP Tool
+
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Web%Scanning/images/web_scanning.png">](https://github.com/ComplexSec/tryhackme/tree/master/Web%20Scanning)
