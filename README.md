@@ -54,4 +54,4 @@ Use common tools such as Nikto, Hydra, Dirbuster and more associated with web ap
 ## Web Scanning ([TryHackMe](https://tryhackme.com/room/rpwebscanning))
 Web scanning is a common activity in web application security testing - learn how to do this with the OWAS ZAP Tool
 
-[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Web%Scanning/images/web_scanning.png">](https://github.com/ComplexSec/tryhackme/tree/master/Web%20Scanning)
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Web%20Scanning/images/web_scanning.png">](https://github.com/ComplexSec/tryhackme/tree/master/Web%20Scanning)
