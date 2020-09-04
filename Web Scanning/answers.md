@@ -11,7 +11,7 @@ A: -h
 
 Notes: Nowhere in the Nikto manual or help page does it say that `-h` lets you specify the target host. Both the manual and help page show this for host. The `-h` can be used however as a shortcut
 
-![](Web%20Scanning/images/h.png)
+![](/Web%20Scanning/images/h.png)
 
 ## Task 1.2
 
@@ -19,7 +19,7 @@ Notes: Nowhere in the Nikto manual or help page does it say that `-h` lets you s
 
 A: -nossl
 
-![](Web%20Scanning/images/nossl.png)
+![](/Web%20Scanning/images/nossl.png)
 
 ## Task 1.3
 
@@ -27,7 +27,7 @@ A: -nossl
 
 A: -ssl
 
-![](Web%20Scanning/images/ssl.png)
+![](/Web%20Scanning/images/ssl.png)
 
 ## Task 1.4
 
@@ -35,7 +35,7 @@ A: -ssl
 
 A: -p
 
-![](Web%20Scanning/images/port.png)
+![](/Web%20Scanning/images/port.png)
 
 ## Task 1.5
 
@@ -43,7 +43,7 @@ A: -p
 
 A: -dbcheck
 
-![](Web%20Scanning/images/dbcheck.png)
+![](/Web%20Scanning/images/dbcheck.png)
 
 ## Task 1.6
 
@@ -51,7 +51,7 @@ A: -dbcheck
 
 A: -mutate 3
 
-![](Web%20Scanning/images/mutate3.png)
+![](/Web%20Scanning/images/mutate3.png)
 
 ## Task 1.7
 
@@ -59,7 +59,7 @@ A: -mutate 3
 
 A: -id admin:PrettyAwesomePassword1234
 
-![](Web%20Scanning/images/id.png)
+![](/Web%20Scanning/images/id.png)
 
 ## Task 1.8
 
@@ -67,7 +67,7 @@ A: -id admin:PrettyAwesomePassword1234
 
 A: Apache/2.4.7
 
-![](Web%20Scanning/images/apache.png)
+![](/Web%20Scanning/images/apache.png)
 
 ## Task 1.9
 
@@ -75,7 +75,7 @@ A: Apache/2.4.7
 
 A: config
 
-![](Web%20Scanning/images/config.png)
+![](/Web%20Scanning/images/config.png)
 
 ## Task 1.10
 
@@ -83,7 +83,7 @@ A: config
 
 A: -until
 
-![](Web%20Scanning/images/until.png)
+![](/Web%20Scanning/images/until.png)
 
 ## Task 1.11
 
@@ -91,7 +91,7 @@ A: -until
 
 A: -list-plugins
 
-![](Web%20Scanning/images/listplugins.png)
+![](/Web%20Scanning/images/listplugins.png)
 
 ## Task 1.12
 
@@ -101,7 +101,7 @@ A: -Plugins outdated
 
 Notes: Running the command `nikto -list-plugins` lists all avaiable plugins
 
-![](Web%20Scanning/images/listplugins.png)
+![](/Web%20Scanning/images/listplugins.png)
 
 ## Task 1.13
 
@@ -109,7 +109,7 @@ Notes: Running the command `nikto -list-plugins` lists all avaiable plugins
 
 A: -Plugins tests
 
-![](Web%20Scanning/images/tests.png)
+![](/Web%20Scanning/images/tests.png)
 
 </p>
 </details>
@@ -123,7 +123,7 @@ A: -Plugins tests
 
 A: URL to attack
 
-![](Web%20Scanning/images/attack.png)
+![](/Web%20Scanning/images/attack.png)
 
 ## Task 2.3
 
@@ -137,7 +137,7 @@ Note: During this attack, you may notice this is very similiar to Nikto. Similia
 
 A: robots.txt
 
-![](Web%20Scanning/images/robots.png)
+![](/Web%20Scanning/images/robots.png)
 
 ## Task 2.5
 
@@ -145,7 +145,7 @@ A: robots.txt
 
 A: /
 
-![](Web%20Scanning/images/disallow.png)
+![](/Web%20Scanning/images/disallow.png)
 
 ## Task 2.6
 
@@ -153,7 +153,7 @@ A: /
 
 A: /dvwa/images
 
-![](Web%20Scanning/images/images.png)
+![](/Web%20Scanning/images/images.png)
 
 ## Task 2.7
 
@@ -161,7 +161,7 @@ A: /dvwa/images
 
 A: HttpOnly
 
-![](Web%20Scanning/images/httponly.png)
+![](/Web%20Scanning/images/httponly.png)
 
 ## Task 2.8
 
@@ -169,7 +169,7 @@ A: HttpOnly
 
 A: Web Browser XSS Protection Not Enabled
 
-![](Web%20Scanning/images/xss.png)
+![](/Web%20Scanning/images/xss.png)
 
 ## Task 2.9
 
@@ -177,7 +177,7 @@ A: Web Browser XSS Protection Not Enabled
 
 A: http://www.dvwa.co.uk
 
-![](Web%20Scanning/images/outscope.png)
+![](/Web%20Scanning/images/outscope.png)
 
 ## Task 2.10
 
