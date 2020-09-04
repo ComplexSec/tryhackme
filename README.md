@@ -55,3 +55,8 @@ Use common tools such as Nikto, Hydra, Dirbuster and more associated with web ap
 Web scanning is a common activity in web application security testing - learn how to do this with the OWAS ZAP Tool
 
 [<img src="https://github.com/ComplexSec/tryhackme/blob/master/Web%20Scanning/images/web_scanning.png">](https://github.com/ComplexSec/tryhackme/tree/master/Web%20Scanning)
+
+## Nessus ([TryHackMe](https://tryhackme.com/room/rpnessus))
+Nessus is an industry used application security scanner - learn how to use it with this room
+
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Nessus/images/nessus.png">](https://github.com/ComplexSec/tryhackme/tree/master/Nessus)
