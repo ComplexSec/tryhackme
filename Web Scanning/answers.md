@@ -83,3 +83,69 @@ A: -Plugins tests
 
 </p>
 </details>
+
+<details><summary>Task 2 - OWASP ZAP</summary>
+<p>
+	
+## Task 2.2
+
+### Q: Launch ZAP, what option do we set in order to specify what we are attacking?
+
+A: URL to attack
+
+## Task 2.3
+
+### Q: Launch the attack against our target
+
+Note: During this attack, you may notice this is very similiar to Nikto. Similiar to Nessus vs. OpenVAS, Nikto and ZAP both offer different perspectives on a host and, as such, it is useful to know how to leverage both scanning tools in order to maximize your own visibility in a situation wherein 'noise' does not particularly matter
+
+## Task 2.4
+
+### Q: ZAP will discover a file that typically contains pages which well-behaved web indexing engines will read in order to know which sections of a site to avoid. What is the name of this file?
+
+A: robots.txt
+
+## Task 2.5
+
+### Q: One entry is included in the disallow section of this file, what is it?
+
+A: /
+
+## Task 2.6
+
+### Q: ZAP will find a directory that contains images for our applications, what is the path for that directory? 
+
+A: /dvwa/images
+
+## Task 2.7
+
+### Q: This website does not force a secure connection by default and ZAP is not pleased with it. Which related cookie is ZAP upset about?
+
+A: HttpOnly
+
+## Task 2.8
+
+### Q: Featured in various rooms on TryHackMe, XSS is a vicious attack that is becoming ever more common on the open web. What alert does ZAP produce to let us know that this site is vulnerable to XSS? 
+
+A: Web Browser XSS Protection Not Enabled
+
+## Task 2.9
+
+### Q: The ZAP proxy spider represents the component responsible for 'crawling' the site. What site is found to be out of scope?
+
+A: http://www.dvwa.co.uk
+
+## Task 2.10
+
+### Q: ZAP will use primarily two methods in order to scan a website, which of these two HTTP methods requests content?
+
+A: GET
+
+## Task 2.11
+
+### Q: Which option attempts to submit content to the website?
+
+A: POST
+
+</p>
+</details>
