@@ -47,3 +47,27 @@ With UDP, the opposite is true. Packets of data are eseentially thrown at the re
 
 This means that TCP would usually be chosen for situations where accuracy is favoured over speed (file transfers, loading a webpage, etc...) and UDP would be used in situations where speed is more important (video streaming)
 
+With a protocol selected, the transport layer then divides the transmission up into bite-sized pieces - over TCP they are called __segments__ and over UDP they are called __datagrams__ - which makes it easire to transmit the message successfully
+
+
+## Layer 3 - Network
+
+The network layer is responsible for locating the destination of your request. For example, the Internet is a huge network; when you want to request information from a webpage, it is the network layer that takes the IP address for the page and figures out the best route to take.
+
+At this stage, we are working with what is referred to as __Logical Addressing__  which are still software controlled. Logical addresses are used to provide order to networks, categorizing them and allowing us to properly sort them
+
+The most common form of logical addressing is the IPv4 format - 192.168.1.1 for example
+
+## Layer 2 - Data Link
+
+The data link layer focuses on the __physical addressing__ of the transmission. It receives a packet from the network layer and adds in the physical MAC address of the receiving endpoint. Inside every network enabled computer is a Network Interface Card (NIC) which comes with a unique MAC (Media Access Control) address to identify it
+
+MAC addresses are set by the manufacturer and literally burnt into the card - they cannot be changed but can be __spoofed__. When information is sent across a network, it is the physical address that is used to identify where exactly to send the information
+
+Additionally, it is the job of the data link layer to present the data in a format suitable for transmission
+
+The data link layer also servers an important function when it receives data, as it checks the received information to make sure that it has not been corrupted during transmission, which would well happen when the data is transmitted by layer 1
+
+## Layer 1
+
+The physical layer is right down to the hardware. This is where the electrical pulses that make up data transfer over a network are sent and received. It is the job of the physical layer to convert the binary data of the transmission into signals and transmit them across the network, as well as receiving incoming signals and converting them back into binary data
