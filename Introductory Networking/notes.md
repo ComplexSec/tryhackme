@@ -75,3 +75,23 @@ The physical layer is right down to the hardware. This is where the electrical p
 </p>
 </details>
 
+<details><summary>Encapsulation</summary>
+<p>
+
+![](/Introductory%20Networking/images/internet.png)
+
+As the data is passed down each layer of the model, more information containing details specific to the layer in question is added on to the start of the transmission
+
+The header added by the Network layer would include things like the source and destination IP addresses, and the header added by the Transport layer would include (amongst other things) information specific to the protocol being used
+
+The data link layer also adds a piece on at the end of the transmission, which is used to verify that the data has not been corrupted on transmission - also has the added bonus of increased security, as the data cannot be intercepted and tampered with without breaking the trailer
+
+The whole process is referred to as __encapsulation__ - the process by which data can be sent from one computer to another
+
+![](/Introductory%20Networking/images/encap.png)
+
+Notice that the encapsulated data is given a different name at different steps of the process. In layers 7, 6 and 5, the data is simply referred to as __data__
+
+In the transport layer, the encapsulated data is referred to as a __segment__ or a __datagram__ depending on whether TCP or UDP has been selected.
+
+At the network layer, the data is referred to as __packets__. When the packets get passed down to the Data Link layer, it becomes a __frame__ and by the time it is transmitted across a network, the frame is broken down into __bits__
