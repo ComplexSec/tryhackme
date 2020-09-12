@@ -95,3 +95,5 @@ Notice that the encapsulated data is given a different name at different steps o
 In the transport layer, the encapsulated data is referred to as a __segment__ or a __datagram__ depending on whether TCP or UDP has been selected.
 
 At the network layer, the data is referred to as __packets__. When the packets get passed down to the Data Link layer, it becomes a __frame__ and by the time it is transmitted across a network, the frame is broken down into __bits__
+
+When the message is received by the second computer, it reverses the process - starting at the physical layer and workign up
