@@ -269,3 +269,40 @@ A: Internet
 
 </p>
 </details>
+
+<details><summary>Task 8 - [Networking Tools] WHOIS</summary>
+<p>
+	
+## Task 8.2 (facebook.com)
+
+### What is the registrant postal code for facebook.com?
+
+A: 94025
+
+## Task 8.3 (facebook.com)
+
+### When was the facebook.com domain first registered?
+
+A: 29/03/1997
+
+## Task 8.5 (microsoft.com)
+
+### Which city is the registrant based in?
+
+A: Redmond
+
+## Task 8.6 (microsoft.com)
+
+### [OSINT] What is the name of the golf course that is near the registrant address for microsoft.com?
+
+A: Bellevue Golf Course
+
+## Task 8.7 (microsoft.com)
+
+### Q: What is the registered Tech Email for microsoft.com?
+
+A: msnhst@microsoft.com
+
+
+</p>
+</details>
