@@ -110,6 +110,30 @@ The process of encapsulation and de-encapsulation are very important - they give
 	
 ![](/Introductory%20Networking/images/tcpip.png)
 
+The TCP/IP model serves as the basis for real-world networking. It consists of only four layers - Application, Transport, Internet and Network Interface
 
+The two models layers match up something like this
+
+![](/Introductory%20Networking/images/match.png)
+
+Process of encapsulation and de-encapsulation work in exactly the same way with TCP/IP model
+
+TCP/IP takes it names from the two most important suite of protocols - __Transmission Control Protocol__ that controls the flow of data between two endpoints and the __Internet Protocol__ which controls how packets are addresses and sent
+
+TCP is a __connection based__ protocol. Before sending any data via TCP, you must first form a stable connection between two computers. Process off orming this connection is called the __three-way handshake__
+
+When you attempt to make a connection, your computer first sends a special request to the remote server indicating that it wants to initialize a connection. This request contains something called a __SYN__ bit which makes first contact in starting the connection process
+
+The server responds with a packet containing the SYN bit as well as another acknowledgement bit called __ACK__
+
+Finally, your computer will send a packet that contains the ACK bit by itself, confirming that the connection has been setup successfully
+
+With the 3-way handshake completed, data can be reliably transmitted between the two computers. Any data that is lost or corrupted on tranmissions is re-sent, leading to a connection which appears to be lossless
+
+To begin with there was no standardisation - different manufacturers followed their own methodologies, and consequently systems made by different manufacturers were completely incompatible when it came to networking
+
+The TCP/IP model was introduced by the American DoD in 1982 to provide a standard
+
+Later, the OSI model was also introduced by the International Organization for Standardisation (ISO); however, it is mainly used as a more comprehensive guide for learning
 </p>
 </details>

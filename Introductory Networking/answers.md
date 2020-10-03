@@ -72,7 +72,7 @@ A: UDP
 </p>
 </details>
 
-<details><summary>Encapsulation</summary>
+<details><summary>Task 3 - Encapsulation</summary>
 <p>
 	
 ## Task 3.1
@@ -104,6 +104,66 @@ A: Data Link
 ### Q: Does encapsulation provide an extra layer of security (Aye/Nay)?
 
 A: Aye
+
+</p>
+</details>
+
+<details><summary>Task 4 - TCP/IP Model</summary>
+<p>
+	
+## Task 4.1
+
+### Q: Which model was introduced first, OSI or TCP/IP?
+
+A: TCP/IP
+
+## Task 4.2
+
+### Q: Which layer of the TCP/IP model covers the functionality of the Transport Layer of the OSI model (Full Name)?
+
+A: Transport
+
+## Task 4.3
+
+### Q: Which layer of the TCP/IP model covers the functionality of the Session layer of the OSI model (Full Name)?
+
+A: Application
+
+## Task 4.4
+
+### Q: The Network Interface layer of the TCP/IP model covers the functionality of two layers in the OSI model. These layers are Data Link and ...?
+
+A: Physical
+
+## Task 4.5
+ 
+### Which layer of the TCP/IP model handles the functionality of the OSI network layer?
+
+A: Internet
+
+## Task 4.6
+
+### Q: What kind of protocol is TCP?
+
+A: Connection-based
+
+## Task 4.7
+
+### Q: What is SYN short for?
+
+A: Synchronized
+
+## Task 4.8
+
+### Q: What is the second step of the three way handshake?
+
+A: SYN/ACK
+
+## Task 4.9
+
+### Q: What is the short name for the Acknowledgement segment in the three-way handshake?
+
+A: ACK
 
 </p>
 </details>
