@@ -137,3 +137,29 @@ The TCP/IP model was introduced by the American DoD in 1982 to provide a standar
 Later, the OSI model was also introduced by the International Organization for Standardisation (ISO); however, it is mainly used as a more comprehensive guide for learning
 </p>
 </details>
+
+<details><summary>WireShark</summary>
+<p>
+	
+![](/Introductory%20Networking/images/wireshark.png)
+
+Wireshark is a tool used to capture and analyzed packets of data going across a network
+
+When you first load the packet into WireShark, you are given a list of captured data in the top window. In the bottom two windows, you are shown the data contained in each captured packet of data
+
+![](/Introductory%20Networking/images/pcap1.png)
+
+Looking at the first packet, there are 5 pieces of information:
+
+* Frame 1 - this shows details from the __physical__ layer of the OSI model (Network Interface layer of the TCP/IP model): the size of the packet received in terms of bytes
+* Ethernet II - shows the details from the __Data Link__ layer of the OSI model (Network interface layer of the TCP/IP model): the transmission medium (in this case Ethernet), as well as the source and destination MAC addresses of the request
+* Internet Protocol Version 4 - shows details from the __Network Layer__ of the OSI model (Internet Layer of the TCP/IP model): the source and destination IP addresses of the requests
+* Transmission Control Protocol - shows details from the __Transport Layer__ of the OSI and TCP/IP models: in this case, it tells us that the protocol was TCP along with other things
+* HyperText Transfer Protocol - shows details from the __Application Layer__ of the OSI and TCP/IP models: specifically, this is a HTTP GET request which requests a web page from a remote server
+
+![](/Introductory%20Networking/images/wireshark2.png)
+
+</p>
+</details>
+
+<details><summary></summary></details>

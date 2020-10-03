@@ -167,3 +167,45 @@ A: ACK
 
 </p>
 </details>
+
+<details><summary>Task 5 - Wireshark</summary>
+<p>
+	
+## Task 5.1
+
+### Q: What is the protocol specified in the section of the request that is linked to the Application layer of the OSI and TCP/IP models?
+
+A: Domain Name System
+
+## Task 5.2
+
+### Q: Which layer of the OSI model does the section that shows the IP address "172.16.16.77" link to (Name of the layer)?
+
+A: Network
+
+## Task 5.3
+
+### In the section of the request that links to the Transport layer of the OSI and TCP/IP models, which protocol is specified?
+
+A: User Datagram Protocol
+
+## Task 5.4
+
+### Over what medium has this request been made (linked to the Data Link layer of the OSI model)?
+
+A: Ethernet II
+
+## Task 5.5
+
+### Which layer of the OSI model does the section that shows the number of bytes transferred (81) link to?
+
+A: Physical
+
+## Task 5.6
+
+### [Research] Can you figure out what kind of address is shown in the layer linked to the Data Link layer of the OSI model?
+
+A: MAC
+
+</p>
+</details>
