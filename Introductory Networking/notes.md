@@ -187,8 +187,28 @@ By default, traceroute operates using the same ICMP protocol that ping utilizes 
 
 ![](/Introductory%20Networking/images/traceroute.png)
 
-
 </p>
 </details>
 
-<details><summary></summary></details>
+<details><summary>[Networking Tools] WHOIS</summary>
+<p>
+	
+![](/Introductory%20Networking/images/dns.png)
+
+Domains are leased out by companies called Domain Registrars. If you want a domain, you go and register with a registar, then lease the domain for a certain length of time
+
+WHOIS allows you to query who a domain name is registered to. In Europe, personal details are redacted; however, elsewhere you can potentially get a great deal of information
+
+There is a [web version](https://www.whois.com/whois/) available
+
+![](/Introductory%20Networking/images/whois.png)
+
+Some information you can gather from WHOIS can be:
+
+* The domain name
+* The company that registered the domain
+* The last renewal & when it's next due
+* Information about nameservers
+
+</p>
+</details>

@@ -246,3 +246,26 @@ A: -v
 </p>
 </details>
 
+<details><summary>Task 7 - [Networking Tools] Traceroute</summary>
+<p>
+	
+## Task 7.2
+
+### Q: What switch would you use to specify an interface when using Traceroute?
+
+A: -i
+
+## Task 7.3
+
+### Q: What swithc would you use if you wanted to use TCP requests when tracing the route?
+
+A: -T
+
+## Task 7.4
+
+### [Lateral Thinking] Which layer of the TCP/IP model will traceroute run on by default?
+
+A: Internet
+
+</p>
+</details>
