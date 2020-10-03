@@ -72,3 +72,38 @@ A: UDP
 </p>
 </details>
 
+<details><summary>Encapsulation</summary>
+<p>
+	
+## Task 3.1
+
+### Q: How would you refer to data at layer 2 of the encapsulation process (with the OSI model)?
+
+A: Frames
+
+## Task 3.2
+
+### Q: How would you refer to data at layer 4 of the encapsulation process (with the OSI model), if the UDP protocol has been selected?
+
+A: Datagrams
+
+## Task 3.3
+
+### What process would a computer perform on a received message?
+
+A: De-encapsulation
+
+## Task 3.4
+
+### Q: Which is the only layer of the OSI model to add a __trailer__ during encapsulation?
+
+A: Data Link
+
+## Task 3.5
+
+### Q: Does encapsulation provide an extra layer of security (Aye/Nay)?
+
+A: Aye
+
+</p>
+</details>

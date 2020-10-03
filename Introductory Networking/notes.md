@@ -96,4 +96,20 @@ In the transport layer, the encapsulated data is referred to as a __segment__ or
 
 At the network layer, the data is referred to as __packets__. When the packets get passed down to the Data Link layer, it becomes a __frame__ and by the time it is transmitted across a network, the frame is broken down into __bits__
 
-When the message is received by the second computer, it reverses the process - starting at the physical layer and workign up
+When the message is received by the second computer, it reverses the process - starting at the physical layer and working up until it reaches the application layer, by stripping off the added information as it goes - referred to as __de-encapsulation__
+
+Computers all follow the same process of encapsulation to send data and de-encapsulation upon receiving it
+
+The process of encapsulation and de-encapsulation are very important - they give us a standardised method for sending data. All transmissions will consistently follow the same methodology, allowing any network enabled device to send a request to any other reachable device
+
+</p>
+</details>
+
+<details><summary>TCP/IP Model</summary>
+<p>
+	
+![](/Introductory%20Networking/images/tcpip.png)
+
+
+</p>
+</details>
