@@ -306,3 +306,45 @@ A: msnhst@microsoft.com
 
 </p>
 </details>
+
+<details><summary>Task 9 - [Networking Tools] Dig</summary>
+<p>
+	
+## Task 9.1
+
+### Q: What is DNS short for?
+
+A: Domain Name System
+
+## Task 9.2
+
+### Q: What is the first type of DNS server your computer would query when you search for a domain?
+
+A: Recursive
+
+## Task 9.3
+
+### Q: What type of DNS server contains records specific to domain extensions (i.e., .com, .co.uk,, etc)? Use the long version of the name
+
+A: Top-Level Domain
+
+## Task 9.4
+
+### Q: Where is the very first place your computer would look to find the IP address of a domain?
+
+A: Local Cache
+
+## Task 9.5
+
+### Q: [Research] Google runs two public DNS servers. One of them can be queried with the IP of 8.8.8.8, what is the IP address of the other one?
+
+A: 8.8.4.4
+
+## Task 9.6
+
+### Q: If a DNS query has a TTL of 24 hours, what number would the dig query show?
+
+A: 86400
+
+</p>
+</details>

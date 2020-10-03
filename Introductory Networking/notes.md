@@ -248,3 +248,15 @@ The TTL is measured in seconds, so the record in the example will expire in 1 mi
 
 </p>
 </details>
+
+<details><summary>Further Reading</summary>
+<p>
+	
+![](/Introductory%20Networking/images/reading.png)
+
+If you want to expand your knowledge of networking theory, the [CISCO Self Study Guide by Steve McQuerry](https://www.amazon.co.uk/Interconnecting-Cisco-Network-Devices-ICND1/dp/1587054620/ref=sr_1_1?keywords=Interconnecting+Cisco+Network+Devices%2C+Part+1&qid=1583683766&sr=8-1) is a great resource to work from
+
+Whilst it is designed as a study guide for the CCNA exam, the book serves equally well as a very rounded introduction to networking principles
+
+</p>
+</details>
