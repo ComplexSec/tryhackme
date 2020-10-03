@@ -185,6 +185,7 @@ The internet is made up of many different servers and end-points, all networked 
 
 By default, traceroute operates using the same ICMP protocol that ping utilizes - this can be altered with switches
 
+![](/Introductory%20Networking/images/traceroute.png)
 
 
 </p>
