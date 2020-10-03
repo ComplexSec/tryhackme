@@ -175,3 +175,19 @@ One of the big advantages of ping is that it is ubiquitous to any network enable
 
 </p>
 </details>
+
+<details><summary>[Networking Tools] Traceroute</summary>
+<p>
+	
+![](/Introductory%20Networking/images/trace.png)
+
+The internet is made up of many different servers and end-points, all networked up to each other. This means that in order to get to the content you actually want you first need to go through a bunch of other servers. Traceroute allows you to see each of these connections - it allows you to see every intermediate step between your computer and the resource you requested
+
+By default, traceroute operates using the same ICMP protocol that ping utilizes - this can be altered with switches
+
+
+
+</p>
+</details>
+
+<details><summary></summary></details>
