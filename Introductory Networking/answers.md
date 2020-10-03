@@ -209,3 +209,39 @@ A: MAC
 
 </p>
 </details>
+
+<details><summary>Task 6 - [Networking Tools] Ping</summary>
+<p>
+	
+## Task 6.1
+
+### Q: What command would you use to ping the bbc.co.uk website?
+
+A: ping bbc.co.uk
+
+## Task 6.2
+
+### Q: Ping muirlandoracle.co.uk. What is the IP address?
+
+A: 217.160.0.152
+
+## Task 6.3
+
+### What switch lets you changed the interval of sent ping requests?
+
+A: -i
+
+## Task 6.4
+
+### What switch would allow you to restrict requests to IPv4?
+
+A: -4
+
+## Task 6.5
+
+### What switch would give you a more verbose output?
+
+A: -v
+
+</p>
+</details>

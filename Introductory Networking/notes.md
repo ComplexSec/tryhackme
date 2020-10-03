@@ -162,4 +162,16 @@ Looking at the first packet, there are 5 pieces of information:
 </p>
 </details>
 
-<details><summary></summary></details>
+<details><summary>[Networking Tools] Ping</summary>
+<p>
+	
+![](/Introductory%20Networking/images/ping.png)
+
+The ping command is used when we want to test whether a connection to a remote resource is possible
+
+Ping works by using the ICMP protocol, which is one of the slightly less well-known TCP/IP protocols. The ICMP protocol works on the __Network__ layer of the OSI model, and thus the Internet layer of the TCP/IP model. Ping can also be used to determine the IP address of the server hosting a website (eg. google.com)
+
+One of the big advantages of ping is that it is ubiquitous to any network enabled device. All operating systems support it out of the box and even most embedded devices can use ping
+
+</p>
+</details>
