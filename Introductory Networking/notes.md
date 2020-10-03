@@ -212,3 +212,39 @@ Some information you can gather from WHOIS can be:
 
 </p>
 </details>
+
+<details><summary>[Networking Tools] Dig</summary>
+<p>
+	
+![](/Introductory%20Networking/images/web.png)
+
+At the basic level, DNS allows us to ask a special server to give us the IP address of the website we are trying to access
+
+The computer first sends a request to a special DNS server. The server would then go looking for the IP address for Google and send it back to us. Our computer could then send the request to the IP of the Google server
+
+When you first make a request to a website, the first thing that your computer does is check its local cache to see if it is already got an IP address stored for the website; if it does not have it, it goes to the next stage
+
+Assuming the address has not been found, your computer will then send a request to what is known as a __recursive DNS server__. These will automatically be known to the router on your network. Many ISPs maintain their own recursive servers, but companies such as Google and OpenDNS also control recursive servers - this is how your comptuer knows where to send the request for information: details for a recursive DNS server are stored in your router. These servers will also maintain a cache of results for popular domains; however, if the website you have requested is NOT stored in the cache, the recursive server will pass the request on to a __root name server__
+
+There are 13 root name DNS servers in the world. The root name servers essentially keep track of the DNS servers in the next level down, choosing an appropriate one to redirect your request to. These lower level servers are called __Top-Level Domain servers__
+
+__Top-Level Domain (TLD)__ servers are split up into extensions (.com, .co.uk, .edu). As with root name servers, TLD servers keep track of the next level down: __Authoritative name servers__. When a TLD server receives your request for information, the server passes it down to an appropriate Authoritative name server
+
+__Authoritative name servers__ are used to store DNS records for domains directly. In other words, every domain in the world will have its DNS records stored on an authoritative name server somewhere - they are the source of information. When your request reaches the authoritative name server for the domain you are querying, it will send the relevant information back to you, allowing your computer to connect to the IP address behind the domain you requested
+
+When you visit a website, this all happens automatically but we can also do it manually with a tool called `dig`. Dig allows us to manually query recursive DNS servers of our choice for information about domains
+
+`dig <domain> @<dns-server-ip>`
+
+![](/Introductory%20Networking/images/dig.png)
+
+In summary, this tells us that we sent it one query and successfully received one full answer - which as expected contains the IP for the domain name we queried
+
+Another interesting piece of information that dig gives us is the TTL (Time To Live) of the queried DNS record. The TTL of the record tells your computer when to stop considering the record as being valid (when it should request the data again). The TTL can be found in the second column of the answer section
+
+![](/Introductory%20Networking/images/ttl.png)
+
+The TTL is measured in seconds, so the record in the example will expire in 1 minute and 31 seconds
+
+</p>
+</details>
