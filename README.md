@@ -66,7 +66,12 @@ To attack infrastructure, you need to understand how networking across the Inter
 
 [<img src="https://github.com/ComplexSec/tryhackme/blob/master/Introductory%20Networking/images/intro_networking.png">](https://github.com/ComplexSec/tryhackme/tree/master/Introductory%20Networking)
 
-##  Networking ([TryHackMe](https://tryhackme.com/room/introtonetworking))
+##  Networking ([TryHackMe](https://tryhackme.com/room/bpnetworking))
 IP addressing is a very important part of the Internet and understanding networks involves understand basic IP addresses
 
-[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Networking/images/networking.png">](https://github.com/ComplexSec/tryhackme/tree/master/0Networking)
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Networking/images/networking.png">](https://github.com/ComplexSec/tryhackme/tree/master/Networking)
+
+##  Network Services ([TryHackMe](https://tryhackme.com/room/networkservices))
+Learn about then enumerate and exploit a variety of network services and misconfigurations
+
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Network%20Services/images/network_services.png">](https://github.com/ComplexSec/tryhackme/tree/master/Network%20Services)
