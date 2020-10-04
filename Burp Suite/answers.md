@@ -128,7 +128,13 @@ Deploy the VM
 
 ### Q: By default, the Burp proxy listens on only one interface. What is it?
 
-A: 127.0.0.1:8080
+<details><summary>Answer</summary>
+<p>
+	
+127.0.0.1:8080
+
+</p>
+</details>
 
 ## Task 6.3 - no answer needed
 
@@ -139,21 +145,45 @@ A: 127.0.0.1:8080
 ### Q: Return to the browser and navigate to the web app hosted on machine in the lab. Note that the page appears to be continuously loading. In Burp, we have a request that is waiting in our Intercept tab. 
 ### Take a look at the actions. Which shortcut allows us to forward the request to Repeater?
 
-A: CTRL+R
+<details><summary>Answer</summary>
+<p>
+	
+CTRL+R
+
+</p>
+</details>
+
+<details><summary>Walkthrough</summary>
+<p>
 
 Walkthrough: Right click inside Intercept tab and you will see various options
 
 ![](/Burp%20Suite/images/repeater.png)
 
+</p>
+</details>
+
 ## Task 6.5
 
 ### Q: How about if we wanted to forward our request to Intruder?
 
-A: CTRL+I
+<details><summary>Answer</summary>
+<p>
+	
+CTRL+I
+
+</p>
+</details>
+
+<details><summary>Walkthrough</summary>
+<p>
 
 Walkthrough: Right click inside Intercept tab and you will see various options
 
 ![](/Burp%20Suite/images/intruder.png)
+
+</p>
+</details>
 
 ## Task 6.6
 
