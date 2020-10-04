@@ -7,8 +7,14 @@
 
 ### Q: Which tool in Burp Suite can we use to perform a `diff` on responses and other pieces of data?
 
-<details><summary>Answer</summary></details>
-Comparer
+<details><summary>Answer</summary>
+<p>
+
+Comparer	
+
+</p>
+</details>
+
 
 ## Task 4.2
 
