@@ -1,9 +1,9 @@
-#  TryHackMe - Networking (Room 014)
+# Networking
 
-<details><summary>Kinda Like a Street Address, Just Cooler</summary>
-<p>
+## Notes.md
 
-![](/Networking/images/ip.png)
+Includes detailed notes of the room - open for more information
 
-In a manner similiar to streets and homes, computers and their respective communication networks must have a way to address their "mail"
+## Answers.md
 
+Questions and answers from TryHackMe room with walkthrough
