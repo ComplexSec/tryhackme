@@ -191,31 +191,68 @@ Walkthrough: Right click inside Intercept tab and you will see various options
 
 ### What is the name of the first section wherein general web requests (GET/POST) are saved?
 
-A: HTTP History
+<details><summary>Answer</summary>
+<p>
+	
+HTTP History
 
+</p>
+</details>
+
+<details><summary>Walkthrough</summary>
+<p>
+	
 Walkthrough: In the Proxy tab, the first option after the Intercept sub-tab is HTTP History. Looking through here, we see all general web requests sent via Proxy
 
 ![](/Burp%20Suite/images/http_history.png)
+
+</p>
+</details>
 
 ## Task 6.7
 
 ### Q: Defined in RFC 6455 as a low-latency communication protocol that does not require HTTP encapsulation, what is the name of the second section of our saved history in Burp Suite? These are commonly used in collaborate application which require real-time updates
 
-A: WebSockets history
+<details><summary>Answer</summary>
+<p>
+	
+WebSockets history
+
+</p>
+</details>
+
+<details><summary>Walkthrough</summary>
+<p>
+	
 
 Walkthrough: In the Proxy tab, the second option after the Intercept sub-tab is WebSockets History. Looking through here, we see WebSockets requests sent via Proxy
 
 ![](/Burp%20Suite/images/websockets_history.png)
 
+</p>
+</details>
+
 ## Task 6.8
 
 ### Move over to the Options section of the Proxy tab and scroll down to `Intercept Client Requests`. Here, we can apply further fine-grained rules to define which requests we would like to intercept. Perhaps the most useful out of the default rules is our only AND rule. What is it's match type?
 
-A: URL
+<details><summary>Answer</summary>
+<p>
+	
+URL
+
+</p>
+</details>
+
+<details><summary>Walkthrough</summary>
+<p>
 
 Walkthrough: Going into the `Intercept Client Requests` options, we can see the `Match Type` field says URL for our AND rule
 
 ![](/Burp%20Suite/images/and_rule.png)
+
+</p>
+</details>
 
 ## Task 6.9
 
@@ -223,11 +260,23 @@ Walkthrough: Going into the `Intercept Client Requests` options, we can see the 
 
 ### In this situation, enabling this match rule can be incredibly useful following target definition as we can effectively leave intercept on permanently (unless we need to navigate without intercept) as it won't disturb sites which are outside of our scope - something which is particularly nice if we need to Google something in the same browser.
 
-A: Is in target scope
+<details><summary>Answer</summary>
+<p>
+	
+Is in target scope
+
+</p>
+</details>
+
+<details><summary>Walkthrough</summary>
+<p>
 
 Walkthrough: Going into the `Intercept Client Requests` options, we can see the `Relationship` field says Is in target scope for our AND rule 
 
 ![](/Burp%20Suite/images/relationship.png)
+
+</p>
+</details>
 
 </p>
 </details>
