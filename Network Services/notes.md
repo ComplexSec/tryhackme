@@ -49,3 +49,30 @@ TAG | FUNCTION
 </p>
 </details>
 
+<details><summary>Exploiting SMB</summary>
+<p>
+	
+![](/Network%20Services/images/exploit.png)
+
+While there are vulnerabilities such as [CVE-2017-7494](https://www.cvedetails.com/cve/CVE-2017-7494/) that can allow remote code execution by exploiting SMB, you are more likely to encounter a situation where the best way into a system is due to misconfigurations in the system
+
+In this case, we are going to be exploiting anonymous SMB share access - a common misconfiguration that can allow us to gain information that will lead to a shell
+
+From our enumeration, we know:
+
+	* The SMB share location
+	* The name of an interesting SMB share
+
+SMBClient is part of the default Samba suite. While it is available by default on Kali and Parrot, you can find the documentation [here](https://www.samba.org/samba/docs/current/man-html/smbclient.1.html) if you need to install it
+
+We can remotely access the SMB share using the syntax:
+
+	`smbclient //[IP]/[SHARE]`
+
+Followed by the tags:
+
+	`-U [name]` to specify the user
+	`-p [port]` to specify the port
+
+</p>
+</details>

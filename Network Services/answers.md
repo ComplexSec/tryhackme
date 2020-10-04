@@ -80,3 +80,63 @@ A: profiles
 
 </p>
 </details>
+
+<details><summary>Task 3 - Exploiting SMB</summary>
+<p>
+	
+## Task 3.1
+
+### Q: What would be the correct syntax to access an SMB share called "secret" as user "suit" on a machine with the IP 10.10.10.2 on the default port?
+
+A: smbclient //10.10.10.2/secret -U suit -p 445
+
+## Task 3.3
+
+### Q: Let's see if our interesting share has been configured to allow anonymous access - that it does not require authentication to view the files. We can do this easily by:
+
+	* using the username "anonymous"
+	* connecting to the share we found during the enumeration stage
+	* and not supplying a password
+
+Does the share allow anonymous access? Y/N?
+
+A: Y
+
+![](/Network%20Services/images/smbclient.png)
+
+## Task 3.4
+
+### Q: Great! Have a look around for any interesting documents that could contain valuable information. Who can we assume this profile folder belongs to?
+
+A: John Cactus
+
+![](/Network%20Services/images/john.png)
+
+## Task 3.5
+
+### Q: What service has been configured to allow him to work from home?
+
+A: SSH
+
+## Task 3.6
+
+### Q: Okay! Now that we know this, what directory on the share should we look in?
+
+A: .ssh
+
+## Task 3.7
+
+### Q: This directory contains authentication keys that allow a user to authenticate themselves on, and then access, a server. Which of these keys is most useful to us?
+
+A: id_rsa
+
+## Task 3.8
+
+### Q: Download this file to your local machine and change the permissions to 600. Now, use the information you have already gathered to work out the username of the account. Then use the service and key to log-in to the server. What is the smb.txt flag?
+
+A: THM{smb_is_fun_eh?}
+
+![](/Network%20Services/images/ssh.png)
+
+</p>
+</details>
