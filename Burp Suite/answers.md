@@ -10,7 +10,7 @@
 <details><summary>Answer</summary>
 <p>
 
-Comparer	
+__Comparer__	
 
 </p>
 </details>
