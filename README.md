@@ -65,3 +65,8 @@ Nessus is an industry used application security scanner - learn how to use it wi
 To attack infrastructure, you need to understand how networking across the Internet works
 
 [<img src="https://github.com/ComplexSec/tryhackme/blob/master/Introductory%20Networking/images/intro_networking.png">](https://github.com/ComplexSec/tryhackme/tree/master/Introductory%20Networking)
+
+##  Networking ([TryHackMe](https://tryhackme.com/room/introtonetworking))
+IP addressing is a very important part of the Internet and understanding networks involves understand basic IP addresses
+
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/0Networking/images/networking.png">](https://github.com/ComplexSec/tryhackme/tree/master/0Networking)
