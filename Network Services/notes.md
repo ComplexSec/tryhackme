@@ -14,3 +14,38 @@ The SMB protocol is known as a __response-request protocol__ - meaning that it t
 Once a connection is established, clients can then send commands (SMBs) to the server that allow them to access shares, open files, read and write files, etc...
 
 Microsoft Windows operating systems since Windows 95 have included client and server SMB protocol support. Samba, an open source server that supports the SMB protocol, was released for Unix systems
+
+</p>
+</details>
+
+<details><summary>Enumerating SMB</summary>
+<p>
+	
+![](/Network%20Services/images/smb2.png)
+
+Enumeration is the process of gathering informaton on a target in order to find potential attack vectors and aid in exploitation
+
+This process is essential for an attack to be successful, as wasting time with exploits that either do not work or can crash the system can be a waste of energy. Enumeration can be used to gather usernames, passwords, network information, hostnames, application data, services, or any other information
+
+Typically, there are SMB share drives on a server that can be connected to and used to view or transfer files. SMB can often be a great starting point for an attacker looking to discover sensitive information
+
+First step of enumeration is conducting a port scan to find out as much information as you can about the services, appications, structure and OS of the target machine. The `-A` flag for nmap enables __OS detection, Version detection, Script scanning and Traceroute__ all in one and the `-p-` flagf enables scanning across all ports (65,535)
+
+Enum4Linux is a tool used to enumerate SMB shares on both Windows and Linux systems. It is basically a wrapper around the tols in the Samba package and makes it easy to quickly extract information from the target pertaining to SMB. Installed by default on Kali and Parrot but can install from the [official Github]https://github.com/portcullislabs/enum4linux)
+
+The syntax for Enum4Linux is simple - `enum4linux [options] ip`
+
+TAG | FUNCTION
+------------ | -------------
+-U | get userlist
+-M | get machine list
+-N | get namelist dump
+-S | get sharelist
+-P | get password policy information
+-G | get group and member list
+-A | all of the above (full basic enumeration)
+
+
+</p>
+</details>
+
