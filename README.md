@@ -60,3 +60,8 @@ Web scanning is a common activity in web application security testing - learn ho
 Nessus is an industry used application security scanner - learn how to use it with this room
 
 [<img src="https://github.com/ComplexSec/tryhackme/blob/master/Nessus/images/nessus.png">](https://github.com/ComplexSec/tryhackme/tree/master/Nessus)
+
+## Introductory Networking ([TryHackMe](https://tryhackme.com/room/introtonetworking))
+To attack infrastructure, you need to understand how networking across the Internet works
+
+[<img src="https://github.com/ComplexSec/tryhackme/blob/master/Introductory%20Networking/images/intro_networking.png">](https://github.com/ComplexSec/tryhackme/tree/master/Introductory%20Networking)
