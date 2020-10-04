@@ -22,49 +22,97 @@ __Comparer__
 
 ### Q: What tool could we use to analyze randomness in different pieces of data such as password reset tokens?
 
-A: Sequencer
+<details><summary>Answer</summary>
+<p>
+	
+Sequencer
+
+</p>
+</details>
 
 ## Task 4.3
 
 ### Q: Which tool can we use to set the scope of our project?
 
-A: Target
+<details><summary>Answer</summary>
+<p>
+	
+Target
+
+</p>
+</details>
 
 ## Task 4.4
 
 ### Q: While only available in the premium version, which tool can we use to automatically identify different vulnerabilities in the application we are examining?
 
-A: Scanner
+<details><summary>Answer</summary>
+<p>
+	
+Scanner
+
+</p>
+</details>
 
 ## Task 4.5
 
 ### Q: Encoding or decoding data can be particularly useful when examining URL parameters or protections on a form. Which tool allows us to do just that?
 
-A: Decoder
+<details><summary>Decoder</summary>
+<p>
+	
+Decoder
+
+</p>
+</details>
 
 ## Task 4.6
 
 ### Q: Which tool allows us to redirect our web traffic into Burp for further examination?
 
-A: Proxy
+<details><summary>Answer</summary>
+<p>
+	
+Proxy
+
+</p>
+</details>
 
 ## Task 4.7
 
 ### Q: Simple in concept, but powerful in execution, which tool allows us to reissue requests?
 
-A: Repeater
+<details><summary>Answer</summary>
+<p>
+	
+Repeater
+
+</p>
+</details>
 
 ## Task 4.8
 
 ### Q: With four modes, which tool in Burp can we use for a variety of purposes such as field fuzzing?
 
-A: Intruder
+<details><summary>Answer</summary>
+<p>
+	
+Intruder
+
+</p>
+</details>
 
 ## Task 4.9
 
 ### Q: Which tool allows us to modify Burp Suite via the addition of extensions?
 
-A: Extender
+<details><summary>Answer</summary>
+<p>
+	
+Extender
+
+</p>
+</details>
 
 </p>
 </details>
