@@ -360,9 +360,15 @@ To start, click `Account` or `Login` in the top right corner to navigate to the 
 
 ### Q: Try logging in with invalid credentials. What error is generated when login fails?
 
-A: Invalid email or password
+<details><summary>Answer</summary>
+<p>
+	
+Invalid email or password
 
 ![](/Burp%20Suite/images/invalid_creds.png)
+
+</p>
+</details>
 
 ## Task 8.3 - no answer needed
 
@@ -372,11 +378,23 @@ A: Invalid email or password
 
 ### Q: Now that is it in Repeater, let's try adjusting the request such that we are sending a single quote (') as both the email and password. What error is generated from this request?
 
-A: SQLITE_ERROR
+<details><summary>Answer</summary>
+<p>
+	
+SQLITE_ERROR
+
+</p>
+</details>
+
+<details><summary>Walkthrough</summary>
+<p>
 
 Walkthrough: Replace the `email` and `password` content with a single quote in Repeater and send it
 
 ![](/Burp%20Suite/images/sqlite_error.png)
+
+</p>
+</details>
 
 ## Task 8.5 & 8.6 - no answer needed
 
@@ -394,15 +412,33 @@ With the Burp proxy turned on, submit feedback. Once this is done, find the POST
 
 ### Q: What field do we have to modify in order to submit a zero-star review?
 
-A: rating
+<details><summary>Answer</summary>
+<p>
+	
+Rating
+
+</p>
+</details>
+
+<details><summary>Walkthrough</summary>
+<p>
 
 Walkthrough: The `rating` field indicates how many stars are posted in the review
+
+</p>
+</details>
 
 ## Task 8.9
 
 Submit a zero star review and complete the challenge
 
+<details><summary>Answer</summary>
+<p>
+
 ![](/Burp%20Suite/images/zerostar.png)
+
+</p>
+</details>
 
 </p>
 </details>
