@@ -140,3 +140,58 @@ A: THM{smb_is_fun_eh?}
 
 </p>
 </details>
+
+<details><summary>Task 4 - Understanding Telnet</summary>
+<p>
+	
+## Task 4.1
+
+### Q: What is Telnet?
+
+<details><summary>Answer</summary>
+<p>
+
+A: Application Protocol
+
+</p>
+</details>
+
+## Task 4.2 
+
+### Q: What has slowly replaced Telnet?
+
+<details><summary>Answer</summary>
+<p>
+	
+SSH
+
+</p>
+</details>
+
+## Task 4.3
+
+### Q: How would you connect to a Telnet server with the IP 10.10.10.3 on port 23?
+
+<details><summary>Answer</summary>
+<p>
+	
+telnet 10.10.10.3 23
+
+</p>
+</details>
+
+## Task 4.4
+
+### Q: The lack of what means that all Telnet communication is in plaintext?
+
+<details><summary>Answer</summary>
+<p>
+	
+Encryption
+
+</p>
+</details>
+
+</p>
+</details>
+

@@ -76,3 +76,20 @@ Followed by the tags:
 
 </p>
 </details>
+
+
+<details><summary>Understanding Telnet</summary>
+<p>
+	
+Telnet is an application protocol which allows you to connect to and execute commands on a remote machine that is hosting a telnet server
+
+The telnet client will establish a connection with the server. The client will then become a virtual terminal - allowing you to interact with the remote host
+
+Telnet sends ALL messages in cleartext and has no specific security mechanisms. Thus, in many applications and services, Telnet has been replaced by SSH in most implementations
+
+Telnet works when the user conects to the server using the Telnet protocol - entering __telnet__ into a command prompt. The user then executes commands on the server by using specific Telnet commands in the Telnet prompt. You can connect to a Telnet server with the following syntax:
+
+	`telnet [ip] [port]`
+
+</p>
+</details>
