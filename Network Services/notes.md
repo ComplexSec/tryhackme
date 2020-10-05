@@ -81,6 +81,8 @@ Followed by the tags:
 <details><summary>Understanding Telnet</summary>
 <p>
 	
+![](/Network%20Services/images/exploit.png)
+	
 Telnet is an application protocol which allows you to connect to and execute commands on a remote machine that is hosting a telnet server
 
 The telnet client will establish a connection with the server. The client will then become a virtual terminal - allowing you to interact with the remote host
