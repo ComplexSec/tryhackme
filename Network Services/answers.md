@@ -1,5 +1,7 @@
 #  TryHackMe - Network Services (Room 015)
 
+## Please try and answer all questions before looking at the answers to test your knowledge :)
+
 <details><summary>Task 1 - Understanding SMB</summary>
 <p>
 
