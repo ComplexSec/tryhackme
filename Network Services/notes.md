@@ -109,3 +109,16 @@ Hop over to [answers](https://github.com/ComplexSec/tryhackme/blob/master/Networ
 
 </p>
 </details>
+
+<details><summary>Exploiting Telnet</summary>
+<p>
+	
+![](/Network%20Services/images/vuln.png)
+
+Telnet, being a protocol, is insecure for being in cleartext. It lacks encryption so sends all communication over plaintext and for the most part has poor access control. There are CVE's for Telnet client and server systems so when exploiting you can check for those on
+
+	[CVE Details Website](https://www.cvedetails.com/)
+	[CVE Mitre](https://cve.mitre.org/)
+
+</p>
+</details>
