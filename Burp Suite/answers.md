@@ -304,15 +304,27 @@ Walkthrough: Going into the `Intercept Client Requests` options, we can see the 
 
 ### Q: Browse around the rest of the application to build out our page structure in the target tab. Once you have visited most of the pages of the site, return to Burp Suite and expand the various levels of the application directory. What do we call this representation of the collective web application?
 
-A: Site Map
+<details><summary>Answer</summary>
+<p>
+	
+Site Map
 
 ![](/Burp%20Suite/images/sitemap.png)
+
+</p>
+</details>
 
 ## Task 7.6
 
 ### Q: What is the term for browsing the application as a normal user prior to examining it further?
 
-A: Happy Path
+<details><summary>Answer</summary>
+<p>
+	
+Happy Path
+
+</p>
+</details>
 
 ## Task 7.7 - no answer needed
 
@@ -324,9 +336,15 @@ A: Happy Path
 
 ### Which poisoning issue arises when an application behind a cache process input that is not included in the cache key?
 
-A: Web Cache Poisoning
+<details><summary>Answer</summary>
+<p>
+	
+Web Cache Poisoning
 
 ![](/Burp%20Suite/images/webcache_poisoning.png)
+
+</p>
+</details>
 
 </p>
 </details>
