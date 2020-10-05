@@ -531,3 +531,41 @@ mike
 
 </p>
 </details>
+
+<details><summary>Task 9 - Exploiting FTP</summary>
+<p>
+	
+## Task 9.1
+
+### Q: What is the password for the user "mike"?
+
+<details><summary>Answer</summary>
+<p>
+	
+password
+
+![](/Network%20Services/images/hydra.png)
+
+</p>
+</details>
+
+## Task 9.2 - no answer needed
+
+### Q: Bingo! Now, let's connect to the FTP server as this user using `ftp [IP]` and entering the credentials when prompted
+
+## Task 9.3
+
+### Q: What is ftp.txt?
+
+<details><summary>Answer</summary>
+<p>
+	
+THM{y0u_g0t_th3_ftp_fl4g}
+
+![](/Network%20Services/images/flag.png)
+
+</p>
+</details>
+
+</p>
+</details>
