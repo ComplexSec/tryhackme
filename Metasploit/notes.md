@@ -75,3 +75,15 @@ Leaving a Metasploit console running is NOT always convenient and it can be help
 
 </p>
 </details>
+
+<details><summary>Modules for Every Occasion</summary>
+<p>
+	
+![](/Metasploit/images/modules.png)
+
+Metasploit consists of six core modules that make up the bulk of the tools you will utilize within it
+
+![](/Metasploit/images/module.png)
+
+</p>
+</details>
