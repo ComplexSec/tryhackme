@@ -188,3 +188,42 @@ Hop over to [answers](https://github.com/ComplexSec/tryhackme/blob/master/Networ
 
 </p>
 </details>
+
+<details><summary>Exploiting FTP</summary>
+<p>
+	
+![](/Network%20Services/images/exploitation.jpg)
+
+Similiarly to Telnet, when using FTP both the command and data channels are unencrypted. Any data sent over these channels can be intercepted and read
+
+With data from FTP being sent in plaintext, if a man in the middle attack took place, an attacker could reveal anything sent through this protocol (such as passwords). An article written by [JSCape](https://www.jscape.com/blog/bid/91906/Countering-Packet-Sniffers-Using-Encrypted-FTP) demonstrates and explains this process using APR-Poisoning to trick a victim into sending sensitive information to an attacker rather than a legitimate source
+
+When looking at an FTP server from the position we find ourselves in, an avenue we can exploit is weak or default password configurations
+
+From our enumeration we know:
+	
+	* There is an FTP server running
+	* We have a possible username
+
+Using this information, we can try and brute force the password
+
+Hydra is a very fast online password cracking tool which can perform rapid dictionary attacks against more than 50 protocols including Telnnet, RDP, SSH, FTP, HTTP, HTTPS, SMB, several databases and much more
+
+If you need to download it, you can find it [here](https://github.com/vanhauser-thc/thc-hydra)
+
+The syntax for the command we are going to use is:
+
+	`hydra -t 4 -l [user] -P /usr/share/wordlists/rockyou.txt -vV 10.10.169.28 ftp`
+
+TAG | FUNCTION
+------------ | -------------
+hydra | runs the hydra tool
+-t 4 | number of parallel connections per target
+-l [user] | points to the user who's account you are trying to compromise
+-P [path to dictionary] | points to file containing the list of passwords
+-vV | sets verbose mode to very verbose - shows each attempt
+[IP] | IP of target machine
+ftp / protocol | sets the protocol
+
+</p>
+</details>
