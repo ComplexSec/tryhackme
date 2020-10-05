@@ -120,6 +120,25 @@ Telnet, being a protocol, is insecure for being in cleartext. It lacks encryptio
 	https://www.cvedetails.com/
 	https://cve.mitre.org/
 
+A CVE - short for Common Vulnerabilities and Exposure - is a list of publicly disclosed computer security flaws. When someone refers to a CVE, they usually mean the CVE ID number assigned to a security flaw
+
+You are far more likely to find a misconfiguration in how Telnet has been configured or is operating that will allow you to exploit it
+
+From our enumeration stage, we know the following:
+
+	* There is a poorly hidden telnet service running on this machine
+	* The service itself is marked "backdoor"
+	* We have a possible username of "Skidy" implicated
+
+Using this information, we can try accessing the telnet port and using it as a foothold to get a full reverse shell on the machine
+
+A "shell" can simply be described as a piece of code or program which can be used to gain code or command execution on a device. A reverse shell is a type of shell in which the target machine communicates back to the attacking machine
+
+The attacking machine has a listening port on which it receives the connection resulting in code or command execution
+
+![](/Network%20Services/images/reverse.png)
+
+Hop over to [answers](https://github.com/ComplexSec/tryhackme/blob/master/Network%20Services/answers.md) to continue
 
 </p>
 </details>
