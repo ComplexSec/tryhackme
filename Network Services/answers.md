@@ -522,7 +522,7 @@ PUBLIC_NOTICE.txt
 
 mike
 
-![](/Network%20Services/images/notice.png)
+![](/Network%20Services/images/mike.png)
 
 </p>
 </details>
