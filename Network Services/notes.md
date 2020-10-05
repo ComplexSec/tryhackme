@@ -95,3 +95,17 @@ Telnet works when the user conects to the server using the Telnet protocol - ent
 
 </p>
 </details>
+
+<details><summary>Enumerating Telnet</summary>
+<p>
+	
+![](/Network%20Services/images/enum.png)
+
+We've already seen how key enumeration can be in exploiting a misconfigured network service. However, vulnerabilities that could be potentially trivial to exploit do not always jump out as us. For that reason we need to be thorough in our method
+
+Always start out the same way by doing a port scan to find out as much informaton as we can about the services, applications, structure and OS of the target machine
+
+Hop over to [answers](https://github.com/ComplexSec/tryhackme/blob/master/Network%20Services/answers.md) to continue
+
+</p>
+</details>

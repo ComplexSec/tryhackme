@@ -195,3 +195,94 @@ Encryption
 </p>
 </details>
 
+<details><summary>Task 5 - Enumerating Telnet</summary>
+<p>
+	
+## Task 5.1
+
+### Q: How many ports are open on the target machine?
+
+<details><summary>Answer</summary>
+<p>
+
+1
+
+![](/Network%20Services/images/nmap2.png)
+
+</p>
+</details>
+
+## Task 5.2
+
+### Q: What port is this?
+
+<details><summary>Answer</summary>
+<p>
+
+8012
+
+</p>
+</details>
+
+## Task 5.3
+
+### Q: This port is unassigned, but still lists the protocol it is using, what protocol is this?
+
+<details><summary>Answer</summary>
+<p>
+
+TCP
+
+</p>
+</details>
+
+## Task 5.4
+
+### Q: Now re-run the namp scan without the -p- flag. How many ports show up as open?
+
+<details><summary>Answer</summary>
+<p>
+	
+0
+
+![](/Network%20Services/images/closed.png)
+
+</p>
+</details>
+
+## Task 5.5 - no answer needed
+
+### Here, we see that by assigning Telnet to a __non-standard port__ it is not part of the common ports list or top 1000 ports that nmap scans. It is important to try every angle when enumerating as the information you gather here will inform your exploitation stage
+
+## Task 5.6
+
+### Q: Based on the title returned to us, what do we think this port could be used for?
+
+<details><summary>Answer</summary>
+<p>
+	
+A backdoor
+
+![](/Network%20Services/images/backdoor.png)
+
+</p>
+</details>
+
+## Task 5.7
+
+### Q: Who could it belong to? Gathering possible usernames is an important step in enumeration?
+
+<details><summary>Answer</summary>
+<p>
+	
+Skidy
+
+</p>
+</details>
+
+## Task 5.8 - no answer needed
+
+### Always keep a note of information you find during your enumeration stage, so you can refer back to it when you move on to try exploits
+
+</p>
+</details>
