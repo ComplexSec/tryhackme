@@ -85,5 +85,17 @@ Metasploit consists of six core modules that make up the bulk of the tools you w
 
 ![](/Metasploit/images/module.png)
 
+Easily the most common module utilized is the `exploit` modules - these hold all of the exploit code we use. Another module used hand in hand with exploits is the `payload` modules which contain the various bits of shellcode we send to have executed following exploitation
+
+The `auxiliary` module is most commonly used in scanning and verification that machines are exploitable
+
+One of the most common activities after exploitation is looting and pivoting. The `post` module provides these capabilities
+
+The `encoder` module allows us to modify the apperance of our exploit such that we avoid signature detection. It is commonly used in payload obfuscation
+
+The `nop` module is used with buffer overflow and ROP attacks
+
+To load different modules not loaded in by default, you can use the `load` command
+
 </p>
 </details>
