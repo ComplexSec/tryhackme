@@ -142,3 +142,49 @@ Hop over to [answers](https://github.com/ComplexSec/tryhackme/blob/master/Networ
 
 </p>
 </details>
+
+<details><summary>Understanding FTP</summary>
+<p>
+	
+![](/Network%20Services/images/ftp.png)
+
+File Transfer Protocol (FTP) is a protocol used to allow remote transfer of files over a network. It uses a client-server model to do this and relays commands and data in a very efficient way
+
+A typical FTP session operates using two channels
+
+	A command (sometimes called the control) channel
+	A data channel
+
+As their names imply, the command channel is used for transmitting commands as well as replies to those commands, while the data channel is used for transferring data
+
+FTP operates using a client-server protocol. The client initiates a connection with the server, the server validates whatever login credentials are provided and then opens the session
+
+While the session is open, the client may execute FTP commands on the server
+
+The FTP server may support either Active or Passive connections or both
+
+	* In an active FTP connection, the client opens a port and listens. The server is required to actively connect to it
+	* In a passive FTP connection, the server opens a port and listens (passively) and the client connects to it
+
+Find more details on the technical function and implementation of FTP on the [Internet Engineering Task Force website](https://www.ietf.org/rfc/rfc959.txt). The IETF is one of a number of standards agencies who define and regulate internet standards
+
+</p>
+</details>
+
+<details><summary>Enumerating FTP</summary>
+<p>
+	
+![](/Network%20Services/images/ftp_enum.png)
+
+We are going to be exploiting an anonymous FTP login to see what files we can access and if they contain any information that might allow us to pop a shell on the system. This a common pathway in CTF challenges, and mimics a real-life careless implementation of FTP servers
+
+As we are logging into an FTP server, we are going to need to make sure there is an FTP client installed on the system. There should be one installed by default on most Linux operating systems - you can test if there is one by typine `ftp` into the console. If a prompt does not appear, simply install via the `sudo apt install ftp` command
+
+Worth noting that some vulnerable versions of in.ftpd and some other FTP server variants return different responses to the `cwd` command for home directories which exist and those that don't. This can be exploited because you can issue cwd commands before authentication and if there is a home directory there is more than likely a user account to go with it
+
+This vulnerability is documented [here](https://www.exploit-db.com/exploits/20745)
+
+Hop over to [answers](https://github.com/ComplexSec/tryhackme/blob/master/Network%20Services/answers.md) to continue
+
+</p>
+</details>

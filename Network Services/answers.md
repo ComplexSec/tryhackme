@@ -409,3 +409,125 @@ THM{y0u_g0t_th3_t3ln3t_fl4g}
 
 </p>
 </details>
+
+<details><summary>Task 7 - Understanding FTP</summary>
+<p>
+	
+## Task 7.1
+
+### Q: What communications model does FTP use?
+
+<details><summary>Answer</summary>
+<p>
+	
+client-server	
+
+</p>
+</details>	
+
+## Task 7.2
+
+### Q: What is the standard FTP port?
+
+<details><summary>Answer</summary>
+<p>
+	
+21
+
+</p>
+</details>
+
+## Task 7.3
+
+### Q: How many modes of FTP connection are there?
+
+<details><summary>Answer</summary>
+<p>
+	
+2	
+
+</p>
+</details>
+
+</p>
+</details>
+
+<details><summary>Task 8 - Enumerating FTP</summary>
+<p>
+	
+## Task 8.1
+
+### Q: Run an nmap scan. How many ports are open on the target machine?
+
+<details><summary>Answer</summary>
+<p>
+	
+2
+
+</p>
+</details>
+
+## Task 8.2
+
+### Q: What port is FTP running on?
+
+<details><summary>Answer</summary>
+<p>
+	
+21
+
+</p>
+</details>
+
+## Task 8.3
+
+### Q: What variant of FTP is running on it?
+
+<details><summary>Answer</summary>
+<p>
+	
+vsftpd
+
+![](/Network%20Services/images/vsftpd.png)
+	
+</p>
+</details>
+
+## Task 8.4
+
+### Great! Now that we know that type of FTP server we are dealing with we can check to see if we are able to login anonymously to the FTP server
+
+We can do this by typoing `ftp [IP]` into the console and entering anonymous as the username and no password
+
+What is the name of the file in the anonymous FTP directory?
+
+<details><summary>Answer</summary>
+<p>
+	
+PUBLIC_NOTICE.txt
+
+![](/Network%20Services/images/notice.png)
+	
+</p>
+</details>
+
+## Task 8.5
+
+### Q: What do we think a possible username could be?
+
+<details><summary>Answer</summary>
+<p>
+
+mike
+
+![](/Network%20Services/images/notice.png)
+
+</p>
+</details>
+
+## Task 8.6 - no answer needed
+
+### Q: Great! Now we have got details about the FTP server and a possible username
+
+</p>
+</details>
