@@ -39,3 +39,39 @@ Metasploit uses a PostGreSQL type of database as seen above
 
 </p>
 </details>
+
+<details><summary>Rock 'em to the Core [Commands]</summary>
+<p>
+	
+![](/Metasploit/images/rock.png)
+
+On the Metasploit prompt, type the command `help`
+
+![](/Metasploit/images/help2.png)
+
+The help menu has a very short one-character alias which is `?`
+
+Finding various modules we have at our disposal within Metasploit is one of the most common commands we will leverage in the framework. The base command we use for searching is simply `search`
+
+Once we have found the module we want to leverage, we use the command `use` to select it. If we want to view information about either a specific module or just the active module we use the `info` command
+
+Metasploit has a built-in netcat-like function where we can make quick connections with a host simply to verify that we can talk to it. This command is the `connect` command
+
+If you just want to see the MOTD/ASCII art when we start msfconsole, simply type the `banner` comamnd
+
+![](/Metasploit/images/banner.png)
+
+To change the value of a variable, we use the `set` command. Metasploit also supports the use of global variables, something which is incredibly useful when you are specifically focusing on a single box. The command to change global variables is the `setg` command
+
+To view the value of the variables, we use the `get` command
+
+![](/Metasploit/images/get.png)
+
+To change the value of a variable to null/no value we use the `unset` command
+
+When performing a penetration test, it is quite common to record your screen either for further review or for providing evidence of any actions taken. This is often couple with the collection of console output to a file as it can be incredibly useful to grep for different pieces of information output to the screen. The `spool` command can be used to set the console output to save to a file
+
+Leaving a Metasploit console running is NOT always convenient and it can be helpful to have all of our previously set values load when starting up Metasploit. The `save` command can be used to store the settings/active datastores from Metasploit to a settings file. This saves within the msf4 or msf5 directory and can be undone easily by simply removing the created settings file
+
+</p>
+</details>
