@@ -2,6 +2,8 @@
 
 ## Please try and answer all questions before looking at the answers to test your knowledge :)
 
+![](/Network%20Services/images/labs.png)
+
 <details><summary>Task 1 - Understanding SMB</summary>
 <p>
 
