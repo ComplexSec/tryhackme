@@ -227,3 +227,19 @@ ftp / protocol | sets the protocol
 
 </p>
 </details>
+
+<details><summary>Expanding Your Knowledge</summary>
+<p>
+	
+![](/Network%20Services/images/further.png)
+
+There will always be things that surpirse us all especially in the sometimes abstract logical problems of capture the flag challenges. But, as with anything, practice makes perfect. We can all look back on the things we have learnt after completing something challenging.
+
+Here are some resources that might be useful to read after completing this room
+
+* https://medium.com/@gregIT/exploiting-simple-network-services-in-ctfs-ec8735be5eef#
+* https://attack.mitre.org/techniques/T1210/
+* https://www.nextgov.com/cybersecurity/2019/10/nsa-warns-vulnerabilities-multiple-vpn-services/160456/
+
+</p>
+</details>
