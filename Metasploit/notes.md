@@ -204,5 +204,18 @@ Can also run the `shell` command to spawn a normal system shell on the victim
 	
 ![](/Metasploit/images/cisco.png)
 
+Last but not least, let's take a look at the autorouting options available to us in Metaspoit. While our victim machine may not have multiple network interfaces (NICs) we will walk through the motions of pivoting through our victim as if it did have access to extra networks
+
+First, run the command `run autoroute -h`. This pulls up the help menu for autoroute. To add a route to the following subnet (172.18.1.0/24), we use the command:
+
+	`run autoroute -s 172.18.1.0/24 -n 255.255.255.0`
+
+![](/Metasploit/images/autoroute.png)
+
+Additionally, we can start a socks4a proxy server out of this session. First, background out of the current meterpreter session and run the command `search server/socks4a`. The full path of this auxiliary module is `auxiliary/server/socks4a`
+
+![](/Metasploit/images/socks.png)
+
+Once we have started a socks server, we can modify our /etc/proxychains.conf file to include our new server. The `proxychains` command allows us to run them through our socks4a server
 </p>
 </details>
