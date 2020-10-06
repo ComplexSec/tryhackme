@@ -183,5 +183,26 @@ If we want to transfer files to our victim, we use the `upload` command. If we w
 
 ![](/Metasploit/images/ip.png)
 
-</p>]
+We can go ahead and run a few post modules from Metasploit. First, run the command `run /post/windows/gather/checkvm`. This determines if we are in a VM - very useful piece of knowledge for further pivoting
+
+![](/Metasploit/images/checkvm.png)
+
+Next, try running `run /post/multi/recon/local_exploit_suggester`. This checks for various exploits which we can run within our session to elevate our privileges
+
+![](/Metasploit/images/suggest.png)
+
+Finally, let's try forcing RDP to be available. This won't work since we are not administrators but this is a fun command to know about: `run post/windows/manage/enable_rdp`
+
+![](/Metasploit/images/rdp.png)
+
+Can also run the `shell` command to spawn a normal system shell on the victim
+</p>
+</details>
+
+<details><summary>Makin' Cisco Proud</summary>
+<p>
+	
+![](/Metasploit/images/cisco.png)
+
+</p>
 </details>
