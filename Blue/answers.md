@@ -2,7 +2,7 @@
 
 ## Please try and answer all questions before looking at the answers to test your knowledge :)
 
-![](/Blue/images/msf4.png)
+![](/Blue/images/msf4.jpg)
 
 <details><summary>Task 1 - Recon</summary>
 <p>
