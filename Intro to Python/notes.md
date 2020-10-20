@@ -1,5 +1,7 @@
 #  TryHackMe - Intro to Python (Room 018)
 
+![](/Intro%20to%20Python/images/python1.png)
+
 <details><summary>Hello World</summary>
 <p>
 
